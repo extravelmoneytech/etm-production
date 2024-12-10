@@ -1,9 +1,11 @@
 <div class="mt-24 px-5 sm:px-12 md:px-24 ">
-    <div class="flex flex-col sm:flex-row bg-none sm:bg-gradient-to-r from-[rgba(14,81,160,0.03)] to-[rgba(227,29,28,0.03)] bg-white rounded-2xl">
-    <div class="flex items-center justify-center sm:items-end">
-        <img src="<?php echo $fold . 'public/images/callBack.svg'; ?>" alt="">
+<p class="text-[#18325b] text-3xl font-extrabold ">Connect with a real expert instantly!</p>
+<p class="text-[#555555] text-lg font-medium leading-[30px] mt-4">Get all your questions answered from exchange rates to KYC, TCS and more</p>
+    <div class="flex flex-col md:flex-row bg-none sm:bg-gradient-to-r from-[rgba(14,81,160,0.03)] to-[rgba(227,29,28,0.03)] bg-white rounded-2xl justify-between lg:px-6 mt-8">
+    <div class="flex items-center justify-center sm:items-end w-full lg:w-[40%]">
+        <img src="<?php echo $fold . 'public/images/callBack.png'; ?>" alt="">
     </div>
-    <div class="flex flex-col sm:flex-col-reverse bg-gradient-to-r from-[rgba(14,81,160,0.03)] to-[rgba(227,29,28,0.03)] bg-white sm:bg-none sm:bg-transparent p-3 rounded-2xl">
+    <div class="flex flex-col sm:flex-col-reverse bg-gradient-to-r from-[rgba(14,81,160,0.03)] to-[rgba(227,29,28,0.03)] bg-white sm:bg-none sm:bg-transparent p-3 rounded-2xl justify-center w-full lg:w-[60%]">
         <div class="flex flex-col sm:flex-row gap-2 mt-0 sm:mt-6">
             <div class="h-14 p-2.5 bg-[#0e51a0] rounded-lg justify-center items-center gap-1 inline-flex">
                 <div class="w-6 h-6 relative">
@@ -25,7 +27,7 @@
 
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 mt-6 sm:mt-0 gap-6">
-            <div class="w-[343px] h-[106px] justify-start items-start gap-2 inline-flex">
+            <div class=" justify-start items-start gap-2 inline-flex">
                 <div class="h-8 py-1 justify-start items-center gap-2.5 flex">
                     <div class="h-6 relative">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -45,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="w-[343px] h-[106px] justify-start items-start gap-2 inline-flex">
+            <div class=" justify-start items-start gap-2 inline-flex">
                 <div class="h-8 py-1 justify-start items-center gap-2.5 flex">
                     <div class="h-6 relative">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -65,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="w-[343px] h-[106px] justify-start items-start gap-2 inline-flex">
+            <div class=" justify-start items-start gap-2 inline-flex">
                 <div class="h-8 py-1 justify-start items-center gap-2.5 flex">
                     <div class="h-6 relative">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -85,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="w-[343px] h-[106px] justify-start items-start gap-2 inline-flex">
+            <div class=" justify-start items-start gap-2 inline-flex">
                 <div class="h-8 py-1 justify-start items-center gap-2.5 flex">
                     <div class="h-6 relative">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
