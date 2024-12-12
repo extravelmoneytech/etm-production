@@ -1,7 +1,7 @@
 <section class="flex flex-col mt-24 customMd:mt-40 xl:mt-60 " >
                 <div class="mt-10  flex-col gap-2 flex sm:hidden px-5 sm:px-12 md:px-24 mb-8" >
-                    <div class="flex justify-between">
-                        <div class="flex flex-col gap-1 text-center justify-between items-center ">
+                    <div class="grid grid-cols-3">
+                        <div class="col-span-1 flex flex-col gap-1 text-center items-center ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                                 <path d="M17.0464 9.37088C16.8739 8.77765 16.7866 8.1629 16.7871 7.54509C16.7871 3.94763 19.7035 1.03125 23.301 1.03125C26.8984 1.03125 29.8148 3.94763 29.8148 7.54509C29.8148 8.17978 29.7241 8.79328 29.5547 9.37322" stroke="#0E51A0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M10.3197 14.3221H36.2821M10.3197 9.89172H36.2821M35.3291 14.9178V9.89172H11.2728V14.9178C11.2728 15.8929 10.6948 16.7675 9.80814 17.1736C7.77433 18.1049 6.36133 20.1572 6.36133 22.5405V42.391C6.36133 44.9192 8.4108 46.9687 10.939 46.9687H35.6629C38.191 46.9687 40.2406 44.9193 40.2406 42.391V22.5405C40.2406 20.1572 38.8276 18.1049 36.7938 17.1736C35.9071 16.7675 35.3291 15.8929 35.3291 14.9178Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -9,14 +9,14 @@
                                 <path d="M19.8282 21.204H22.6242M21.2262 22.602V19.806M38.8417 5.31279H41.6376M40.2396 6.7107V3.91479M21.4259 38.5583L14.1802 46.6476C13.8348 47.0333 13.2421 47.0659 12.8564 46.7205L10.7945 44.8735C10.4088 44.528 10.3761 43.9354 10.7216 43.5497L17.9673 35.4604C18.3127 35.0747 18.9054 35.042 19.2911 35.3875L21.353 37.2345C21.7387 37.5799 21.7714 38.1727 21.4259 38.5583Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg>
 
-                              <p class="text-lg w-full font-bold" style="word-wrap: break-word;background: linear-gradient(329deg, #0E51A0 -43.1%, #E31D1C 144.49%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Save More</p>
-                              <span class="text-black/60 text-mediumFont font-normal  leading-normal">5%+ better than <br/>market rates.</span>
+                              <p class="text-base xs:text-lg w-full font-bold" style="word-wrap: break-word;background: linear-gradient(329deg, #0E51A0 -43.1%, #E31D1C 144.49%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Save More</p>
+                              <span class="text-black/60 text-mediumFont font-normal  leading-normal mt-2">5%+ better than <br/>market rates.</span>
 
 
 
                         </div>
 
-                        <div class="flex flex-col gap-1 text-center justify-between items-center ">
+                        <div class="col-span-1 flex flex-col gap-1 text-center items-center ">
                             
 
                               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -28,14 +28,14 @@
                                 <path d="M13.8982 41.1551C16.2668 41.1551 18.1869 39.2349 18.1869 36.8663C18.1869 34.4977 16.2668 32.5775 13.8982 32.5775C11.5295 32.5775 9.60938 34.4977 9.60938 36.8663C9.60938 39.2349 11.5295 41.1551 13.8982 41.1551Z" stroke="#0E51A0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg>
 
-                              <p class="text-lg w-full font-bold" style="word-wrap: break-word;background: linear-gradient(329deg, #0E51A0 -43.1%, #E31D1C 144.49%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Fast Credit</p>
-                              <span class="text-black/60 text-mediumFont font-normal  leading-normal">Credit/Delivery in <br/>48 working hours.</span>
+                              <p class="text-base xs:text-lg w-full font-bold" style="word-wrap: break-word;background: linear-gradient(329deg, #0E51A0 -43.1%, #E31D1C 144.49%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Fast Credit</p>
+                              <span class="text-black/60 text-mediumFont font-normal  leading-normal mt-2">Credit/Delivery in <br/>48 working hours.</span>
 
 
 
                         </div>
 
-                        <div class="flex flex-col gap-1 text-center justify-between items-center ">
+                        <div class="col-span-1 flex flex-col gap-1 text-center  items-center ">
                             
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -54,8 +54,8 @@
                               </svg>
 
 
-                              <p class="text-lg w-full font-bold" style="word-wrap: break-word;background: linear-gradient(329deg, #0E51A0 -43.1%, #E31D1C 144.49%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Expert Help</p>
-                              <span class="text-black/60 text-mediumFont font-normal  leading-normal">Professional support,<br/>every step</span>
+                              <p class="text-base xs:text-lg w-full font-bold" style="word-wrap: break-word;background: linear-gradient(329deg, #0E51A0 -43.1%, #E31D1C 144.49%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Expert Help</p>
+                              <span class="text-black/60 text-mediumFont font-normal  leading-normal mt-2">Professional support,<br/>every step</span>
 
 
 

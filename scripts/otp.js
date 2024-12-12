@@ -129,6 +129,7 @@ countryData.forEach(country => {
   countryCodeDropDown.appendChild(li);
 });
 forceSelectDropdownItem('contryCodeMain','IN')
+console.log('countryCodeDropDown','countryCodeDropDown')
 
 
 document.querySelector('#contryCodeMain').addEventListener('dropdownChange', () => {

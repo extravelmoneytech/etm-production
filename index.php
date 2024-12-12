@@ -214,16 +214,13 @@ $city="";
                 <div
                     class=" flex w-full flex-col customMd:flex-row heroMain px-5 sm:px-12 md:px-24 py-5 relative justify-center  sm:justify-between customMd:pt-16 md:pt-16">
                     <div class="w-full md:w-6/12 md:pr-4 widgetContainer">
-                        <!--<h1 class="text-[1.9rem] md:text-headingCustom text-black font-bold tracking-tight">For<span class="text-primary-blue">e</span><span class="text-primary-red">x</span> & Money Transfers..-->
-                        <!--    <br>Extra simple, <span class="text-primary-blue">e</span><span class="text-primary-red">x</span>tra-->
-                        <!--    savings-->
-                        <!--</h1>-->
-                        <h1 class="text-[1.9rem] md:text-headingCustom text-black font-bold tracking-tight">For<span class="text-primary-blue">e</span><span class="text-primary-red">x</span> & Money Transfers..
+                        
+                        <h1 class="text-[1.6rem] xs:text-[1.9rem] md:text-[2.4rem] md:leading-[3rem] text-black font-bold tracking-tight">For<span class="text-primary-blue">e</span><span class="text-primary-red">x</span> & Money Transfers..
                             <br>Extra simple, <span class="text-primary-blue">e</span><span class="text-primary-red">x</span>tra
                             savings
                         </h1>
                         <p
-                            class="text-opacity-60 sm:text-opacity-100 text-black mt-3 text-base sm:text-mediumFont sm:w-11/12">
+                            class="text-opacity-60 sm:text-opacity-100 text-black mt-3 text-base sm:text-sm sm:w-11/12">
                             Get the best exchange rates on currency, forex cards, and money transfers from India. Fast, easy, and trusted RBI-authorized partners! </p>
 
 

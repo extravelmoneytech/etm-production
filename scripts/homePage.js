@@ -1064,3 +1064,4 @@ function updateCurrencySymbol(dropdownId, type) {
         console.error(`No selected item found in dropdown ${dropdownId}`);
     }
 }
+

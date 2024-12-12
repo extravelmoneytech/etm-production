@@ -97,7 +97,7 @@ if (sessionStorage.getItem('productPage') === 'fx') {
             city: buyCity
         });
 
-        fetch('https://mvc.extravelmoney.com/api-etm/', {
+        fetch(apiUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',

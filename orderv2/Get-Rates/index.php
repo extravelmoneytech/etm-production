@@ -3,63 +3,63 @@
 
 <?php
 
-    
-    $fold = "../../";  
 
-    $getRatesPage = true;
-    $title="Get Rates";
-    include $fold . 'includesv2/head.php';
-     
+$fold = "../../";
+
+$getRatesPage = true;
+$title = "Get Rates";
+include $fold . 'includesv2/head.php';
+
 ?>
 
 
 <body>
     <div class="flex flex-col items-center justify-center">
         <div class="chooseCityOverlay absolute top-0 left-0 w-full h-[100vh] bg-white customMd:bg-black/30  customMd:bg-opacity-60  z-20"
-        style="backdrop-filter: blur(7px)">
+            style="backdrop-filter: blur(7px)">
 
-        <div
-                    class="otpWidget pt-10 customMd:pt-5 flex w-full  customMd::w-[30%] customMd::min-w-[26.5rem] absolute  z-20 top-0 left-0 bg-white px-5  py-5 customMd:rounded-xl flex-col customMd:mt-12 customMd:bg-white  min-h-[100vh] customMd:min-h-[0] h-[37rem] customMd:max-w-2xl customMd:left-2/4  customMd:top-1/2  customMd:transform customMd:-translate-x-1/2 customMd:-translate-y-1/2">
-                    <img class="w-44" src="<?php echo $fold . 'public/images/logo/ETM logo without tagline.png'; ?>" alt="">
-                    
-                    <div id="sendOtpMain" class="flex flex-col ">
-                        <img class="w-48 mt-4" src="<?php echo $fold .'public/images/otpImg.svg'; ?>" alt="">
+            <div
+                class="otpWidget pt-10 customMd:pt-5 flex w-full  customMd::w-[30%] customMd::min-w-[26.5rem] absolute  z-20 top-0 left-0 bg-white px-5  py-5 customMd:rounded-xl flex-col customMd:mt-12 customMd:bg-white  min-h-[100vh] customMd:min-h-[0] h-[37rem] customMd:max-w-2xl customMd:left-2/4  customMd:top-1/2  customMd:transform customMd:-translate-x-1/2 customMd:-translate-y-1/2">
+                <img class="w-44" src="<?php echo $fold . 'public/images/logo/ETM logo without tagline.png'; ?>" alt="">
+
+                <div id="sendOtpMain" class="flex flex-col ">
+                    <img class="w-48 mt-4" src="<?php echo $fold . 'public/images/otpImg.svg'; ?>" alt="">
 
                     <span class="text-black text-sm font-semibold mt-6 leading-7">Enter Your Mobile Number</span>
 
                     <div class="flex justify-between gap-2" id="otpMobileContainer">
                         <div id=""
-                    class="p-[2px] rounded-[12px]  customGradient justify-start items-center gap-2.5 inline-flex w-[35%]">
-                    <div style="padding: 0.75rem 0.5rem;height: 3rem;" class="justify-start rounded-[10px] items-center gap-2.5 flex w-full border-0 bg-white">
-                        <div style="height: fit-content;padding: 0;border: none;width: 100%;" class="dropdownMain select-none countryCodeContainer" data-search="true" id="contryCodeMain" dataval="oe" custom-content>
+                            class="p-[2px] rounded-[12px]  customGradient justify-start items-center gap-2.5 inline-flex w-[35%]">
+                            <div style="padding: 0.75rem 0.5rem;height: 3rem;" class="justify-start rounded-[10px] items-center gap-2.5 flex w-full border-0 bg-white">
+                                <div style="height: fit-content;padding: 0;border: none;width: 100%;" class="dropdownMain select-none countryCodeContainer" data-search="true" id="contryCodeMain" dataval="oe" custom-content>
 
-                            <div class="selectedItem">
+                                    <div class="selectedItem">
 
-                                    
+
+                                    </div>
+
+                                    <ul class="dropdownList overflow-scroll" id="countryCodeDropDown">
+
+
+
+                                    </ul>
+                                    <svg class="dropdownArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path d="M13.354 6.85354L8.35403 11.8535C8.30759 11.9 8.25245 11.9369 8.19175 11.9621C8.13105 11.9872 8.06599 12.0002 8.00028 12.0002C7.93457 12.0002 7.86951 11.9872 7.80881 11.9621C7.74811 11.9369 7.69296 11.9 7.64653 11.8535L2.64653 6.85354C2.55271 6.75972 2.5 6.63247 2.5 6.49979C2.5 6.36711 2.55271 6.23986 2.64653 6.14604C2.74035 6.05222 2.8676 5.99951 3.00028 5.99951C3.13296 5.99951 3.26021 6.05222 3.35403 6.14604L8.00028 10.7929L12.6465 6.14604C12.693 6.09958 12.7481 6.06273 12.8088 6.03759C12.8695 6.01245 12.9346 5.99951 13.0003 5.99951C13.066 5.99951 13.131 6.01245 13.1917 6.03759C13.2524 6.06273 13.3076 6.09958 13.354 6.14604C13.4005 6.19249 13.4373 6.24764 13.4625 6.30834C13.4876 6.36904 13.5006 6.43409 13.5006 6.49979C13.5006 6.56549 13.4876 6.63054 13.4625 6.69124C13.4373 6.75193 13.4005 6.80708 13.354 6.85354Z" fill="black"></path>
+                                    </svg>
                                 </div>
-
-                            <ul  class="dropdownList overflow-scroll" id="countryCodeDropDown">
-                                
-
-                                
-                            </ul>
-                            <svg class="dropdownArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path d="M13.354 6.85354L8.35403 11.8535C8.30759 11.9 8.25245 11.9369 8.19175 11.9621C8.13105 11.9872 8.06599 12.0002 8.00028 12.0002C7.93457 12.0002 7.86951 11.9872 7.80881 11.9621C7.74811 11.9369 7.69296 11.9 7.64653 11.8535L2.64653 6.85354C2.55271 6.75972 2.5 6.63247 2.5 6.49979C2.5 6.36711 2.55271 6.23986 2.64653 6.14604C2.74035 6.05222 2.8676 5.99951 3.00028 5.99951C3.13296 5.99951 3.26021 6.05222 3.35403 6.14604L8.00028 10.7929L12.6465 6.14604C12.693 6.09958 12.7481 6.06273 12.8088 6.03759C12.8695 6.01245 12.9346 5.99951 13.0003 5.99951C13.066 5.99951 13.131 6.01245 13.1917 6.03759C13.2524 6.06273 13.3076 6.09958 13.354 6.14604C13.4005 6.19249 13.4373 6.24764 13.4625 6.30834C13.4876 6.36904 13.5006 6.43409 13.5006 6.49979C13.5006 6.56549 13.4876 6.63054 13.4625 6.69124C13.4373 6.75193 13.4005 6.80708 13.354 6.85354Z" fill="black"></path>
-                            </svg>
-                        </div>
-                    </div>
+                            </div>
                         </div>
 
                         <div id="otpInputContainer"
-                    class="p-[2px] rounded-[12px]  customGradient justify-start items-center gap-2.5 inline-flex  w-[65%]">
-                    <div class="justify-start rounded-[10px] items-center gap-2.5 flex bg-white w-full">
-                        <input type="text" id="mobNumber"
-                            class="font-semibold w-full outline-none border-0 bg-transparent py-3 px-2">
-                    </div>
+                            class="p-[2px] rounded-[12px]  customGradient justify-start items-center gap-2.5 inline-flex  w-[65%]">
+                            <div class="justify-start rounded-[10px] items-center gap-2.5 flex bg-white w-full">
+                                <input type="text" id="mobNumber"
+                                    class="font-semibold w-full outline-none border-0 bg-transparent py-3 px-2">
+                            </div>
                         </div>
                     </div>
                     <p class="text-[#777777] text-sm font-medium mt-4 leading-[21px] mb-8">We will send you one-time
-                                password to your mobile number</p>
+                        password to your mobile number</p>
 
                     <!--            <div  id="optSend" class=" px-4 py-3.5  rounded-lg justify-center items-center gap-1 inline-flex  cursor-pointer bg-primary-blue">-->
                     <!--    <div style="color:white" class=" text-base font-bold font-['Plus Jakarta Sans']">Get OTP via SMS</div>-->
@@ -69,7 +69,7 @@
                     <!--            fill="white" />-->
                     <!--    </svg>-->
                     <!--</div>-->
-                                
+
                     <!--            <div id="whatsappOtpSend"  style="border:0.8px solid #20bc73;" class=" px-4 py-3.5 mt-4  rounded-lg justify-center items-center gap-1 inline-flex cursor-pointer">-->
                     <!--    <div style="color:#20bc73" class="text-base font-bold font-['Plus Jakarta Sans']">Get OTP on WhatsApp</div>-->
                     <!--    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">-->
@@ -79,9 +79,9 @@
                     <!--    </svg>-->
                     <!--</div>-->
 
-                    
 
-                                <div id="whatsappOtpSend" class=" px-4 py-3.5 bg-[#20bc73] rounded-lg justify-center items-center gap-1 inline-flex cursor-pointer">
+
+                    <div id="whatsappOtpSend" class=" px-4 py-3.5 bg-[#20bc73] rounded-lg justify-center items-center gap-1 inline-flex cursor-pointer">
                         <div class="text-white text-base font-bold font-['Plus Jakarta Sans']">Get OTP on WhatsApp</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -98,10 +98,10 @@
                                 fill="#2C5AA2" />
                         </svg>
                     </div>
-                    </div>
+                </div>
 
-                    <div id="verifyOtpMain" class="mt-6 flex flex-col h-full ">
-                        <span class="text-[#777777] text-base font-medium  leading-7">Enter OTP</span>
+                <div id="verifyOtpMain" class="mt-6 flex flex-col h-full ">
+                    <span class="text-[#777777] text-base font-medium  leading-7">Enter OTP</span>
 
                     <div class="otpInputBlock mt-4 gap-4 flex mb-2">
                         <input type="number" class="w-16 h-16 bg-primary-blue/10 rounded-xl outline-none border-0  text-white text-center font-semibold text-3xl">
@@ -114,14 +114,14 @@
 
                     </div>
 
-                    
+
                     <p class="text-[#777777] text-sm font-medium mt-4 leading-[21px] cursor-pointer">Code has been sent to <span id="mobNum"></span><span class="text-black font-semibold ml-4" id="changeNumberBtn">
-                        Change?</span></p>
+                            Change?</span></p>
 
                     <div class="mt-6 justify-start items-center gap-2 inline-flex">
                         <span class="text-black/60 text-sm font-normal  leading-[21px]">Didn’t get the OTP</span>
                         <span class="otpTimer w-12 text-black/60 text-sm font-normal  leading-[21px]">In 30s</span>
-                        <span class="text-[#0e51a0] text-sm font-semibold  leading-[21px] otpResendBtn cursor-pointer" >Resend OTP</span>
+                        <span class="text-[#0e51a0] text-sm font-semibold  leading-[21px] otpResendBtn cursor-pointer">Resend OTP</span>
                     </div>
 
                     <div id="otpVerify"
@@ -132,21 +132,21 @@
                                 d="M15.781 12.7823L8.28104 20.2823C8.21136 20.3519 8.12863 20.4072 8.03759 20.4449C7.94654 20.4826 7.84896 20.5021 7.75042 20.5021C7.65187 20.5021 7.55429 20.4826 7.46324 20.4449C7.3722 20.4072 7.28947 20.3519 7.21979 20.2823C7.15011 20.2126 7.09483 20.1299 7.05712 20.0388C7.01941 19.9478 7 19.8502 7 19.7516C7 19.6531 7.01941 19.5555 7.05712 19.4645C7.09483 19.3734 7.15011 19.2907 7.21979 19.221L14.1901 12.2516L7.21979 5.28226C7.07906 5.14153 7 4.95066 7 4.75164C7 4.55261 7.07906 4.36174 7.21979 4.22101C7.36052 4.08028 7.55139 4.00122 7.75042 4.00122C7.94944 4.00122 8.14031 4.08028 8.28104 4.22101L15.781 11.721C15.8508 11.7907 15.9061 11.8734 15.9438 11.9644C15.9816 12.0555 16.001 12.1531 16.001 12.2516C16.001 12.3502 15.9816 12.4478 15.9438 12.5388C15.9061 12.6299 15.8508 12.7126 15.781 12.7823Z"
                                 fill="white" />
                         </svg>
-                        
-                    </div>
-                    </div>
-                    
 
+                    </div>
                 </div>
-    </div>
+
+
+            </div>
+        </div>
         <div class="w-full chooseCityOverlayMain  relative" style="max-width: 103rem;">
 
-           
 
-        <?php
+
+            <?php
 
             include $fold . 'includesv2/header.php';
-        ?>
+            ?>
 
             <div class="progressBar mb-0 md:mb-8">
                 <div class="w-full justify-start items-center progressBar hidden md:inline-flex mt-8">
@@ -170,7 +170,7 @@
                         <span
                             class="text-black text-opacity-60 text-lg font-normal  absolute -bottom-12 min-w-48 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">Choose Provider</span>
                     </div>
-                    
+
                     <div class="moneyT grow shrink basis-0 h-0.5 bg-[#20bc73]"></div>
                     <div class="moneyT flex flex-col relative">
                         <div
@@ -180,8 +180,8 @@
                         <span
                             class="text-black text-opacity-60 text-lg font-normal  absolute -bottom-12 min-w-48 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">Choose Provider</span>
                     </div>
-                    
-                    
+
+
                     <div class="grow shrink basis-0 h-0.5 bg-[#20bc73] border border-[#eaeef4]"></div>
                     <div class="flex flex-col relative">
                         <div
@@ -258,7 +258,7 @@
 
 
 
-                        
+
 
                         <div
                             class=" w-full px-[9px] py-2 bg-[#20bc73]/10 rounded-lg justify-start items-center gap-1 hidden md:inline-flex " id="recommendationTextContainer">
@@ -271,6 +271,52 @@
                             <p class="grow shrink basis-0 text-[#20bc73] text-xs font-medium leading-tight" id="recommendationText">We recommend
                                 USD forex card for United States of America, CAD in Cash for Canada, and GBK Cash for
                                 Germany</p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-black/10 flex-col justify-center items-center flex">
+
+
+                            <div class="px-3 bg-[#0e51a0]/5 justify-between items-center inline-flex">
+                                <div class="text-[#0e51a0] text-sm font-semibold font-['Plus Jakarta Sans'] leading-[21px]">Currency 1</div>
+
+                                <div class="justify-center items-center gap-2 flex">
+                                    <div class="w-8 h-8 px-0.5 bg-white rounded-3xl justify-center items-center gap-1 flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                            <path d="M17.4922 5.60867L14.0008 2.11727C13.8992 2.01569 13.7786 1.93512 13.6459 1.88014C13.5132 1.82517 13.371 1.79688 13.2273 1.79688C13.0837 1.79688 12.9415 1.82517 12.8088 1.88014C12.6761 1.93512 12.5555 2.01569 12.4539 2.11727L2.82031 11.7516C2.71854 11.8531 2.63785 11.9736 2.58287 12.1064C2.5279 12.2391 2.49974 12.3814 2.5 12.5251V16.0165C2.5 16.3066 2.61524 16.5848 2.82035 16.7899C3.02547 16.995 3.30367 17.1102 3.59375 17.1102H7.08516C7.22883 17.1105 7.37114 17.0823 7.50388 17.0274C7.63663 16.9724 7.75718 16.8917 7.8586 16.7899L17.4922 7.15555C17.5938 7.05398 17.6743 6.9334 17.7293 6.80069C17.7843 6.66799 17.8126 6.52575 17.8126 6.38211C17.8126 6.23847 17.7843 6.09623 17.7293 5.96352C17.6743 5.83082 17.5938 5.71024 17.4922 5.60867ZM7.19531 16.1266C7.16615 16.156 7.12653 16.1726 7.08516 16.1727H3.59375C3.55231 16.1727 3.51257 16.1563 3.48327 16.127C3.45396 16.0977 3.4375 16.0579 3.4375 16.0165V12.5251C3.43768 12.4837 3.45425 12.4441 3.4836 12.4149L10.4688 5.42898L14.1805 9.14148L7.19531 16.1266ZM16.8289 6.49305L14.8438 8.4782L11.132 4.76648L13.1172 2.78055C13.1317 2.76602 13.1489 2.7545 13.1679 2.74663C13.1869 2.73877 13.2072 2.73472 13.2277 2.73472C13.2483 2.73472 13.2686 2.73877 13.2876 2.74663C13.3065 2.7545 13.3238 2.76602 13.3383 2.78055L16.8289 6.27195C16.8434 6.28646 16.855 6.3037 16.8628 6.32267C16.8707 6.34163 16.8747 6.36197 16.8747 6.3825C16.8747 6.40303 16.8707 6.42337 16.8628 6.44233C16.855 6.4613 16.8434 6.47854 16.8289 6.49305Z" fill="#0E51A0" />
+                                        </svg>
+                                    </div>
+                                    <div class="w-8 h-8 px-0.5 bg-white rounded-3xl justify-center items-center gap-1 flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                            <path d="M15.9401 5.25045H3.56261C3.4134 5.25045 3.2703 5.30973 3.16479 5.41524C3.05928 5.52075 3 5.66385 3 5.81306C3 5.96228 3.05928 6.10538 3.16479 6.21089C3.2703 6.3164 3.4134 6.37568 3.56261 6.37568H4.12523V16.5027C4.12523 16.8011 4.24378 17.0873 4.4548 17.2984C4.66582 17.5094 4.95202 17.6279 5.25045 17.6279H14.2523C14.5507 17.6279 14.8369 17.5094 15.0479 17.2984C15.2589 17.0873 15.3775 16.8011 15.3775 16.5027V6.37568H15.9401C16.0893 6.37568 16.2324 6.3164 16.3379 6.21089C16.4434 6.10538 16.5027 5.96228 16.5027 5.81306C16.5027 5.66385 16.4434 5.52075 16.3379 5.41524C16.2324 5.30973 16.0893 5.25045 15.9401 5.25045ZM14.2523 16.5027H5.25045V6.37568H14.2523V16.5027ZM6.37568 3.56261C6.37568 3.4134 6.43495 3.2703 6.54046 3.16479C6.64597 3.05928 6.78907 3 6.93829 3H12.5644C12.7136 3 12.8567 3.05928 12.9622 3.16479C13.0678 3.2703 13.127 3.4134 13.127 3.56261C13.127 3.71183 13.0678 3.85493 12.9622 3.96044C12.8567 4.06595 12.7136 4.12523 12.5644 4.12523H6.93829C6.78907 4.12523 6.64597 4.06595 6.54046 3.96044C6.43495 3.85493 6.37568 3.71183 6.37568 3.56261Z" fill="#E31D1C" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="px-3 flex-col justify-between items-center gap-4 flex border border-black/10">
+                                <div class="text-black text-[15px] font-bold leading-[18px]">United States Dollar - USD </div>
+
+                                <div class="py-4 items-center justify-between gap-4 flex">
+                                    <div class="text-[#555555] text-xs font-normal leading-[18px]">USD rate in Bangalore:</div>
+                                    <div class="text-[#555555] text-xs font-normal leading-[18px]">83.33 INR</div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 flex-col justify-between items-center gap-4 flex border">
+                                <div class="justify-start items-center gap-2 flex flex-col">
+                                    <div class="text-[#555555] text-[13px] font-normal leading-tight tracking-tight">Amount</div>
+                                    <div class="text-black text-sm font-semibold leading-[14.14px]">1000 USD</div>
+                                </div>
+                                <div class="justify-end items-center gap-2 flex flex-col">
+                                    <div class="text-[#555555] text-[13px] font-normal leading-tight tracking-tight">Exchange Rate</div>
+                                    <div class="text-[#0e51a0] text-base font-bold leading-none">₹ 84,472</div>
+                                </div>
+
+                            </div>
+
+
+
                         </div>
 
                         <div class="cardSection flex flex-col gap-8 mt-4">
@@ -292,121 +338,30 @@
                                     <p class="text-black/60 text-xs font-medium ">Choose Product</p>
 
                                     <div class="dropdownMain select-none bg-white mt-2" id="cardProduct"
-                                                    dataval="forexCard">
-                                                    <div class="selectedItem">
-
-                                                    </div>
-                                                    <ul class="dropdownList">
-                                                        <li value="forexCard">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon"
-                                                            width="29" height="29" viewBox="0 0 24 25" fill="none">
-                                                                <path
-                                                                    d="M21 5.1875H3C2.6519 5.1875 2.31806 5.32578 2.07192 5.57192C1.82578 5.81806 1.6875 6.1519 1.6875 6.5V18.5C1.6875 18.8481 1.82578 19.1819 2.07192 19.4281C2.31806 19.6742 2.6519 19.8125 3 19.8125H21C21.3481 19.8125 21.6819 19.6742 21.9281 19.4281C22.1742 19.1819 22.3125 18.8481 22.3125 18.5V6.5C22.3125 6.1519 22.1742 5.81806 21.9281 5.57192C21.6819 5.32578 21.3481 5.1875 21 5.1875ZM3 6.3125H21C21.0497 6.3125 21.0974 6.33225 21.1326 6.36742C21.1677 6.40258 21.1875 6.45027 21.1875 6.5V8.9375H2.8125V6.5C2.8125 6.45027 2.83225 6.40258 2.86742 6.36742C2.90258 6.33225 2.95027 6.3125 3 6.3125ZM21 18.6875H3C2.95027 18.6875 2.90258 18.6677 2.86742 18.6326C2.83225 18.5974 2.8125 18.5497 2.8125 18.5V10.0625H21.1875V18.5C21.1875 18.5497 21.1677 18.5974 21.1326 18.6326C21.0974 18.6677 21.0497 18.6875 21 18.6875ZM19.3125 16.25C19.3125 16.3992 19.2532 16.5423 19.1477 16.6477C19.0423 16.7532 18.8992 16.8125 18.75 16.8125H15.75C15.6008 16.8125 15.4577 16.7532 15.3523 16.6477C15.2468 16.5423 15.1875 16.3992 15.1875 16.25C15.1875 16.1008 15.2468 15.9577 15.3523 15.8523C15.4577 15.7468 15.6008 15.6875 15.75 15.6875H18.75C18.8992 15.6875 19.0423 15.7468 19.1477 15.8523C19.2532 15.9577 19.3125 16.1008 19.3125 16.25ZM13.3125 16.25C13.3125 16.3992 13.2532 16.5423 13.1477 16.6477C13.0423 16.7532 12.8992 16.8125 12.75 16.8125H11.25C11.1008 16.8125 10.9577 16.7532 10.8523 16.6477C10.7468 16.5423 10.6875 16.3992 10.6875 16.25C10.6875 16.1008 10.7468 15.9577 10.8523 15.8523C10.9577 15.7468 11.1008 15.6875 11.25 15.6875H12.75C12.8992 15.6875 13.0423 15.7468 13.1477 15.8523C13.2532 15.9577 13.3125 16.1008 13.3125 16.25Z"
-                                                                    fill="black" />
-                                                            </svg>
-                                                            <span>Forex Card</span>
-                                                        </li>
-                                                        <li value="currency">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon"
-                                                                width="29" height="29" viewBox="0 0 24 25" fill="none">
-                                                                <path
-                                                                    d="M21 5.1875H3C2.6519 5.1875 2.31806 5.32578 2.07192 5.57192C1.82578 5.81806 1.6875 6.1519 1.6875 6.5V18.5C1.6875 18.8481 1.82578 19.1819 2.07192 19.4281C2.31806 19.6742 2.6519 19.8125 3 19.8125H21C21.3481 19.8125 21.6819 19.6742 21.9281 19.4281C22.1742 19.1819 22.3125 18.8481 22.3125 18.5V6.5C22.3125 6.1519 22.1742 5.81806 21.9281 5.57192C21.6819 5.32578 21.3481 5.1875 21 5.1875ZM3 6.3125H21C21.0497 6.3125 21.0974 6.33225 21.1326 6.36742C21.1677 6.40258 21.1875 6.45027 21.1875 6.5V8.9375H2.8125V6.5C2.8125 6.45027 2.83225 6.40258 2.86742 6.36742C2.90258 6.33225 2.95027 6.3125 3 6.3125ZM21 18.6875H3C2.95027 18.6875 2.90258 18.6677 2.86742 18.6326C2.83225 18.5974 2.8125 18.5497 2.8125 18.5V10.0625H21.1875V18.5C21.1875 18.5497 21.1677 18.5974 21.1326 18.6326C21.0974 18.6677 21.0497 18.6875 21 18.6875ZM19.3125 16.25C19.3125 16.3992 19.2532 16.5423 19.1477 16.6477C19.0423 16.7532 18.8992 16.8125 18.75 16.8125H15.75C15.6008 16.8125 15.4577 16.7532 15.3523 16.6477C15.2468 16.5423 15.1875 16.3992 15.1875 16.25C15.1875 16.1008 15.2468 15.9577 15.3523 15.8523C15.4577 15.7468 15.6008 15.6875 15.75 15.6875H18.75C18.8992 15.6875 19.0423 15.7468 19.1477 15.8523C19.2532 15.9577 19.3125 16.1008 19.3125 16.25ZM13.3125 16.25C13.3125 16.3992 13.2532 16.5423 13.1477 16.6477C13.0423 16.7532 12.8992 16.8125 12.75 16.8125H11.25C11.1008 16.8125 10.9577 16.7532 10.8523 16.6477C10.7468 16.5423 10.6875 16.3992 10.6875 16.25C10.6875 16.1008 10.7468 15.9577 10.8523 15.8523C10.9577 15.7468 11.1008 15.6875 11.25 15.6875H12.75C12.8992 15.6875 13.0423 15.7468 13.1477 15.8523C13.2532 15.9577 13.3125 16.1008 13.3125 16.25Z"
-                                                                    fill="black" />
-                                                            </svg>
-                                                            <span>Currency</span>
-                                                        </li>
-                                                    </ul>
-                                                    <svg class="dropdownArrow" xmlns="http://www.w3.org/2000/svg"
-                                                        width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                        <path
-                                                            d="M13.354 6.85354L8.35403 11.8535C8.30759 11.9 8.25245 11.9369 8.19175 11.9621C8.13105 11.9872 8.06599 12.0002 8.00028 12.0002C7.93457 12.0002 7.86951 11.9872 7.80881 11.9621C7.74811 11.9369 7.69296 11.9 7.64653 11.8535L2.64653 6.85354C2.55271 6.75972 2.5 6.63247 2.5 6.49979C2.5 6.36711 2.55271 6.23986 2.64653 6.14604C2.74035 6.05222 2.8676 5.99951 3.00028 5.99951C3.13296 5.99951 3.26021 6.05222 3.35403 6.14604L8.00028 10.7929L12.6465 6.14604C12.693 6.09958 12.7481 6.06273 12.8088 6.03759C12.8695 6.01245 12.9346 5.99951 13.0003 5.99951C13.066 5.99951 13.131 6.01245 13.1917 6.03759C13.2524 6.06273 13.3076 6.09958 13.354 6.14604C13.4005 6.19249 13.4373 6.24764 13.4625 6.30834C13.4876 6.36904 13.5006 6.43409 13.5006 6.49979C13.5006 6.56549 13.4876 6.63054 13.4625 6.69124C13.4373 6.75193 13.4005 6.80708 13.354 6.85354Z"
-                                                            fill="black" />
-                                                    </svg>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mt-4">
-                                    <p class="text-black/60 text-xs font-medium ">Choose Currency</p>
-
-                                    <div class="dropdownMain select-none bg-white mt-2" id="cardCurrency" dataval="usa" >
-
+                                        dataval="forexCard">
                                         <div class="selectedItem">
 
                                         </div>
-
-                                        
-                                        <ul class="dropdownList overflow-scroll">
-    <li value="USD">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">USD</span>
-            <span class="text-sm text-black/40 font-normal">United States Dollar</span>
-        </div>
-    </li>
-    <li value="AUD">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">AUD</span>
-            <span class="text-sm text-black/40 font-normal">Australian Dollar</span>
-        </div>
-    </li>
-    <li value="GBP">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">GBP</span>
-            <span class="text-sm text-black/40 font-normal">British Pound</span>
-        </div>
-    </li>
-    <li value="CAD">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">CAD</span>
-            <span class="text-sm text-black/40 font-normal">Canadian Dollar</span>
-        </div>
-    </li>
-    <li value="EUR">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">EUR</span>
-            <span class="text-sm text-black/40 font-normal">Euro</span>
-        </div>
-    </li>
-    <li value="JPY">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">JPY</span>
-            <span class="text-sm text-black/40 font-normal">Japanese Yen</span>
-        </div>
-    </li>
-    <li value="MYR">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">MYR</span>
-            <span class="text-sm text-black/40 font-normal">Malaysian Ringgit</span>
-        </div>
-    </li>
-    <li value="NZD">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">NZD</span>
-            <span class="text-sm text-black/40 font-normal">New Zealand Dollar</span>
-        </div>
-    </li>
-    <li value="SGD">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">SGD</span>
-            <span class="text-sm text-black/40 font-normal">Singapore Dollar</span>
-        </div>
-    </li>
-    <li value="THB">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">THB</span>
-            <span class="text-sm text-black/40 font-normal">Thai Baht</span>
-        </div>
-    </li>
-    <li value="AED">
-        <div class="flex flex-col justify-start items-start">
-            <span class="font-medium">AED</span>
-            <span class="text-sm text-black/40 font-normal">UAE Dirham</span>
-        </div>
-    </li>
-                                                    </ul>
-                                        
-                                        
+                                        <ul class="dropdownList">
+                                            <li value="forexCard">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon"
+                                                    width="29" height="29" viewBox="0 0 24 25" fill="none">
+                                                    <path
+                                                        d="M21 5.1875H3C2.6519 5.1875 2.31806 5.32578 2.07192 5.57192C1.82578 5.81806 1.6875 6.1519 1.6875 6.5V18.5C1.6875 18.8481 1.82578 19.1819 2.07192 19.4281C2.31806 19.6742 2.6519 19.8125 3 19.8125H21C21.3481 19.8125 21.6819 19.6742 21.9281 19.4281C22.1742 19.1819 22.3125 18.8481 22.3125 18.5V6.5C22.3125 6.1519 22.1742 5.81806 21.9281 5.57192C21.6819 5.32578 21.3481 5.1875 21 5.1875ZM3 6.3125H21C21.0497 6.3125 21.0974 6.33225 21.1326 6.36742C21.1677 6.40258 21.1875 6.45027 21.1875 6.5V8.9375H2.8125V6.5C2.8125 6.45027 2.83225 6.40258 2.86742 6.36742C2.90258 6.33225 2.95027 6.3125 3 6.3125ZM21 18.6875H3C2.95027 18.6875 2.90258 18.6677 2.86742 18.6326C2.83225 18.5974 2.8125 18.5497 2.8125 18.5V10.0625H21.1875V18.5C21.1875 18.5497 21.1677 18.5974 21.1326 18.6326C21.0974 18.6677 21.0497 18.6875 21 18.6875ZM19.3125 16.25C19.3125 16.3992 19.2532 16.5423 19.1477 16.6477C19.0423 16.7532 18.8992 16.8125 18.75 16.8125H15.75C15.6008 16.8125 15.4577 16.7532 15.3523 16.6477C15.2468 16.5423 15.1875 16.3992 15.1875 16.25C15.1875 16.1008 15.2468 15.9577 15.3523 15.8523C15.4577 15.7468 15.6008 15.6875 15.75 15.6875H18.75C18.8992 15.6875 19.0423 15.7468 19.1477 15.8523C19.2532 15.9577 19.3125 16.1008 19.3125 16.25ZM13.3125 16.25C13.3125 16.3992 13.2532 16.5423 13.1477 16.6477C13.0423 16.7532 12.8992 16.8125 12.75 16.8125H11.25C11.1008 16.8125 10.9577 16.7532 10.8523 16.6477C10.7468 16.5423 10.6875 16.3992 10.6875 16.25C10.6875 16.1008 10.7468 15.9577 10.8523 15.8523C10.9577 15.7468 11.1008 15.6875 11.25 15.6875H12.75C12.8992 15.6875 13.0423 15.7468 13.1477 15.8523C13.2532 15.9577 13.3125 16.1008 13.3125 16.25Z"
+                                                        fill="black" />
+                                                </svg>
+                                                <span>Forex Card</span>
+                                            </li>
+                                            <li value="currency">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon"
+                                                    width="29" height="29" viewBox="0 0 24 25" fill="none">
+                                                    <path
+                                                        d="M21 5.1875H3C2.6519 5.1875 2.31806 5.32578 2.07192 5.57192C1.82578 5.81806 1.6875 6.1519 1.6875 6.5V18.5C1.6875 18.8481 1.82578 19.1819 2.07192 19.4281C2.31806 19.6742 2.6519 19.8125 3 19.8125H21C21.3481 19.8125 21.6819 19.6742 21.9281 19.4281C22.1742 19.1819 22.3125 18.8481 22.3125 18.5V6.5C22.3125 6.1519 22.1742 5.81806 21.9281 5.57192C21.6819 5.32578 21.3481 5.1875 21 5.1875ZM3 6.3125H21C21.0497 6.3125 21.0974 6.33225 21.1326 6.36742C21.1677 6.40258 21.1875 6.45027 21.1875 6.5V8.9375H2.8125V6.5C2.8125 6.45027 2.83225 6.40258 2.86742 6.36742C2.90258 6.33225 2.95027 6.3125 3 6.3125ZM21 18.6875H3C2.95027 18.6875 2.90258 18.6677 2.86742 18.6326C2.83225 18.5974 2.8125 18.5497 2.8125 18.5V10.0625H21.1875V18.5C21.1875 18.5497 21.1677 18.5974 21.1326 18.6326C21.0974 18.6677 21.0497 18.6875 21 18.6875ZM19.3125 16.25C19.3125 16.3992 19.2532 16.5423 19.1477 16.6477C19.0423 16.7532 18.8992 16.8125 18.75 16.8125H15.75C15.6008 16.8125 15.4577 16.7532 15.3523 16.6477C15.2468 16.5423 15.1875 16.3992 15.1875 16.25C15.1875 16.1008 15.2468 15.9577 15.3523 15.8523C15.4577 15.7468 15.6008 15.6875 15.75 15.6875H18.75C18.8992 15.6875 19.0423 15.7468 19.1477 15.8523C19.2532 15.9577 19.3125 16.1008 19.3125 16.25ZM13.3125 16.25C13.3125 16.3992 13.2532 16.5423 13.1477 16.6477C13.0423 16.7532 12.8992 16.8125 12.75 16.8125H11.25C11.1008 16.8125 10.9577 16.7532 10.8523 16.6477C10.7468 16.5423 10.6875 16.3992 10.6875 16.25C10.6875 16.1008 10.7468 15.9577 10.8523 15.8523C10.9577 15.7468 11.1008 15.6875 11.25 15.6875H12.75C12.8992 15.6875 13.0423 15.7468 13.1477 15.8523C13.2532 15.9577 13.3125 16.1008 13.3125 16.25Z"
+                                                        fill="black" />
+                                                </svg>
+                                                <span>Currency</span>
+                                            </li>
+                                        </ul>
                                         <svg class="dropdownArrow" xmlns="http://www.w3.org/2000/svg"
                                             width="16" height="17" viewBox="0 0 16 17" fill="none">
                                             <path
@@ -416,11 +371,102 @@
                                     </div>
 
                                 </div>
-                                
+
+
+                                <div class="mt-4">
+                                    <p class="text-black/60 text-xs font-medium ">Choose Currency</p>
+
+                                    <div class="dropdownMain select-none bg-white mt-2" id="cardCurrency" dataval="usa">
+
+                                        <div class="selectedItem">
+
+                                        </div>
+
+
+                                        <ul class="dropdownList overflow-scroll">
+                                            <li value="USD">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">USD</span>
+                                                    <span class="text-sm text-black/40 font-normal">United States Dollar</span>
+                                                </div>
+                                            </li>
+                                            <li value="AUD">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">AUD</span>
+                                                    <span class="text-sm text-black/40 font-normal">Australian Dollar</span>
+                                                </div>
+                                            </li>
+                                            <li value="GBP">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">GBP</span>
+                                                    <span class="text-sm text-black/40 font-normal">British Pound</span>
+                                                </div>
+                                            </li>
+                                            <li value="CAD">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">CAD</span>
+                                                    <span class="text-sm text-black/40 font-normal">Canadian Dollar</span>
+                                                </div>
+                                            </li>
+                                            <li value="EUR">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">EUR</span>
+                                                    <span class="text-sm text-black/40 font-normal">Euro</span>
+                                                </div>
+                                            </li>
+                                            <li value="JPY">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">JPY</span>
+                                                    <span class="text-sm text-black/40 font-normal">Japanese Yen</span>
+                                                </div>
+                                            </li>
+                                            <li value="MYR">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">MYR</span>
+                                                    <span class="text-sm text-black/40 font-normal">Malaysian Ringgit</span>
+                                                </div>
+                                            </li>
+                                            <li value="NZD">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">NZD</span>
+                                                    <span class="text-sm text-black/40 font-normal">New Zealand Dollar</span>
+                                                </div>
+                                            </li>
+                                            <li value="SGD">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">SGD</span>
+                                                    <span class="text-sm text-black/40 font-normal">Singapore Dollar</span>
+                                                </div>
+                                            </li>
+                                            <li value="THB">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">THB</span>
+                                                    <span class="text-sm text-black/40 font-normal">Thai Baht</span>
+                                                </div>
+                                            </li>
+                                            <li value="AED">
+                                                <div class="flex flex-col justify-start items-start">
+                                                    <span class="font-medium">AED</span>
+                                                    <span class="text-sm text-black/40 font-normal">UAE Dirham</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+
+                                        <svg class="dropdownArrow" xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                            <path
+                                                d="M13.354 6.85354L8.35403 11.8535C8.30759 11.9 8.25245 11.9369 8.19175 11.9621C8.13105 11.9872 8.06599 12.0002 8.00028 12.0002C7.93457 12.0002 7.86951 11.9872 7.80881 11.9621C7.74811 11.9369 7.69296 11.9 7.64653 11.8535L2.64653 6.85354C2.55271 6.75972 2.5 6.63247 2.5 6.49979C2.5 6.36711 2.55271 6.23986 2.64653 6.14604C2.74035 6.05222 2.8676 5.99951 3.00028 5.99951C3.13296 5.99951 3.26021 6.05222 3.35403 6.14604L8.00028 10.7929L12.6465 6.14604C12.693 6.09958 12.7481 6.06273 12.8088 6.03759C12.8695 6.01245 12.9346 5.99951 13.0003 5.99951C13.066 5.99951 13.131 6.01245 13.1917 6.03759C13.2524 6.06273 13.3076 6.09958 13.354 6.14604C13.4005 6.19249 13.4373 6.24764 13.4625 6.30834C13.4876 6.36904 13.5006 6.43409 13.5006 6.49979C13.5006 6.56549 13.4876 6.63054 13.4625 6.69124C13.4373 6.75193 13.4005 6.80708 13.354 6.85354Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+
                                 <div class="mt-4" id="prodAddContainer">
                                     <p class="text-black/60 text-xs font-medium ">Buy <span id="currencyCode">USD</span></p>
                                     <div class="px-3 h-12 flex justify-between items-center border border-gray-300 rounded-lg mt-2 bg-white" id="">
-                                                <input id="prodAddAmnt" class="h-full outline-none w-full  text-base font-semibold" value="1000" type="text">
+                                        <input id="prodAddAmnt" class="h-full outline-none w-full  text-base font-semibold" value="1000" type="text">
 
 
                                     </div>
@@ -428,7 +474,7 @@
                                 </div>
 
                                 <div class="mt-6 flex justify-start gap-4 items-center">
-                                    <div class="text-[#777777] text-xs font-semibold  leading-none">For <span id="prodAddQuantity">1000</span> <span id="ProdAddcurrencyCode">USD</span>  approximate value is
+                                    <div class="text-[#777777] text-xs font-semibold  leading-none">For <span id="prodAddQuantity">1000</span> <span id="ProdAddcurrencyCode">USD</span> approximate value is
                                     </div>
                                     <div class="text-primary-blue text-base font-bold  leading-none" id="prodAddInrValue">₹ 74,000 INR</div>
 
@@ -439,31 +485,31 @@
 
                             </div>
 
-                            <div class="prodCardContainer flex flex-col gap-6" >
+                            <div class="prodCardContainer flex flex-col gap-6">
                                 <div class="prodcard  border border-primary-blue rounded-xl hidden" id="prodCardTemplate">
                                     <div class="md:p-10 p-4">
                                         <div class="flex relative">
                                             <div class="flex flex-col gap-4">
                                                 <div class="h-8 justify-start items-center gap-1.5 inline-flex">
-    
+
                                                     <div
                                                         class=" text-black text-mediumFont md:text-base font-normal leading-normal flex md:min-w-40 justify-between">
                                                         <span>Product</span> <span>:</span>
                                                     </div>
-    
+
                                                     <div
                                                         class="pl-2 pr-3 py-1 bg-[#0e51a0]/5 rounded-[10px] border justify-center items-center gap-2.5 flex">
-                                                        <span 
+                                                        <span
                                                             class="buyProduct text-[#0e51a0] text-mediumFont md:text-base font-semibold leading-normal"></span>
                                                     </div>
                                                 </div>
                                                 <div class="h-8 justify-start items-center gap-1.5 inline-flex">
-    
+
                                                     <div
                                                         class=" text-black text-mediumFont md:text-base font-normal leading-normal flex md:min-w-40 justify-between">
                                                         <span>Currency</span> <span>:</span>
                                                     </div>
-    
+
                                                     <div
                                                         class="pl-2 pr-3 py-1 bg-[#0e51a0]/5 rounded-[10px] border justify-center items-center gap-2.5 flex">
                                                         <span
@@ -472,7 +518,7 @@
                                                 </div>
                                             </div>
                                             <div class="absolute right-0 flex justify-end items-start cursor-pointer" id="deleteCard">
-    
+
                                                 <div class="flex justify-center items-center gap-1">
                                                     <div class="border-[#b42318]/40 rounded-full border p-1">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="md:w-4 w-5"
@@ -482,7 +528,7 @@
                                                                 fill="#B42318" />
                                                         </svg>
                                                     </div>
-    
+
                                                     <span
                                                         class="text-[#b42318] text-sm font-medium leading-normal hidden md:block">Delete</span>
                                                 </div>
@@ -490,27 +536,27 @@
                                         </div>
                                         <p class="text-black text-sm font-normal  leading-[21px] mt-4" id="cardNote"></p>
                                     </div>
-    
+
                                     <div class="border-t border-black/10 " id="errorMarkContainer">
                                         <div class="flex px-4 md:px-10 py-4 justify-between flex-col md:flex-row gap-4">
                                             <div class="w-full md:w-fit">
                                                 <p class="text-black text-sm font-normal">Buy <span id="cardCurrencyName"></span> </p>
-                                                <input id="currencyInput" type="text"  value="$ 1000"
+                                                <input id="currencyInput" type="text" value="$ 1000"
                                                     class="text-xl buyAmount w-full md:w-fit  font-semibold leading-[30px] text-primary-blue border-b border-black/20 outline-none ">
                                             </div>
                                             <div class="flex flex-col items-end">
                                                 <p class="text-black text-sm font-normal ">Total (INR)</p>
                                                 <p class="text-black text-xl  font-bold leading-[30px]" id="inrRate">₹ 00000</p>
                                             </div>
-    
+
                                         </div>
-    
+
                                     </div>
-    
-    
+
+
                                 </div>
                             </div>
-                            
+
 
                         </div>
 
@@ -546,65 +592,65 @@
 
 
                     </div>
-                    
+
                     <div class="md:static fixed  left-1/2  transform -translate-x-1/2   md:translate-x-0 md:translate-y-0 bottom-0 w-full md:w-1/3 mt-2  md:mt-0 bg-white md:h-full px-5 sm:px-12 md:px-0 pb-4 md:pb-0">
                         <div class="  rounded-2xl border border-black/10 w-full">
-                        <div
-                            class="w-full h-10 customGradient3  rounded-tl-2xl z-20 rounded-tr-xl justify-center items-center inline-flex">
                             <div
-                                class="grow shrink basis-0 self-stretch px-3 py-1 justify-start items-center gap-1.5 inline-flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
-                                    fill="none">
-                                    <path
-                                        d="M17.5769 6.47083C17.3387 6.35406 17.0686 6.31905 16.8085 6.37121C16.5483 6.42338 16.3126 6.55981 16.1378 6.75941L13.5741 9.52261L10.8482 3.40916C10.8481 3.40662 10.8481 3.40408 10.8482 3.40154C10.7508 3.19013 10.5947 3.01107 10.3987 2.88557C10.2026 2.76006 9.97468 2.69336 9.74188 2.69336C9.50908 2.69336 9.28115 2.76006 9.08508 2.88557C8.88901 3.01107 8.73301 3.19013 8.63554 3.40154C8.63566 3.40408 8.63566 3.40662 8.63554 3.40916L5.90965 9.52261L3.34594 6.75941C3.17003 6.55977 2.93359 6.42322 2.67276 6.37061C2.41193 6.31801 2.14105 6.35224 1.9015 6.46809C1.66196 6.58393 1.46693 6.77501 1.34621 7.01214C1.2255 7.24926 1.18573 7.51939 1.233 7.78124C1.233 7.78961 1.233 7.79723 1.23833 7.8056L2.96523 15.7145C3.01839 15.993 3.16702 16.2442 3.38551 16.4249C3.604 16.6056 3.87866 16.7044 4.16219 16.7043H15.3223C15.6057 16.7042 15.8802 16.6053 16.0985 16.4247C16.3169 16.244 16.4654 15.9929 16.5185 15.7145L18.2454 7.8056C18.2454 7.79723 18.2454 7.78961 18.2508 7.78124C18.2989 7.51906 18.2589 7.24831 18.137 7.01126C18.0151 6.7742 17.8182 6.58417 17.5769 6.47083ZM15.3269 15.4617L15.3223 15.4861H4.16142L4.15686 15.4617L2.43224 7.56728L2.4429 7.57946L5.64087 11.0241C5.70934 11.0981 5.79512 11.154 5.8905 11.1867C5.98587 11.2193 6.08787 11.2278 6.18734 11.2114C6.28681 11.1949 6.38064 11.154 6.46041 11.0924C6.54019 11.0307 6.60341 10.9502 6.64442 10.8581L9.74188 3.91246L12.8401 10.8604C12.8811 10.9525 12.9443 11.033 13.0241 11.0947C13.1039 11.1563 13.1977 11.1972 13.2972 11.2137C13.3967 11.2301 13.4987 11.2216 13.594 11.1889C13.6894 11.1563 13.7752 11.1004 13.8437 11.0264L17.0416 7.58175L17.0515 7.56728L15.3269 15.4617Z"
-                                        fill="white" />
-                                </svg>
-                                <p class="text-white text-xs font-bold ">We Promise the Best Rates in the Forex market.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="px-4 mt-6 flex justify-between flex-col h-full">
-                            <div class="">
-                                <span class="text-black text-base font-bold">My Cart </span>
-
-                                <div id="cartItems">
-                                    <!-- Placeholder where cart items will be dynamically inserted -->
+                                class="w-full h-10 customGradient3  rounded-tl-2xl z-20 rounded-tr-xl justify-center items-center inline-flex">
+                                <div
+                                    class="grow shrink basis-0 self-stretch px-3 py-1 justify-start items-center gap-1.5 inline-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                        fill="none">
+                                        <path
+                                            d="M17.5769 6.47083C17.3387 6.35406 17.0686 6.31905 16.8085 6.37121C16.5483 6.42338 16.3126 6.55981 16.1378 6.75941L13.5741 9.52261L10.8482 3.40916C10.8481 3.40662 10.8481 3.40408 10.8482 3.40154C10.7508 3.19013 10.5947 3.01107 10.3987 2.88557C10.2026 2.76006 9.97468 2.69336 9.74188 2.69336C9.50908 2.69336 9.28115 2.76006 9.08508 2.88557C8.88901 3.01107 8.73301 3.19013 8.63554 3.40154C8.63566 3.40408 8.63566 3.40662 8.63554 3.40916L5.90965 9.52261L3.34594 6.75941C3.17003 6.55977 2.93359 6.42322 2.67276 6.37061C2.41193 6.31801 2.14105 6.35224 1.9015 6.46809C1.66196 6.58393 1.46693 6.77501 1.34621 7.01214C1.2255 7.24926 1.18573 7.51939 1.233 7.78124C1.233 7.78961 1.233 7.79723 1.23833 7.8056L2.96523 15.7145C3.01839 15.993 3.16702 16.2442 3.38551 16.4249C3.604 16.6056 3.87866 16.7044 4.16219 16.7043H15.3223C15.6057 16.7042 15.8802 16.6053 16.0985 16.4247C16.3169 16.244 16.4654 15.9929 16.5185 15.7145L18.2454 7.8056C18.2454 7.79723 18.2454 7.78961 18.2508 7.78124C18.2989 7.51906 18.2589 7.24831 18.137 7.01126C18.0151 6.7742 17.8182 6.58417 17.5769 6.47083ZM15.3269 15.4617L15.3223 15.4861H4.16142L4.15686 15.4617L2.43224 7.56728L2.4429 7.57946L5.64087 11.0241C5.70934 11.0981 5.79512 11.154 5.8905 11.1867C5.98587 11.2193 6.08787 11.2278 6.18734 11.2114C6.28681 11.1949 6.38064 11.154 6.46041 11.0924C6.54019 11.0307 6.60341 10.9502 6.64442 10.8581L9.74188 3.91246L12.8401 10.8604C12.8811 10.9525 12.9443 11.033 13.0241 11.0947C13.1039 11.1563 13.1977 11.1972 13.2972 11.2137C13.3967 11.2301 13.4987 11.2216 13.594 11.1889C13.6894 11.1563 13.7752 11.1004 13.8437 11.0264L17.0416 7.58175L17.0515 7.56728L15.3269 15.4617Z"
+                                            fill="white" />
+                                    </svg>
+                                    <p class="text-white text-xs font-bold ">We Promise the Best Rates in the Forex market.
+                                    </p>
                                 </div>
-                                
-                                <!-- Template for a cart item -->
-                                <template id="cartItemTemplate">
-                                    <div class="flex justify-between border-b border-black/10 mt-4 pb-2">
-                                        <div class="h-6 justify-start items-center gap-1.5 inline-flex">
-                                            <img src="" alt="Product Icon" class="product-icon">
-                                            <p class="text-black text-xs font-medium leading-snug">Buy <span class="product-quantity"></span> <span class="product-name"></span> @ <span class="currency-value"></span></p>
-                                        </div>
-                                        <span class="text-black text-xs font-semibold leading-snug total-inr">₹ 0</span>
+                            </div>
+                            <div class="px-4 mt-6 flex justify-between flex-col h-full">
+                                <div class="">
+                                    <span class="text-black text-base font-bold">My Cart </span>
+
+                                    <div id="cartItems">
+                                        <!-- Placeholder where cart items will be dynamically inserted -->
                                     </div>
-                                </template>
-                                
-                                
-                                
-                            </div>
+
+                                    <!-- Template for a cart item -->
+                                    <template id="cartItemTemplate">
+                                        <div class="flex justify-between border-b border-black/10 mt-4 pb-2">
+                                            <div class="h-6 justify-start items-center gap-1.5 inline-flex">
+                                                <img src="" alt="Product Icon" class="product-icon">
+                                                <p class="text-black text-xs font-medium leading-snug">Buy <span class="product-quantity"></span> <span class="product-name"></span> @ <span class="currency-value"></span></p>
+                                            </div>
+                                            <span class="text-black text-xs font-semibold leading-snug total-inr">₹ 0</span>
+                                        </div>
+                                    </template>
 
 
-                            <div class="bg-white py-4 rounded-t-3xl   w-full flex items-center justify-center flex-col">
-                            <div class=" h-12 px-2 py-3 cursor-pointer bg-primary-blue rounded-lg justify-center items-center gap-1 inline-flex mt-4 md:mt-20 mb-0 md:mb-4   z-10 w-full"
-                                id="bestRatesFetchBtn">
-                                <div class="text-white text-sm font-bold">Proceed to Next</div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M15.781 12.7823L8.28104 20.2823C8.21136 20.3519 8.12863 20.4072 8.03759 20.4449C7.94654 20.4826 7.84896 20.5021 7.75042 20.5021C7.65187 20.5021 7.55429 20.4826 7.46324 20.4449C7.3722 20.4072 7.28947 20.3519 7.21979 20.2823C7.15011 20.2126 7.09483 20.1299 7.05712 20.0388C7.01941 19.9478 7 19.8502 7 19.7516C7 19.6531 7.01941 19.5555 7.05712 19.4645C7.09483 19.3734 7.15011 19.2907 7.21979 19.221L14.1901 12.2516L7.21979 5.28226C7.07906 5.14153 7 4.95066 7 4.75164C7 4.55261 7.07906 4.36174 7.21979 4.22101C7.36052 4.08028 7.55139 4.00122 7.75042 4.00122C7.94944 4.00122 8.14031 4.08028 8.28104 4.22101L15.781 11.721C15.8508 11.7907 15.9061 11.8734 15.9438 11.9644C15.9816 12.0555 16.001 12.1531 16.001 12.2516C16.001 12.3502 15.9816 12.4478 15.9438 12.5388C15.9061 12.6299 15.8508 12.7126 15.781 12.7823Z"
-                                        fill="white" />
-                                </svg>
+
+                                </div>
+
+
+                                <div class="bg-white py-4 rounded-t-3xl   w-full flex items-center justify-center flex-col">
+                                    <div class=" h-12 px-2 py-3 cursor-pointer bg-primary-blue rounded-lg justify-center items-center gap-1 inline-flex mt-4 md:mt-20 mb-0 md:mb-4   z-10 w-full"
+                                        id="bestRatesFetchBtn">
+                                        <div class="text-white text-sm font-bold">Proceed to Next</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none">
+                                            <path
+                                                d="M15.781 12.7823L8.28104 20.2823C8.21136 20.3519 8.12863 20.4072 8.03759 20.4449C7.94654 20.4826 7.84896 20.5021 7.75042 20.5021C7.65187 20.5021 7.55429 20.4826 7.46324 20.4449C7.3722 20.4072 7.28947 20.3519 7.21979 20.2823C7.15011 20.2126 7.09483 20.1299 7.05712 20.0388C7.01941 19.9478 7 19.8502 7 19.7516C7 19.6531 7.01941 19.5555 7.05712 19.4645C7.09483 19.3734 7.15011 19.2907 7.21979 19.221L14.1901 12.2516L7.21979 5.28226C7.07906 5.14153 7 4.95066 7 4.75164C7 4.55261 7.07906 4.36174 7.21979 4.22101C7.36052 4.08028 7.55139 4.00122 7.75042 4.00122C7.94944 4.00122 8.14031 4.08028 8.28104 4.22101L15.781 11.721C15.8508 11.7907 15.9061 11.8734 15.9438 11.9644C15.9816 12.0555 16.001 12.1531 16.001 12.2516C16.001 12.3502 15.9816 12.4478 15.9438 12.5388C15.9061 12.6299 15.8508 12.7126 15.781 12.7823Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </div>
+
                             </div>
-                            </div>
-                            
                         </div>
                     </div>
-                    </div>
-                    
-                    
+
+
 
 
 
@@ -691,119 +737,120 @@
                         <p class="text-black text-base font-bold mt-4">Choose Your Exchange Center</p>
 
                         <!-- The template card (hidden initially) -->
-<div id="mtcardTemplate" class="mtCard flex flex-col border border-black/10 p-2 rounded-3xl" style="display: none;">
-    <div class="px-4 flex flex-col justify-center items-start border-b border-black/10 pb-3">
-        <img src="" alt="Bank Logo" class="bank-logo " style="width:auto; height:32px;">
-        <p class="text-black text-lg mt-2 font-semibold bank-name"></p>
-
-        
-
-        <div class="flex justify-between items-end w-full">
-
-            <div>
-                <!--<div class="flex justify-start items-center gap-2 mt-6">-->
-                <!--    <span class="text-sm">Payments:</span>-->
-                <!--    <span class="bg-black/5 rounded-[20px] font-medium px-2 py-1 text-sm payment-method1"></span>-->
-                <!--    <span class="bg-black/5 rounded-[20px] font-medium px-2 py-1 text-sm payment-method2"></span>-->
-                <!--</div>-->
-    
-                <p class="text-black/40 text-xs font-normal mt-3 supported-services"></p>
-            </div>
+                        <div id="mtcardTemplate" class="mtCard flex flex-col border border-black/10 p-2 rounded-3xl" style="display: none;">
+                            <div class="px-4 flex flex-col justify-center items-start border-b border-black/10 pb-3">
+                                <img src="" alt="Bank Logo" class="bank-logo " style="width:auto; height:32px;">
+                                <p class="text-black text-lg mt-2 font-semibold bank-name"></p>
 
 
-            
-        </div>
-        
-        
-        
 
-        
-    </div>
+                                <div class="flex justify-between items-end w-full">
 
-    <div class="px-4 flex justify-between items-center mt-4 flex-col w-full customMd:flex-row">
-        <div class="flex justify-between items-center w-full">
-            <div class="flex flex-col ">
-                <p class="text-black/40 text-xs font-normal">Bank Charges</p>
-                <p class="text-black text-xs font-normal bank-charges"></p>
-            </div>
-    
-            <div class="flex flex-col ml-auto mr-8">
-                <div class="text-black/40 text-xs font-normal">TOTAL AMOUNT</div>
-                <div class="text-black text-lg font-bold leading-[27px] total-amount"></div>
-            </div>
-        </div>
-        
+                                    <div>
+                                        <!--<div class="flex justify-start items-center gap-2 mt-6">-->
+                                        <!--    <span class="text-sm">Payments:</span>-->
+                                        <!--    <span class="bg-black/5 rounded-[20px] font-medium px-2 py-1 text-sm payment-method1"></span>-->
+                                        <!--    <span class="bg-black/5 rounded-[20px] font-medium px-2 py-1 text-sm payment-method2"></span>-->
+                                        <!--</div>-->
 
-        <div class="select-button cursor-pointer customMd:max-w-[10rem] h-10 pl-4 pr-2.5 py-2.5 bg-[#0e51a0] rounded-[20px] justify-center items-center gap-0.5 inline-flex mt-4 w-full">
-            <div class="text-white text-sm font-medium">Select</div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M9.53104 3.96896L17.031 11.469C17.1008 11.5386 17.1561 11.6213 17.1938 11.7124C17.2316 11.8034 17.251 11.901 17.251 11.9996C17.251 12.0981 17.2316 12.1957 17.1938 12.2868C17.1561 12.3778 17.1008 12.4606 17.031 12.5302L9.53104 20.0302C9.39031 20.1709 9.19944 20.25 9.00042 20.25C8.80139 20.25 8.61052 20.1709 8.46979 20.0302C8.32906 19.8895 8.25 19.6986 8.25 19.4996C8.25 19.3006 8.32906 19.1097 8.46979 18.969L15.4401 11.9996L8.46979 5.03021C8.40011 4.96052 8.34483 4.8778 8.30712 4.78675C8.26941 4.69571 8.25 4.59813 8.25 4.49958C8.25 4.40104 8.26941 4.30345 8.30712 4.21241C8.34483 4.12136 8.40011 4.03864 8.46979 3.96896C8.53947 3.89927 8.6222 3.844 8.71324 3.80629C8.80429 3.76858 8.90187 3.74916 9.00042 3.74916C9.09896 3.74916 9.19654 3.76858 9.28759 3.80629C9.37863 3.844 9.46136 3.89927 9.53104 3.96896Z" fill="white"/>
-            </svg>
-        </div>
+                                        <p class="text-black/40 text-xs font-normal mt-3 supported-services"></p>
+                                    </div>
 
-        
-    </div>
 
-    
-    
-</div>
 
-<!-- The container for dynamically inserted cards -->
-<div id="mtcardContainer" class="mtCardContainer mt-4 flex flex-col gap-8 "></div>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div class="px-4 flex justify-between items-center mt-4 flex-col w-full customMd:flex-row">
+                                <div class="flex justify-between items-center w-full">
+                                    <div class="flex flex-col ">
+                                        <p class="text-black/40 text-xs font-normal">Bank Charges</p>
+                                        <p class="text-black text-xs font-normal bank-charges"></p>
+                                    </div>
+
+                                    <div class="flex flex-col ml-auto mr-8">
+                                        <div class="text-black/40 text-xs font-normal">TOTAL AMOUNT</div>
+                                        <div class="text-black text-lg font-bold leading-[27px] total-amount"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="select-button cursor-pointer customMd:max-w-[10rem] h-10 pl-4 pr-2.5 py-2.5 bg-[#0e51a0] rounded-[20px] justify-center items-center gap-0.5 inline-flex mt-4 w-full">
+                                    <div class="text-white text-sm font-medium">Select</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9.53104 3.96896L17.031 11.469C17.1008 11.5386 17.1561 11.6213 17.1938 11.7124C17.2316 11.8034 17.251 11.901 17.251 11.9996C17.251 12.0981 17.2316 12.1957 17.1938 12.2868C17.1561 12.3778 17.1008 12.4606 17.031 12.5302L9.53104 20.0302C9.39031 20.1709 9.19944 20.25 9.00042 20.25C8.80139 20.25 8.61052 20.1709 8.46979 20.0302C8.32906 19.8895 8.25 19.6986 8.25 19.4996C8.25 19.3006 8.32906 19.1097 8.46979 18.969L15.4401 11.9996L8.46979 5.03021C8.40011 4.96052 8.34483 4.8778 8.30712 4.78675C8.26941 4.69571 8.25 4.59813 8.25 4.49958C8.25 4.40104 8.26941 4.30345 8.30712 4.21241C8.34483 4.12136 8.40011 4.03864 8.46979 3.96896C8.53947 3.89927 8.6222 3.844 8.71324 3.80629C8.80429 3.76858 8.90187 3.74916 9.00042 3.74916C9.09896 3.74916 9.19654 3.76858 9.28759 3.80629C9.37863 3.844 9.46136 3.89927 9.53104 3.96896Z" fill="white" />
+                                    </svg>
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+                        <!-- The container for dynamically inserted cards -->
+                        <div id="mtcardContainer" class="mtCardContainer mt-4 flex flex-col gap-8 "></div>
 
 
                         <div class="bg-primary-blue/5 py-4 mt-6 rounded-lg">
                             <div class="flex justify-between px-6 items-center">
-                                <p class="text-[#0e51a0] text-base font-semibold font-['Plus Jakarta Sans'] leading-normal">The ExTravelMoney <br/>Customer Advantage</p>
+                                <p class="text-[#0e51a0] text-base font-semibold font-['Plus Jakarta Sans'] leading-normal">The ExTravelMoney <br />Customer Advantage</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 80 40" fill="none">
                                     <g clip-path="url(#clip0_1338_22590)">
-                                      <path d="M25.3937 22.0864L36.0932 37.7418H23.6142L20.0481 31.5008" fill="white"/>
-                                      <path d="M13.092 19.4819L0.612976 37.7414H13.092L23.5258 19.4819L13.5196 1.5332H1.12579L13.092 19.4819Z" fill="white"/>
-                                      <path d="M61.5963 0.769043C49.9276 0.769043 42.2476 8.2275 42.2476 19.8963C42.2476 31.565 50.3707 38.5065 60.9317 38.5065H61.0055C70.6065 38.5065 79.9862 32.4521 79.9862 19.3055C79.9862 8.3752 72.6004 0.769043 61.5963 0.769043Z" fill="white"/>
-                                      <path d="M70.3469 13.9248L70.3449 13.9258C70.0413 13.9792 69.7777 14.0428 69.6013 14.1125L67.4598 14.9464L65.8679 15.5669L57.7059 18.7495L56.6505 19.1597L53.0648 20.5608L49.9315 17.8858L47.509 18.8305L52.2218 25.3535L58.1521 23.2048V23.05L58.1562 30.4531L60.8248 29.3587L66.9777 18.1402L68.1162 17.5064L67.1541 19.6151L68.5541 18.9935L70.6813 18.1618L70.8587 18.092L75.8956 16.091C75.8956 16.091 73.5325 12.7874 70.3469 13.9248Z" fill="#F3F6FA"/>
+                                        <path d="M25.3937 22.0864L36.0932 37.7418H23.6142L20.0481 31.5008" fill="white" />
+                                        <path d="M13.092 19.4819L0.612976 37.7414H13.092L23.5258 19.4819L13.5196 1.5332H1.12579L13.092 19.4819Z" fill="white" />
+                                        <path d="M61.5963 0.769043C49.9276 0.769043 42.2476 8.2275 42.2476 19.8963C42.2476 31.565 50.3707 38.5065 60.9317 38.5065H61.0055C70.6065 38.5065 79.9862 32.4521 79.9862 19.3055C79.9862 8.3752 72.6004 0.769043 61.5963 0.769043Z" fill="white" />
+                                        <path d="M70.3469 13.9248L70.3449 13.9258C70.0413 13.9792 69.7777 14.0428 69.6013 14.1125L67.4598 14.9464L65.8679 15.5669L57.7059 18.7495L56.6505 19.1597L53.0648 20.5608L49.9315 17.8858L47.509 18.8305L52.2218 25.3535L58.1521 23.2048V23.05L58.1562 30.4531L60.8248 29.3587L66.9777 18.1402L68.1162 17.5064L67.1541 19.6151L68.5541 18.9935L70.6813 18.1618L70.8587 18.092L75.8956 16.091C75.8956 16.091 73.5325 12.7874 70.3469 13.9248Z" fill="#F3F6FA" />
                                     </g>
                                     <defs>
-                                      <clipPath id="clip0_1338_22590">
-                                        <rect width="80" height="38.4615" fill="white" transform="translate(0 0.769043)"/>
-                                      </clipPath>
+                                        <clipPath id="clip0_1338_22590">
+                                            <rect width="80" height="38.4615" fill="white" transform="translate(0 0.769043)" />
+                                        </clipPath>
                                     </defs>
-                                  </svg>
+                                </svg>
                             </div>
 
                             <div class="flex px-6 mt-4 gap-6 items-center">
                                 <div class="bg-white/50 p-4 rounded-full">
-                                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                        <path d="M2.25 9.87844H4.5V15.8784H3C2.80109 15.8784 2.61032 15.9575 2.46967 16.0981C2.32902 16.2388 2.25 16.4295 2.25 16.6284C2.25 16.8274 2.32902 17.0181 2.46967 17.1588C2.61032 17.2994 2.80109 17.3784 3 17.3784H21C21.1989 17.3784 21.3897 17.2994 21.5303 17.1588C21.671 17.0181 21.75 16.8274 21.75 16.6284C21.75 16.4295 21.671 16.2388 21.5303 16.0981C21.3897 15.9575 21.1989 15.8784 21 15.8784H19.5V9.87844H21.75C21.9132 9.87828 22.0719 9.82489 22.202 9.72639C22.3321 9.62789 22.4265 9.48964 22.4709 9.33261C22.5153 9.17559 22.5073 9.00837 22.4481 8.8563C22.3889 8.70424 22.2817 8.57564 22.1428 8.49L12.3928 2.49C12.2747 2.41736 12.1387 2.37891 12 2.37891C11.8613 2.37891 11.7253 2.41736 11.6072 2.49L1.85719 8.49C1.71828 8.57564 1.61108 8.70424 1.55187 8.8563C1.49266 9.00837 1.48466 9.17559 1.52908 9.33261C1.57351 9.48964 1.66793 9.62789 1.79803 9.72639C1.92814 9.82489 2.08681 9.87828 2.25 9.87844ZM6 9.87844H9V15.8784H6V9.87844ZM13.5 9.87844V15.8784H10.5V9.87844H13.5ZM18 15.8784H15V9.87844H18V15.8784ZM12 4.00875L19.1006 8.37844H4.89937L12 4.00875ZM23.25 19.6284C23.25 19.8274 23.171 20.0181 23.0303 20.1588C22.8897 20.2994 22.6989 20.3784 22.5 20.3784H1.5C1.30109 20.3784 1.11032 20.2994 0.96967 20.1588C0.829018 20.0181 0.75 19.8274 0.75 19.6284C0.75 19.4295 0.829018 19.2388 0.96967 19.0981C1.11032 18.9575 1.30109 18.8784 1.5 18.8784H22.5C22.6989 18.8784 22.8897 18.9575 23.0303 19.0981C23.171 19.2388 23.25 19.4295 23.25 19.6284Z" fill="black"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <path d="M2.25 9.87844H4.5V15.8784H3C2.80109 15.8784 2.61032 15.9575 2.46967 16.0981C2.32902 16.2388 2.25 16.4295 2.25 16.6284C2.25 16.8274 2.32902 17.0181 2.46967 17.1588C2.61032 17.2994 2.80109 17.3784 3 17.3784H21C21.1989 17.3784 21.3897 17.2994 21.5303 17.1588C21.671 17.0181 21.75 16.8274 21.75 16.6284C21.75 16.4295 21.671 16.2388 21.5303 16.0981C21.3897 15.9575 21.1989 15.8784 21 15.8784H19.5V9.87844H21.75C21.9132 9.87828 22.0719 9.82489 22.202 9.72639C22.3321 9.62789 22.4265 9.48964 22.4709 9.33261C22.5153 9.17559 22.5073 9.00837 22.4481 8.8563C22.3889 8.70424 22.2817 8.57564 22.1428 8.49L12.3928 2.49C12.2747 2.41736 12.1387 2.37891 12 2.37891C11.8613 2.37891 11.7253 2.41736 11.6072 2.49L1.85719 8.49C1.71828 8.57564 1.61108 8.70424 1.55187 8.8563C1.49266 9.00837 1.48466 9.17559 1.52908 9.33261C1.57351 9.48964 1.66793 9.62789 1.79803 9.72639C1.92814 9.82489 2.08681 9.87828 2.25 9.87844ZM6 9.87844H9V15.8784H6V9.87844ZM13.5 9.87844V15.8784H10.5V9.87844H13.5ZM18 15.8784H15V9.87844H18V15.8784ZM12 4.00875L19.1006 8.37844H4.89937L12 4.00875ZM23.25 19.6284C23.25 19.8274 23.171 20.0181 23.0303 20.1588C22.8897 20.2994 22.6989 20.3784 22.5 20.3784H1.5C1.30109 20.3784 1.11032 20.2994 0.96967 20.1588C0.829018 20.0181 0.75 19.8274 0.75 19.6284C0.75 19.4295 0.829018 19.2388 0.96967 19.0981C1.11032 18.9575 1.30109 18.8784 1.5 18.8784H22.5C22.6989 18.8784 22.8897 18.9575 23.0303 19.0981C23.171 19.2388 23.25 19.4295 23.25 19.6284Z" fill="black" />
+                                    </svg>
                                 </div>
-                                
-                                    
-                                    <p class="text-black text-xs font-normal font-['Plus Jakarta Sans'] leading-[18px]"> Minimum 5% Savings from <br> <b>Normal Bank Rates</b></p>
-                             </div>
 
-                             <div class="flex px-6 mt-4 gap-6 items-center border-t-white  border-2 py-4 border-b-white border-l-0 border-r-0">
+
+                                <p class="text-black text-xs font-normal font-['Plus Jakarta Sans'] leading-[18px]"> Minimum 5% Savings from <br> <b>Normal Bank Rates</b></p>
+                            </div>
+
+                            <div class="flex px-6 mt-4 gap-6 items-center border-t-white  border-2 py-4 border-b-white border-l-0 border-r-0">
                                 <div class="bg-white/50 p-4 rounded-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                        <path d="M18.9272 5.25279C18.03 4.34658 16.9629 3.62624 15.7869 3.13302C14.611 2.63979 13.3493 2.38336 12.0741 2.37842H12C9.41414 2.37842 6.93419 3.40565 5.10571 5.23413C3.27723 7.06261 2.25 9.54256 2.25 12.1284V17.3784C2.25 17.9752 2.48705 18.5475 2.90901 18.9694C3.33097 19.3914 3.90326 19.6284 4.5 19.6284H6C6.59674 19.6284 7.16903 19.3914 7.59099 18.9694C8.01295 18.5475 8.25 17.9752 8.25 17.3784V13.6284C8.25 13.0317 8.01295 12.4594 7.59099 12.0374C7.16903 11.6155 6.59674 11.3784 6 11.3784H3.78375C3.92839 9.81461 4.51578 8.32442 5.47709 7.08252C6.43839 5.84061 7.73377 4.89845 9.21141 4.36645C10.689 3.83445 12.2877 3.73466 13.82 4.07877C15.3524 4.42288 16.7548 5.19664 17.8631 6.30936C19.2177 7.67089 20.0509 9.46504 20.2172 11.3784H18C17.4033 11.3784 16.831 11.6155 16.409 12.0374C15.9871 12.4594 15.75 13.0317 15.75 13.6284V17.3784C15.75 17.9752 15.9871 18.5475 16.409 18.9694C16.831 19.3914 17.4033 19.6284 18 19.6284H20.25C20.25 20.2252 20.0129 20.7975 19.591 21.2194C19.169 21.6414 18.5967 21.8784 18 21.8784H12.75C12.5511 21.8784 12.3603 21.9574 12.2197 22.0981C12.079 22.2387 12 22.4295 12 22.6284C12 22.8273 12.079 23.0181 12.2197 23.1587C12.3603 23.2994 12.5511 23.3784 12.75 23.3784H18C18.9946 23.3784 19.9484 22.9833 20.6517 22.2801C21.3549 21.5768 21.75 20.623 21.75 19.6284V12.1284C21.7549 10.853 21.5081 9.58919 21.0237 8.40935C20.5393 7.2295 19.8268 6.15683 18.9272 5.25279ZM6 12.8784C6.19891 12.8784 6.38968 12.9574 6.53033 13.0981C6.67098 13.2387 6.75 13.4295 6.75 13.6284V17.3784C6.75 17.5773 6.67098 17.7681 6.53033 17.9087C6.38968 18.0494 6.19891 18.1284 6 18.1284H4.5C4.30109 18.1284 4.11032 18.0494 3.96967 17.9087C3.82902 17.7681 3.75 17.5773 3.75 17.3784V12.8784H6ZM18 18.1284C17.8011 18.1284 17.6103 18.0494 17.4697 17.9087C17.329 17.7681 17.25 17.5773 17.25 17.3784V13.6284C17.25 13.4295 17.329 13.2387 17.4697 13.0981C17.6103 12.9574 17.8011 12.8784 18 12.8784H20.25V18.1284H18Z" fill="black"/>
-                                      </svg>
+                                        <path d="M18.9272 5.25279C18.03 4.34658 16.9629 3.62624 15.7869 3.13302C14.611 2.63979 13.3493 2.38336 12.0741 2.37842H12C9.41414 2.37842 6.93419 3.40565 5.10571 5.23413C3.27723 7.06261 2.25 9.54256 2.25 12.1284V17.3784C2.25 17.9752 2.48705 18.5475 2.90901 18.9694C3.33097 19.3914 3.90326 19.6284 4.5 19.6284H6C6.59674 19.6284 7.16903 19.3914 7.59099 18.9694C8.01295 18.5475 8.25 17.9752 8.25 17.3784V13.6284C8.25 13.0317 8.01295 12.4594 7.59099 12.0374C7.16903 11.6155 6.59674 11.3784 6 11.3784H3.78375C3.92839 9.81461 4.51578 8.32442 5.47709 7.08252C6.43839 5.84061 7.73377 4.89845 9.21141 4.36645C10.689 3.83445 12.2877 3.73466 13.82 4.07877C15.3524 4.42288 16.7548 5.19664 17.8631 6.30936C19.2177 7.67089 20.0509 9.46504 20.2172 11.3784H18C17.4033 11.3784 16.831 11.6155 16.409 12.0374C15.9871 12.4594 15.75 13.0317 15.75 13.6284V17.3784C15.75 17.9752 15.9871 18.5475 16.409 18.9694C16.831 19.3914 17.4033 19.6284 18 19.6284H20.25C20.25 20.2252 20.0129 20.7975 19.591 21.2194C19.169 21.6414 18.5967 21.8784 18 21.8784H12.75C12.5511 21.8784 12.3603 21.9574 12.2197 22.0981C12.079 22.2387 12 22.4295 12 22.6284C12 22.8273 12.079 23.0181 12.2197 23.1587C12.3603 23.2994 12.5511 23.3784 12.75 23.3784H18C18.9946 23.3784 19.9484 22.9833 20.6517 22.2801C21.3549 21.5768 21.75 20.623 21.75 19.6284V12.1284C21.7549 10.853 21.5081 9.58919 21.0237 8.40935C20.5393 7.2295 19.8268 6.15683 18.9272 5.25279ZM6 12.8784C6.19891 12.8784 6.38968 12.9574 6.53033 13.0981C6.67098 13.2387 6.75 13.4295 6.75 13.6284V17.3784C6.75 17.5773 6.67098 17.7681 6.53033 17.9087C6.38968 18.0494 6.19891 18.1284 6 18.1284H4.5C4.30109 18.1284 4.11032 18.0494 3.96967 17.9087C3.82902 17.7681 3.75 17.5773 3.75 17.3784V12.8784H6ZM18 18.1284C17.8011 18.1284 17.6103 18.0494 17.4697 17.9087C17.329 17.7681 17.25 17.5773 17.25 17.3784V13.6284C17.25 13.4295 17.329 13.2387 17.4697 13.0981C17.6103 12.9574 17.8011 12.8784 18 12.8784H20.25V18.1284H18Z" fill="black" />
+                                    </svg>
                                 </div>
-                                
-                                    
-                                    <p class="text-black text-xs font-normal font-['Plus Jakarta Sans'] leading-[18px]">Guidance from 
-                                         <br> <b>Money Transfer Specialists</b></p>
-                             </div>
 
-                             <div class="flex px-6 gap-6 items-center py-4">
+
+                                <p class="text-black text-xs font-normal font-['Plus Jakarta Sans'] leading-[18px]">Guidance from
+                                    <br> <b>Money Transfer Specialists</b>
+                                </p>
+                            </div>
+
+                            <div class="flex px-6 gap-6 items-center py-4">
                                 <div class="bg-white/50 p-4 rounded-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                        <path d="M20.25 3.87842H3.75C3.35218 3.87842 2.97064 4.03645 2.68934 4.31776C2.40804 4.59906 2.25 4.98059 2.25 5.37842V18.1284C2.25 18.5262 2.40804 18.9078 2.68934 19.1891C2.97064 19.4704 3.35218 19.6284 3.75 19.6284H5.25V21.1284C5.25 21.3273 5.32902 21.5181 5.46967 21.6587C5.61032 21.7994 5.80109 21.8784 6 21.8784C6.19891 21.8784 6.38968 21.7994 6.53033 21.6587C6.67098 21.5181 6.75 21.3273 6.75 21.1284V19.6284H17.25V21.1284C17.25 21.3273 17.329 21.5181 17.4697 21.6587C17.6103 21.7994 17.8011 21.8784 18 21.8784C18.1989 21.8784 18.3897 21.7994 18.5303 21.6587C18.671 21.5181 18.75 21.3273 18.75 21.1284V19.6284H20.25C20.6478 19.6284 21.0294 19.4704 21.3107 19.1891C21.592 18.9078 21.75 18.5262 21.75 18.1284V5.37842C21.75 4.98059 21.592 4.59906 21.3107 4.31776C21.0294 4.03645 20.6478 3.87842 20.25 3.87842ZM20.25 18.1284H3.75V5.37842H20.25V11.3784H18.6863C18.4982 10.2659 17.899 9.26457 17.0075 8.57293C16.116 7.8813 14.9972 7.54982 13.8729 7.64418C12.7485 7.73854 11.7006 8.25185 10.9368 9.08239C10.1731 9.91293 9.74919 11.0001 9.74919 12.1284C9.74919 13.2567 10.1731 14.3439 10.9368 15.1744C11.7006 16.005 12.7485 16.5183 13.8729 16.6127C14.9972 16.707 16.116 16.3755 17.0075 15.6839C17.899 14.9923 18.4982 13.991 18.6863 12.8784H20.25V18.1284ZM15.5475 11.3784C15.3824 11.0925 15.1276 10.869 14.8225 10.7426C14.5174 10.6162 14.1792 10.5941 13.8602 10.6795C13.5413 10.765 13.2594 10.9533 13.0584 11.2153C12.8574 11.4772 12.7485 11.7982 12.7485 12.1284C12.7485 12.4586 12.8574 12.7796 13.0584 13.0416C13.2594 13.3035 13.5413 13.4918 13.8602 13.5773C14.1792 13.6628 14.5174 13.6406 14.8225 13.5142C15.1276 13.3879 15.3824 13.1644 15.5475 12.8784H17.1562C16.9737 13.5854 16.5396 14.2016 15.9352 14.6114C15.3309 15.0212 14.5979 15.1965 13.8735 15.1045C13.1491 15.0125 12.4832 14.6595 12.0005 14.1116C11.5178 13.5637 11.2515 12.8586 11.2515 12.1284C11.2515 11.3982 11.5178 10.6931 12.0005 10.1452C12.4832 9.59736 13.1491 9.24433 13.8735 9.15233C14.5979 9.06032 15.3309 9.23566 15.9352 9.64547C16.5396 10.0553 16.9737 10.6714 17.1562 11.3784H15.5475Z" fill="black"/>
-                                      </svg>
+                                        <path d="M20.25 3.87842H3.75C3.35218 3.87842 2.97064 4.03645 2.68934 4.31776C2.40804 4.59906 2.25 4.98059 2.25 5.37842V18.1284C2.25 18.5262 2.40804 18.9078 2.68934 19.1891C2.97064 19.4704 3.35218 19.6284 3.75 19.6284H5.25V21.1284C5.25 21.3273 5.32902 21.5181 5.46967 21.6587C5.61032 21.7994 5.80109 21.8784 6 21.8784C6.19891 21.8784 6.38968 21.7994 6.53033 21.6587C6.67098 21.5181 6.75 21.3273 6.75 21.1284V19.6284H17.25V21.1284C17.25 21.3273 17.329 21.5181 17.4697 21.6587C17.6103 21.7994 17.8011 21.8784 18 21.8784C18.1989 21.8784 18.3897 21.7994 18.5303 21.6587C18.671 21.5181 18.75 21.3273 18.75 21.1284V19.6284H20.25C20.6478 19.6284 21.0294 19.4704 21.3107 19.1891C21.592 18.9078 21.75 18.5262 21.75 18.1284V5.37842C21.75 4.98059 21.592 4.59906 21.3107 4.31776C21.0294 4.03645 20.6478 3.87842 20.25 3.87842ZM20.25 18.1284H3.75V5.37842H20.25V11.3784H18.6863C18.4982 10.2659 17.899 9.26457 17.0075 8.57293C16.116 7.8813 14.9972 7.54982 13.8729 7.64418C12.7485 7.73854 11.7006 8.25185 10.9368 9.08239C10.1731 9.91293 9.74919 11.0001 9.74919 12.1284C9.74919 13.2567 10.1731 14.3439 10.9368 15.1744C11.7006 16.005 12.7485 16.5183 13.8729 16.6127C14.9972 16.707 16.116 16.3755 17.0075 15.6839C17.899 14.9923 18.4982 13.991 18.6863 12.8784H20.25V18.1284ZM15.5475 11.3784C15.3824 11.0925 15.1276 10.869 14.8225 10.7426C14.5174 10.6162 14.1792 10.5941 13.8602 10.6795C13.5413 10.765 13.2594 10.9533 13.0584 11.2153C12.8574 11.4772 12.7485 11.7982 12.7485 12.1284C12.7485 12.4586 12.8574 12.7796 13.0584 13.0416C13.2594 13.3035 13.5413 13.4918 13.8602 13.5773C14.1792 13.6628 14.5174 13.6406 14.8225 13.5142C15.1276 13.3879 15.3824 13.1644 15.5475 12.8784H17.1562C16.9737 13.5854 16.5396 14.2016 15.9352 14.6114C15.3309 15.0212 14.5979 15.1965 13.8735 15.1045C13.1491 15.0125 12.4832 14.6595 12.0005 14.1116C11.5178 13.5637 11.2515 12.8586 11.2515 12.1284C11.2515 11.3982 11.5178 10.6931 12.0005 10.1452C12.4832 9.59736 13.1491 9.24433 13.8735 9.15233C14.5979 9.06032 15.3309 9.23566 15.9352 9.64547C16.5396 10.0553 16.9737 10.6714 17.1562 11.3784H15.5475Z" fill="black" />
+                                    </svg>
                                 </div>
-                                
-                                    
-                                    <p class="text-black text-xs font-normal font-['Plus Jakarta Sans'] leading-[18px]"> Account Opening <br> <b>Not Required</b></p>
-                             </div>
-                    </div>
+
+
+                                <p class="text-black text-xs font-normal font-['Plus Jakarta Sans'] leading-[18px]"> Account Opening <br> <b>Not Required</b></p>
+                            </div>
+                        </div>
 
 
 
@@ -812,37 +859,37 @@
 
 
 
-                
+
             </section>
 
         </div>
 
     </div>
     <footer>
-        
+
 
 
 
         <div class="loadingAnimationContainer flex items-center justify-center h-screen fixed top-0 left-0 w-full bg-white z-50">
             <div class="loading">
                 <svg viewBox="0 0 187.3 93.7" height="200px" width="300px" class="svgbox">
-                 <defs>
-                   <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
-                     <stop stop-color="#2C5AA2" offset="0%"></stop>
-                        <stop stop-color="#E3373A" offset="100%"></stop>
-                   </linearGradient>
-                 </defs>
-                 <path stroke="url(#gradient)" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"></path>
-               </svg>
+                    <defs>
+                        <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
+                            <stop stop-color="#2C5AA2" offset="0%"></stop>
+                            <stop stop-color="#E3373A" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path stroke="url(#gradient)" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"></path>
+                </svg>
             </div>
         </div>
 
 
-        <?php 
-    include $fold . 'includesv2/footerScripts.php';
-    ?>
+        <?php
+        include $fold . 'includesv2/footerScripts.php';
+        ?>
 
-        
+
 
     </footer>
 </body>

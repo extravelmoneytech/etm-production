@@ -9,6 +9,9 @@ function setSelectedItemInnerHTML(dropdownId, item, selectedItem) {
         if(dropdownId==='contryCodeMain'){
             selectedItem.innerHTML=`<span>${item.getAttribute('mob-code')}</span><span>${item.getAttribute('value')}</span>`
         }
+        if(dropdownId==='callBackCountryCodeMain'){
+            selectedItem.innerHTML=`<span>${item.getAttribute('mob-code')}</span><span>${item.getAttribute('value')}</span>`
+        }
         if(dropdownId==='widgetCurrency'){
             let currencyName=item.getAttribute('currency-name')
             selectedItem.innerHTML=`<span>${currencyName}</span>`
@@ -232,8 +235,7 @@ function getSelectedDropdownItemElement(dropdownId) {
 
 function forceSelectDropdownItem(dropdownId, valueToSelect) {
 
-
-    console.log()
+    console.log(dropdownId, valueToSelect)
 
 
 
@@ -247,10 +249,10 @@ function forceSelectDropdownItem(dropdownId, valueToSelect) {
 
     const dropdownList = dropdownMain.querySelector('.dropdownList');
     const selectedItem = dropdownMain.querySelector('.selectedItem');
+    console.log(dropdownList)
 
     
     const item = dropdownList.querySelector(`li[value="${valueToSelect}"]`);
-
     
     if (item) {
         // Use globalized function to set the innerHTML
@@ -282,3 +284,6 @@ function forceSelectDropdownItem(dropdownId, valueToSelect) {
         console.warn(`Dropdown item with value "${valueToSelect}" not found.`);
     }
 }
+
+
+forceSelectDropdownItem('callBackCountryCodeMain','IN')

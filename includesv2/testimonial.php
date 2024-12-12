@@ -35,7 +35,7 @@
                             <div class="testimonialBody py-4 px-6">
                                 <p class="text-black/60 text-base font-normal leading-[28px]">It has been a really wonderful experience remitting fees for my daughter for her university through Extravelmoney. The rates are very competitive and ease of operation also. Money reached the university with in 24 hours, that was pretty fast.</p>
                                 <div class="flex flex-col justify-center items-start mt-4">
-                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/google_logo 1.png'; ?>" alt="google-logo">
+                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/Google_2015_logo.svg'; ?>" alt="google-logo">
 
                                     <div class="testiStars flex justify-center items-center gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 21" fill="none">
@@ -75,7 +75,7 @@
                             <div class="testimonialBody py-4 px-6">
                                 <p class="text-black/60 text-base font-normal leading-[28px]">My parents have been using their services since 2020, to remit funds to me in Poland. The executives are very helpful and responsible. Never had any issues with them and I do recommend using their services.</p>
                                 <div class="flex flex-col justify-center items-start mt-4">
-                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/google_logo 1.png'; ?>" alt="google-logo">
+                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/Google_2015_logo.svg'; ?>" alt="google-logo">
 
                                     <div class="testiStars flex justify-center items-center gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 21" fill="none">
@@ -114,7 +114,7 @@
                             <div class="testimonialBody py-4 px-6">
                                 <p class="text-black/60 text-base font-normal leading-[28px]">Sold Pounds almost at 14 paise less the running rate. Extravelmoney shows you all forex sellers near your vicinity, simply choose one of them, show your ID proof and collect money! The best feature is the price lock option which was very beneficial in my case.</p>
                                 <div class="flex flex-col justify-center items-start mt-4">
-                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/google_logo 1.png'; ?>" alt="google-logo">
+                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/Google_2015_logo.svg'; ?>" alt="google-logo">
 
                                     <div class="testiStars flex justify-center items-center gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 21" fill="none">
@@ -153,7 +153,7 @@
                             <div class="testimonialBody py-4 px-6">
                                 <p class="text-black/60 text-base font-normal leading-[28px]">This has been the easiest and most economical way to transfer money to Canada. I got in touch with them through a friend's recommendation. Ms. Mary processed things for me so quickly. Even after moving to Canada, I used their service, again happened absolutely seamlessly.</p>
                                 <div class="flex flex-col justify-center items-start mt-4">
-                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/google_logo 1.png'; ?>" alt="google-logo">
+                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/Google_2015_logo.svg'; ?>" alt="google-logo">
 
                                     <div class="testiStars flex justify-center items-center gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 21" fill="none">
@@ -192,7 +192,7 @@
                             <div class="testimonialBody py-4 px-6">
                                 <p class="text-black/60 text-base font-normal leading-[28px]">Did a transaction for the first time for my son's education requirements for 20k USD. Got a savings of INR 25k compared to bank rate card. A friendly economical service by Extravelmoney.</p>
                                 <div class="flex flex-col justify-center items-start mt-4">
-                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/google_logo 1.png'; ?>" alt="google-logo">
+                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/Google_2015_logo.svg'; ?>" alt="google-logo">
 
                                     <div class="testiStars flex justify-center items-center gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 21" fill="none">
@@ -232,7 +232,7 @@
                             <div class="testimonialBody py-4 px-6">
                                 <p class="text-black/60 text-base font-normal leading-[28px]">I booked Malaysian Ringgit currency and Singapore dollars in forex card from ExTravelMoney at 1 AM, got a call from the team within 5 minutes and got currency and card delivered by 4 PM. Really impressed with their services. Will recommend them, 10/10!</p>
                                 <div class="flex flex-col justify-center items-start mt-4">
-                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/google_logo 1.png'; ?>" alt="google-logo">
+                                <img class="w-14" src="<?php echo $fold . 'public/images/logo/Google_2015_logo.svg'; ?>" alt="google-logo">
 
                                     <div class="testiStars flex justify-center items-center gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 21" fill="none">
