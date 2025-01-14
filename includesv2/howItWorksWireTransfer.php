@@ -11,6 +11,8 @@
 
 <section id="howItWorkSection" class="mt-24 px-5 sm:px-12 md:px-24">
 
+<?php ?>
+
 <p class="text-[#18325b] text-3xl font-extrabold">Its Done! in 3 simple steps</p>
 
 

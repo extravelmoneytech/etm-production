@@ -1,3 +1,58 @@
+<style>
+    .success-popup {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        animation: slideIn 0.3s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .success-popup.fade-out {
+        animation: fadeOut 0.3s ease-out forwards;
+    }
+
+    @keyframes fadeOut {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+
+    .checkmark {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        stroke-width: 2;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+    }
+</style>
 <header class="w-full flex justify-start items-center">
                 <div class="hidden md:flex w-full">
                     <div class="navContainer justify-between  flex w-full px-24 py-8 pt-10 items-start gap-8">

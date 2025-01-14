@@ -242,24 +242,6 @@ include $fold . 'includesv2/head.php';
                 <div class="pb-32 md:pb-8 px-5 sm:px-12 md:px-16 py-5 md:flex gap-5 md:gap-10 forexContainer flex-col md:flex-row " style="padding-bottom:25rem;">
 
                     <div class="w-full md:w-2/3 md:border border-black/10 rounded-xl md:px-12 md:py-6">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <div
                             class=" w-full px-[9px] py-2 bg-[#20bc73]/10 rounded-lg justify-start items-center gap-1 hidden md:inline-flex " id="recommendationTextContainer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -276,7 +258,7 @@ include $fold . 'includesv2/head.php';
                         <div class="bg-white rounded-2xl border border-black/10 flex-col justify-center items-center flex">
 
 
-                            <div class="px-3 bg-[#0e51a0]/5 justify-between items-center inline-flex">
+                            <div class="px-3 bg-[#0e51a0]/5 justify-between items-center inline-flex w-full rounded-ss-2xl rounded-se-2xl py-2">
                                 <div class="text-[#0e51a0] text-sm font-semibold font-['Plus Jakarta Sans'] leading-[21px]">Currency 1</div>
 
                                 <div class="justify-center items-center gap-2 flex">
@@ -294,21 +276,21 @@ include $fold . 'includesv2/head.php';
                             </div>
 
 
-                            <div class="px-3 flex-col justify-between items-center gap-4 flex border border-black/10">
+                            <div class="px-3 flex-col justify-center items-stretch gap-2 flex border-b border-black/10 w-full py-3">
                                 <div class="text-black text-[15px] font-bold leading-[18px]">United States Dollar - USD </div>
 
-                                <div class="py-4 items-center justify-between gap-4 flex">
+                                <div class="items-center justify-between gap-4 flex">
                                     <div class="text-[#555555] text-xs font-normal leading-[18px]">USD rate in Bangalore:</div>
                                     <div class="text-[#555555] text-xs font-normal leading-[18px]">83.33 INR</div>
                                 </div>
                             </div>
 
-                            <div class="px-3 flex-col justify-between items-center gap-4 flex border">
-                                <div class="justify-start items-center gap-2 flex flex-col">
+                            <div class="px-3 justify-between items-center gap-4 flex w-full py-3">
+                                <div class="justify-center items-stretch gap-2 flex flex-col mt-2">
                                     <div class="text-[#555555] text-[13px] font-normal leading-tight tracking-tight">Amount</div>
                                     <div class="text-black text-sm font-semibold leading-[14.14px]">1000 USD</div>
                                 </div>
-                                <div class="justify-end items-center gap-2 flex flex-col">
+                                <div class="justify-center items-end gap-2 flex flex-col">
                                     <div class="text-[#555555] text-[13px] font-normal leading-tight tracking-tight">Exchange Rate</div>
                                     <div class="text-[#0e51a0] text-base font-bold leading-none">₹ 84,472</div>
                                 </div>

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     loadinggg(true)
     try {
-        const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+        
         const params = new URLSearchParams({
             action: 'get_contact_details',  // Removed extra whitespace
             token: token
@@ -340,7 +340,7 @@ document.querySelector('#contactUpdateBtn').addEventListener('click', async () =
     })
 
     try {
-        const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+        
         let params;
 
         if (productType === 'fx') {

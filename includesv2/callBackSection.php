@@ -71,8 +71,8 @@
                     <span class="text-white text-base font-bold  leading-normal">Get a Call back</span>
                 </div>
 
-                <a href="https://api.whatsapp.com/send?phone=914842886900" target="_blank">
-                    <div class="h-14 p-2.5 bg-[#20bc73] rounded-lg justify-center items-center gap-1 inline-flex cursor-pointer">
+                <a class="h-14 p-2.5 bg-[#20bc73] rounded-lg inline-flex justify-center items-center" href="https://api.whatsapp.com/send?phone=914842886900" target="_blank">
+                    <div class="  justify-center items-center gap-1 inline-flex cursor-pointer">
                         <div class="w-6 h-6 relative">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                 <path d="M17.5878 13.714L14.5878 12.214C14.4697 12.1552 14.3381 12.1285 14.2065 12.1367C14.0748 12.145 13.9476 12.1878 13.8378 12.2609L12.4606 13.1796C11.8284 12.8321 11.3081 12.3118 10.9606 11.6796L11.8793 10.3024C11.9524 10.1926 11.9952 10.0654 12.0035 9.93374C12.0117 9.80205 11.985 9.67053 11.9262 9.55244L10.4262 6.55244C10.364 6.42688 10.2679 6.32125 10.1488 6.24752C10.0296 6.17378 9.89224 6.13489 9.75213 6.13525C8.75757 6.13525 7.80374 6.53034 7.10048 7.2336C6.39722 7.93687 6.00213 8.89069 6.00213 9.88525C6.00461 12.0725 6.8746 14.1695 8.42124 15.7161C9.96787 17.2628 12.0649 18.1328 14.2521 18.1353C14.7446 18.1353 15.2322 18.0383 15.6872 17.8498C16.1422 17.6613 16.5556 17.3851 16.9038 17.0369C17.252 16.6887 17.5282 16.2753 17.7167 15.8203C17.9051 15.3653 18.0021 14.8777 18.0021 14.3853C18.0022 14.2459 17.9635 14.1093 17.8903 13.9907C17.8171 13.8722 17.7124 13.7764 17.5878 13.714ZM14.2521 16.6353C12.4625 16.6333 10.7468 15.9215 9.48135 14.656C8.21591 13.3906 7.50411 11.6749 7.50213 9.88525C7.50198 9.36505 7.68209 8.86087 8.01181 8.45851C8.34153 8.05615 8.80048 7.78047 9.31057 7.67838L10.3868 9.83463L9.47088 11.1978C9.40243 11.3004 9.36038 11.4184 9.34844 11.5412C9.3365 11.664 9.35505 11.7879 9.40244 11.9018C9.93905 13.1772 10.9536 14.1918 12.229 14.7284C12.3433 14.7779 12.4681 14.7981 12.5921 14.7873C12.7162 14.7765 12.8356 14.735 12.9396 14.6665L14.3093 13.7534L16.4656 14.8296C16.3627 15.3403 16.0858 15.7995 15.6821 16.1287C15.2785 16.458 14.7731 16.637 14.2521 16.6353ZM12.0021 2.38525C10.3188 2.38489 8.66408 2.82034 7.19899 3.64922C5.7339 4.4781 4.50836 5.67218 3.64166 7.11522C2.77497 8.55827 2.29664 10.2011 2.25324 11.8839C2.20984 13.5666 2.60285 15.232 3.394 16.7178L2.32994 19.9099C2.2418 20.1742 2.22901 20.4579 2.293 20.729C2.35699 21.0002 2.49524 21.2481 2.69224 21.4451C2.88924 21.6421 3.13722 21.7804 3.40837 21.8444C3.67953 21.9084 3.96315 21.8956 4.22744 21.8074L7.41963 20.7434C8.72722 21.4389 10.1761 21.8273 11.6562 21.8793C13.1364 21.9312 14.6089 21.6452 15.962 21.0431C17.3151 20.441 18.5133 19.5385 19.4656 18.4042C20.4178 17.2699 21.0992 15.9335 21.4579 14.4966C21.8166 13.0596 21.8432 11.5598 21.5357 10.111C21.2282 8.66226 20.5947 7.30257 19.6833 6.13518C18.7719 4.96778 17.6065 4.02337 16.2755 3.37362C14.9446 2.72387 13.4832 2.38586 12.0021 2.38525ZM12.0021 20.3853C10.5518 20.3862 9.12691 20.0043 7.8715 19.2781C7.77959 19.2248 7.67739 19.1916 7.57169 19.1808C7.46599 19.1699 7.35919 19.1817 7.25838 19.2153L3.75213 20.3853L4.92119 16.879C4.95489 16.7783 4.9668 16.6715 4.95613 16.5658C4.94547 16.4601 4.91247 16.3579 4.85932 16.2659C3.94991 14.6936 3.58479 12.8652 3.82059 11.0642C4.05639 9.26326 4.87993 7.59046 6.16346 6.30531C7.44699 5.02016 9.11875 4.19451 10.9194 3.95643C12.7201 3.71836 14.549 4.08117 16.1224 4.98858C17.6958 5.896 18.9258 7.29729 19.6215 8.97508C20.3173 10.6529 20.4399 12.5134 19.9703 14.268C19.5008 16.0225 18.4654 17.5731 17.0246 18.6792C15.5839 19.7853 13.8185 20.385 12.0021 20.3853Z" fill="white" />
@@ -99,8 +99,8 @@
                         </div>
                     </div>
                     <div class="grow shrink basis-0 flex-col justify-start items-start gap-1 inline-flex">
-                        <div class="text-black text-xl font-bold font-['Plus Jakarta Sans'] leading-[30px]">Clear Doubts easily</div>
-                        <div class="self-stretch text-[#555555] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">You won't be talking to pushy salesmen. You'll only be engaging with exceptional advisors</div>
+                        <div class="text-black text-xl font-bold font-['Plus Jakarta Sans'] leading-[30px]">Genuine Experts</div>
+                        <div class="self-stretch text-[#555555] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">Every advisor is a seasoned forex specialist.</div>
                     </div>
                 </div>
 
@@ -119,8 +119,8 @@
                         </div>
                     </div>
                     <div class="grow shrink basis-0 flex-col justify-start items-start gap-1 inline-flex">
-                        <div class="text-black text-xl font-bold font-['Plus Jakarta Sans'] leading-[30px]">Clear Doubts easily</div>
-                        <div class="self-stretch text-[#555555] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">You won't be talking to pushy salesmen. You'll only be engaging with exceptional advisors</div>
+                        <div class="text-black text-xl font-bold font-['Plus Jakarta Sans'] leading-[30px]">No Spam</div>
+                        <div class="self-stretch text-[#555555] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">We’ll only call when it’s necessary — no spam calls, ever.</div>
                     </div>
                 </div>
 
@@ -139,8 +139,8 @@
                         </div>
                     </div>
                     <div class="grow shrink basis-0 flex-col justify-start items-start gap-1 inline-flex">
-                        <div class="text-black text-xl font-bold font-['Plus Jakarta Sans'] leading-[30px]">Clear Doubts easily</div>
-                        <div class="self-stretch text-[#555555] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">You won't be talking to pushy salesmen. You'll only be engaging with exceptional advisors</div>
+                        <div class="text-black text-xl font-bold font-['Plus Jakarta Sans'] leading-[30px]">Advice, Not Sales</div>
+                        <div class="self-stretch text-[#555555] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">We're here to clear your doubts, not to sell services.</div>
                     </div>
                 </div>
 
@@ -159,8 +159,8 @@
                         </div>
                     </div>
                     <div class="grow shrink basis-0 flex-col justify-start items-start gap-1 inline-flex">
-                        <div class="text-black text-xl font-bold font-['Plus Jakarta Sans'] leading-[30px]">Clear Doubts easily</div>
-                        <div class="self-stretch text-[#555555] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">You won't be talking to pushy salesmen. You'll only be engaging with exceptional advisors</div>
+                        <div class="text-black text-xl font-bold font-['Plus Jakarta Sans'] leading-[30px]">Absolutely Free</div>
+                        <div class="self-stretch text-[#555555] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">It's completely free. No strings attached.</div>
                     </div>
                 </div>
             </div>
@@ -451,18 +451,6 @@
             </div>
 
 
-            <div class="h-14 px-2 py-2.5 bg-[#4add65]/5 rounded-lg border border-[#4add65]/10 justify-center items-center gap-2 inline-flex">
-                <div class="w-8 h-8 bg-[#20bc73] rounded-3xl justify-center items-center gap-2.5 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M14.6565 11.3156L12.1565 10.0656C12.0581 10.0166 11.9485 9.99438 11.8387 10.0012C11.729 10.0081 11.623 10.0438 11.5315 10.1047L10.3838 10.8703C9.85697 10.5807 9.42342 10.1471 9.13381 9.62031L9.89943 8.47266C9.96034 8.38112 9.99603 8.27514 10.0029 8.1654C10.0097 8.05567 9.98753 7.94606 9.93849 7.84766L8.68849 5.34766C8.63668 5.24302 8.5566 5.155 8.45732 5.09355C8.35804 5.0321 8.24353 4.9997 8.12677 5C7.29797 5 6.50312 5.32924 5.91707 5.91529C5.33101 6.50134 5.00177 7.2962 5.00177 8.125C5.00384 9.94773 5.72883 11.6952 7.0177 12.9841C8.30656 14.2729 10.054 14.9979 11.8768 15C12.2872 15 12.6935 14.9192 13.0727 14.7621C13.4518 14.6051 13.7963 14.3749 14.0865 14.0847C14.3767 13.7945 14.6069 13.45 14.7639 13.0709C14.9209 12.6917 15.0018 12.2854 15.0018 11.875C15.0019 11.7589 14.9696 11.645 14.9086 11.5462C14.8476 11.4474 14.7603 11.3676 14.6565 11.3156ZM11.8768 13.75C10.3854 13.7483 8.95566 13.1552 7.90113 12.1006C6.84659 11.0461 6.25343 9.61633 6.25177 8.125C6.25165 7.6915 6.40175 7.27135 6.67651 6.93605C6.95127 6.60075 7.33373 6.37101 7.75881 6.28594L8.65568 8.08281L7.8924 9.21875C7.83536 9.30431 7.80032 9.40262 7.79037 9.50496C7.78042 9.60731 7.79588 9.71053 7.83537 9.80547C8.28254 10.8683 9.12804 11.7138 10.1908 12.1609C10.2861 12.2022 10.3901 12.2191 10.4935 12.2101C10.5968 12.2011 10.6964 12.1665 10.783 12.1094L11.9244 11.3484L13.7213 12.2453C13.6356 12.6709 13.4048 13.0535 13.0684 13.3279C12.7321 13.6023 12.3109 13.7515 11.8768 13.75ZM10.0018 1.875C8.59901 1.87469 7.22007 2.23757 5.99916 2.9283C4.77825 3.61904 3.75697 4.6141 3.03472 5.81664C2.31247 7.01918 1.91387 8.38822 1.8777 9.79052C1.84153 11.1928 2.16904 12.5806 2.82834 13.8188L1.94162 16.4789C1.86817 16.6992 1.85751 16.9355 1.91083 17.1615C1.96416 17.3874 2.07936 17.5941 2.24353 17.7582C2.4077 17.9224 2.61435 18.0376 2.84031 18.0909C3.06627 18.1443 3.30262 18.1336 3.52287 18.0602L6.18302 17.1734C7.27269 17.753 8.48007 18.0767 9.71351 18.12C10.947 18.1633 12.1741 17.925 13.3017 17.4232C14.4293 16.9215 15.4278 16.1694 16.2213 15.2241C17.0149 14.2789 17.5827 13.1652 17.8816 11.9678C18.1805 10.7703 18.2026 9.52047 17.9464 8.31315C17.6902 7.10584 17.1623 5.97276 16.4027 4.99993C15.6432 4.02711 14.672 3.24009 13.563 2.69864C12.4539 2.15718 11.236 1.87551 10.0018 1.875ZM10.0018 16.875C8.79316 16.8758 7.60576 16.5575 6.55959 15.9523C6.48299 15.9079 6.39783 15.8803 6.30974 15.8713C6.22166 15.8622 6.13266 15.872 6.04865 15.9L3.12677 16.875L4.10099 13.9531C4.12908 13.8692 4.139 13.7802 4.13011 13.6921C4.12122 13.604 4.09372 13.5188 4.04943 13.4422C3.29159 12.132 2.98733 10.6083 3.18383 9.10747C3.38033 7.60667 4.06661 6.21267 5.13622 5.14171C6.20582 4.07076 7.59896 3.38271 9.0995 3.18431C10.6001 2.98592 12.1241 3.28826 13.4353 4.04444C14.7465 4.80062 15.7715 5.96837 16.3513 7.36652C16.9311 8.76468 17.0332 10.3151 16.642 11.7773C16.2507 13.2394 15.3878 14.5316 14.1872 15.4533C12.9866 16.375 11.5154 16.8748 10.0018 16.875Z" fill="white" />
-                    </svg>
-                </div>
-                <div class="grow shrink basis-0 text-[#20bc73] text-[13px] font-normal font-['Plus Jakarta Sans'] leading-[16.90px]">Outside India? Please expect a WhatsApp call.</div>
-            </div>
-
-
-
-
             <div class="mt-4">
                 <p class="text-black/60 text-sm font-medium leading-[21px]">Got a question?</p>
                 <input value="" id="question" placeholder="Type your question here." type="text" class="h-12 p-2 rounded-lg border border-black/10 text-black text-sm w-full mt-2 outline-none font-bold">
@@ -571,11 +559,12 @@
             removeAlertBelowElement(document.querySelector('#mobContainer'))
         }
 
-        console.log(fullName, question, mobNumber, countryCode);
+        console.log(fullName, question, mobNumber, parseInt(countryCode));
 
         const formData = new URLSearchParams();
         formData.append('r_name', fullName);
         formData.append('r_phno', mobNumber);
+        formData.append('r_code', parseInt(countryCode));
         formData.append('r_msg', question);
         formData.append('user_email', '');
         formData.append('user_location', '');
@@ -601,7 +590,7 @@
     });
 
 
-    function showSuccessPopup(message = 'Request send successfully!') {
+    function showSuccessPopup(message = 'Request sent successfully!') {
         // Create popup container
         const popup = document.createElement('div');
         popup.className = 'success-popup';
@@ -626,15 +615,4 @@
             }, 300); // Wait for fade out animation
         }, 2000); // Show for 2 seconds
     }
-
-
-    document.querySelector('#callBackCountryCodeMain').addEventListener('dropdownChange', () => {
-        let val = document.querySelector('#callBackCountryCodeMain').getAttribute('dataval');
-
-        if (val != 'IN') {
-            console.log('other')
-        } else {
-            console.log('Indian')
-        }
-    });
 </script>
