@@ -1,15 +1,15 @@
-let nextPageUrl='/orderv2/Complete-KYC'
+let nextPageUrl = '/orderv2/Complete-KYC'
 
 // Then on the previous page, use this to detect when the page is revisited
-window.addEventListener('pageshow', function(event) {
+window.addEventListener('pageshow', function (event) {
     if (event.persisted) {
         // Force reload if the page is cached
         window.location.reload();
     }
 });
 
-if(!userCheck()){
-    window.location.href='/'
+if (!userCheck()) {
+    window.location.href = '/'
 }
 
 function formatAmount(amount) {
@@ -19,10 +19,16 @@ function formatAmount(amount) {
 let token = sessionStorage.getItem('token')
 console.log(token)
 document.addEventListener('DOMContentLoaded', async () => {
+
+   await loadSummary();
+
+});
+
+async function loadSummary() {
     loadinggg(true)
 
     try {
-        const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+
         const params = new URLSearchParams({
             action: 'summary',
             token: token
@@ -44,46 +50,57 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (resp) {
             console.log(resp);
-            if(!resp.bank_charges){
+            if (!resp.bank_charges) {
                 // window.location.href='/error.html'
             }
 
-            if(sessionStorage.getItem('productPage')==='fx'){
+            if (sessionStorage.getItem('productPage') === 'fx') {
                 if (resp.delivery_opted === '0') {
                     document.querySelector('#doorDeliveryData').style.display = "none"
-                    document.querySelector('#paymentInfoText').innerHTML=`Visit store before <b>${resp.delivery_on}</b> . Full/partial payment required before store visit. Payment instructions will be shared on your registered email after KYC verification.`
-                }else{
+                    document.querySelector('#paymentInfoText').innerHTML = `Visit store before <b>${resp.delivery_on}</b> . Full/partial payment required before store visit. Payment instructions will be shared on your registered email after KYC verification.`
+                } else {
                     document.querySelector('#deliveryFee').innerHTML = '₹' + resp.door_fee;
-                    document.querySelector('#paymentInfoText').textContent='Full payment required before delivery. Payment instructions will be shared on your registered email after KYC verification.'
+                    document.querySelector('#paymentInfoText').textContent = 'Full payment required before delivery. Payment instructions will be shared on your registered email after KYC verification.'
                 }
-                document.querySelector('#totalAmnt').innerHTML =formatAmount(resp.total) ;
-    
+                document.querySelector('#totalAmnt').innerHTML = formatAmount(resp.total);
+
                 document.querySelector('#gst').innerHTML = '₹' + resp.gst;
                 // Handle the response
-    
+
                 const productListContainer = document.getElementById('productList');
                 // Clear the existing product list (if any)
                 productListContainer.innerHTML = '';
-    
-                let productList=resp.order_details
+
+                let productList = resp.order_details
                 // Loop through the productList array and generate HTML for each product
                 productList.forEach(product => {
                     const productHTML = generateProductHTML(product);
                     productListContainer.appendChild(productHTML);
                 });
+
             }
 
-            if(sessionStorage.getItem('productPage')==='mt'){
-                document.querySelector('#currencyMt').textContent=`${resp.order_details[0].currency} @ ${resp.order_details[0].rate}`;
-                document.querySelector('#currencyMtAmnt').textContent=resp.order_details[0].amount;
-                document.querySelector('#currencyMtAmntinr').textContent=`₹  ${formatIndianCurrency(resp.order_details[0].amount*resp.order_details[0].rate)}`
-                resp.zero_bb_charge?document.querySelector('#intermediatoryNote').style.display='none':''
+            if (sessionStorage.getItem('productPage') === 'mt') {
+                document.querySelector('#currencyMt').innerHTML = `${resp.order_details[0].currency} @${resp.order_details[0].past_rate !== '0'
+                    ? `<s>${resp.order_details[0].past_rate}</s>`
+                    : ''
+                    } ${resp.order_details[0].rate}`;
+
+                document.querySelector('#currencyMtAmnt').textContent = resp.order_details[0].amount;
+                document.querySelector('#currencyMtAmntinr').textContent = `₹  ${formatIndianCurrency(resp.order_details[0].amount * resp.order_details[0].rate)}`
+                resp.zero_bb_charge ? document.querySelector('#intermediatoryNote').style.display = 'none' : ''
                 document.querySelector('#gstMt').innerHTML = '₹ ' + resp.gst;
                 document.querySelector('#bankCharges').innerHTML = '₹ ' + resp.bank_charges;
-                document.querySelector('#totalAmnt').innerHTML = '₹ ' +formatIndianCurrency(resp.total);
+                document.querySelector('#totalAmnt').innerHTML = '₹ ' + formatIndianCurrency(resp.total);
+                if (resp.discount != "") {
+                    intiateDiscountSection(resp.coupon_applied, resp.discount);
+                } else {
+                    intiateDiscountSection()
+                }
+
             }
 
-            
+
 
             loadinggg(false)
         }
@@ -92,7 +109,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         // location.href='/error.html'
 
     }
-});
+}
 
 
 // Function to generate the HTML for each product
@@ -147,60 +164,199 @@ document.querySelector('#summaryConfirm').addEventListener('click', () => {
 
 const getUserIP = async () => {
     try {
-      const response = await fetch('https://api.ipify.org?format=json');
-      const data = await response.json();
-      return data.ip;
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        return data.ip;
     } catch (error) {
-      console.error('Error fetching user IP:', error);
-      return null;
+        console.error('Error fetching user IP:', error);
+        return null;
     }
-  };
-  
-  const placeOrder = async () => {
-      console.log('hey');
-  
-      try {
-          // Fetch the user IP before proceeding
-          const userIP = await getUserIP();
-          if (!userIP) {
-              throw new Error("Could not retrieve user IP address.");
-          }
-  
-          
-          const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
-          const params = new URLSearchParams({
-              action: 'create_order',
-              token: token,
-              userip: userIP // Add the user IP to the params
-          });
+};
 
-          
-          
-  
-          const response = await fetch(apiUrl, {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/x-www-form-urlencoded',
-              },
-              body: params.toString(),
-          });
-  
-          if (!response.ok) {
-              throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-  
-          const resp = await response.json();
-          
-          if (resp.status) {
-              console.log(resp);
-              sessionStorage.setItem('orderId', resp.orderID);
-              location.href = nextPageUrl;
-              setTimeout(() => {
-                  loadinggg(false);
-              }, 2000);
-          }
-      } catch (error) {
-          console.error('Error fetching data:', error);
-          location.href = '/error.html';
-      }
-  };
+const placeOrder = async () => {
+    console.log('hey');
+
+    try {
+        // Fetch the user IP before proceeding
+        const userIP = await getUserIP();
+        if (!userIP) {
+            throw new Error("Could not retrieve user IP address.");
+        }
+
+
+
+        const params = new URLSearchParams({
+            action: 'create_order',
+            token: token,
+            userip: userIP // Add the user IP to the params
+        });
+
+
+
+
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: params.toString(),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const resp = await response.json();
+
+        if (resp.status) {
+            console.log(resp);
+            sessionStorage.setItem('orderId', resp.orderID);
+            location.href = nextPageUrl;
+            setTimeout(() => {
+                loadinggg(false);
+            }, 2000);
+        }
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        location.href = '/error.html';
+    }
+};
+
+
+function intiateDiscountSection(coupon = null, discount = null) {
+
+    let trigger = document.querySelector('#discountCodeTrigger')
+    let discountInputContainer = document.querySelector('#discountInputContainer')
+    let discountInput = document.querySelector('#discountInput')
+    let discountApplyBtn = document.querySelector('#applyCoupon')
+    let discountRemoveContainer = document.querySelector('#discountCouponRemoveContainer');
+    let couponCode = document.querySelectorAll('.couponCode');
+    let discountRate = document.querySelector('#discountRate')
+    let discountRemoveBtn = document.querySelector('#removeCoupon')
+
+    if (coupon && discount) {
+        trigger.style.display = 'none'
+        discountInputContainer.style.display = 'none'
+        discountRemoveContainer.style.display = 'flex'
+        couponCode.forEach(item => {
+            item.textContent = coupon;
+        })
+        discountRate.textContent = ' ₹' + discount
+        discountRemoveBtn.addEventListener('click', () => {
+            removeCoupon()
+        })
+
+    }
+    else {
+        discountRemoveContainer.style.display = 'none';
+        trigger.style.display = 'flex'
+        trigger.addEventListener('click', () => {
+            console.log(discountInputContainer.style.display)
+            if (discountInputContainer.style.display === 'none') {
+                discountInputContainer.style.display = 'flex'
+                discountInput.focus()
+                discountApplyBtn.addEventListener('click', async () => await handleApplyCoupon(discountInput.value))
+            }else if(discountInputContainer.style.display === 'flex'){
+                discountInputContainer.style.display = 'none'
+
+                removeAlertBelowElement(discountInputContainer);
+            }
+
+        })
+    }
+
+}
+
+async function handleApplyCoupon(val) {
+    if (!val || val.trim() === "") {
+        insertAlertBelowElement(discountInputContainer, 'Enter a valid coupon code!')
+        return;
+    } else {
+        removeAlertBelowElement(discountInputContainer);
+
+        try {
+            const params = new URLSearchParams({
+                action: 'validate_coupon',
+                token: token,
+                coupon: val
+            });
+            console.log(params.toString())
+
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: params.toString(),
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const resp = await response.json();
+            console.log(resp)
+
+            if (resp.status) {
+                loadSummary()
+            }
+            if (resp.status == 2) {
+                insertAlertBelowElement(discountInputContainer, 'Coupon only valid for order of minimum ₹' + resp.min_order)
+                return
+            }
+            if (resp.status == 0) {
+                insertAlertBelowElement(discountInputContainer, 'Enter a valid coupon code!')
+                return;
+            }
+
+
+        } catch (error) {
+            console.log(error)
+        }
+
+    }
+
+
+}
+
+async function removeCoupon() {
+    try {
+        const params = new URLSearchParams({
+            action: 'remove_coupon',
+            token: token,
+        });
+        console.log(params.toString())
+
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: params.toString(),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const resp = await response.json();
+        if (resp) {
+            loadSummary()
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

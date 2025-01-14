@@ -219,7 +219,7 @@ if (sessionStorage.getItem('productPage') === 'fx') {
 
 
         try {
-            const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+            
 
             const params = new URLSearchParams({
                 action: 'add_remove_product',
@@ -330,7 +330,7 @@ if (sessionStorage.getItem('productPage') === 'fx') {
                 // Declare and immediately invoke the async function
                 (async () => {
                     try {
-                        const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+                        
                         const params = new URLSearchParams({
                             action: 'save_amount',
                             token: token,  // Ensure token is defined
@@ -379,7 +379,7 @@ if (sessionStorage.getItem('productPage') === 'fx') {
                     loadinggg(true)
 
                     try {
-                        const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+                        c
 
                         const params = new URLSearchParams({
                             action: 'add_remove_product',
@@ -539,7 +539,7 @@ if (sessionStorage.getItem('productPage') === 'mt') {
         city: mtCity
     });
 
-    fetch('https://mvc.extravelmoney.com/api-etm/', {
+    fetch(apiUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -616,7 +616,7 @@ if (sessionStorage.getItem('productPage') === 'mt') {
                     storeID: item.storeID
                 });
 
-                fetch('https://mvc.extravelmoney.com/api-etm/', {
+                fetch(apiUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
@@ -730,7 +730,7 @@ if (countryCode === "91" && mobNumber.value.length !== 10) {
     (async () => {
         loadinggg(true)
         try {
-            const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+            
             const params = new URLSearchParams({
                 action: 'send_otp',
                 token: token,  // Assuming `token` is defined elsewhere in your code
@@ -833,7 +833,6 @@ function verifyOtp() {
     (async () => {
         loadinggg(true)
         try {
-            const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
             const params = new URLSearchParams({
                 action: 'check_otp',
                 token: token,

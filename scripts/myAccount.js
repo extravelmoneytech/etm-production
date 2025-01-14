@@ -1,12 +1,15 @@
-if(!userCheck()){
-    window.location.href='/login'
+if (!userCheck()) {
+    window.location.href = '/login'
 }
-console.log(userInfoCheck,'heyyy');
+console.log(userInfoCheck, 'heyyy');
 let mobNum = userInfoCheck.mobNum;
 let countryCode = userInfoCheck.countryCode;
 let userId = userInfoCheck.userId;
 console.log(userId, countryCode, mobNum);
-let singleOrderPageFlag=false;
+let singleOrderPageFlag = false;
+let referralActive = false;
+let referralCode;
+let referralCoupon;
 let paramsData = {
     action: 'user_profile_data',
     mobile: mobNum,
@@ -17,7 +20,7 @@ const params = new URLSearchParams(paramsData);
 
 // Making the POST request
 loadinggg(true);
-fetch('https://mvc.extravelmoney.com/api-etm/', {
+fetch(apiUrl, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -26,14 +29,31 @@ fetch('https://mvc.extravelmoney.com/api-etm/', {
 })
     .then(response => response.json())
     .then(data => {
-        console.log(data)
-        document.querySelector("#userName").textContent=data.customer_name
+        console.log(data, 'data')
+        document.querySelector("#userName").textContent = data.customer_name
         document.querySelector("#avatar").querySelector('span').textContent = data.customer_name.charAt(0);
-        document.querySelector("#earningCount").textContent=formatAmount(data.earnings)
-        document.querySelector("#referalCount").textContent=data.ref_orders
+        document.querySelector("#earningCount").textContent = formatAmount(data.earnings)
+        document.querySelector("#referalCount").textContent = data.ref_orders
+        if (data.aff_token !== "") {
+            referralActive = true;
+            referralCoupon = data.aff_coupon;
+            referralCode = data.aff_token;
+            console.log(referralCoupon, referralCode, 'test')
+        }
+        document.querySelector('#referralCopy').addEventListener('click', () => {
+            handleReferral(1)
+        })
+        document.querySelector('#whatsappAffiliate').addEventListener('click', () => {
+            handleReferral(2)
+        })
+        document.querySelector('#emailAffiliate').addEventListener('click', () => {
+            handleReferral(3)
+        })
+    
+
         if (data.order_list && data.order_list.length > 0) {
-            document.querySelector('#orderListTable').style.display='table'
-            document.querySelector('#order_count').textContent=data.order_count
+            document.querySelector('#orderListTable').style.display = 'table'
+            document.querySelector('#order_count').textContent = data.order_count
             document.querySelector('.listContainer').innerHTML = "";
             data.order_list.forEach(item => {
                 createList(item);
@@ -41,7 +61,7 @@ fetch('https://mvc.extravelmoney.com/api-etm/', {
             initiateSearch()
             initiateTransactionChange()
             addViewButtonListeners();
-            
+
         } else {
             const tbody = document.querySelector('.listContainer');
             tbody.innerHTML = '<tr><td colspan="8">No orders found</td></tr>';
@@ -54,12 +74,90 @@ fetch('https://mvc.extravelmoney.com/api-etm/', {
         tbody.innerHTML = '<tr><td colspan="8">Failed to load orders. Please try again later.</td></tr>';
     });
 
+
+function handleReferral(val) {
+    if (!referralActive) {
+        let params = new URLSearchParams({
+            action: "activate_referral",
+            uid: userId,
+            country_code: countryCode,
+            mobile: mobNum
+        });
+
+        fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: params.toString() // Properly encoding the parameters
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data, 'dataCHECK');
+                referralCoupon = data.aff_coupon
+                referralCode = data.aff_token
+                makeReferralContent(val,referralCoupon,referralCode)
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+    else {
+        makeReferralContent(val,referralCoupon,referralCode)
+    }
+}
+function makeReferralContent(val, referralCoupon = null, referralCode = null) {
+    const textToCopy = `Use coupon: ${referralCoupon} to get discounts on forex services. Check it out here: https://www.extravelmoney.com/?aff=${referralCode}`;
+
+    if (val == 1) {
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => showSuccessPopup('Copied to clipboard'))
+            .catch(err => console.error('Failed to copy text: ', err));
+    }
+    if (val == 2) {
+        const encodedText = encodeURIComponent(textToCopy);
+        window.open(`https://api.whatsapp.com/send?text=${encodedText}`, '_blank');
+    }
+    if (val == 3) {
+        const encodedSubject = encodeURIComponent('Check out this coupon');
+        const encodedBody = encodeURIComponent(textToCopy);
+        window.open(`mailto:someone@gmail.com?subject=${encodedSubject}&body=${encodedBody}`, '_blank');
+    }
+}
+
+
+function showSuccessPopup(message = 'Request sent successfully!') {
+    // Create popup container
+    const popup = document.createElement('div');
+    popup.className = 'success-popup';
+
+    // Add checkmark SVG
+    popup.innerHTML = `
+    <svg class="checkmark" viewBox="0 0 52 52">
+        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+    </svg>
+    <span>${message}</span>
+`;
+
+    // Add to document
+    document.body.appendChild(popup);
+
+    // Remove after delay
+    setTimeout(() => {
+        popup.classList.add('fade-out');
+        setTimeout(() => {
+            document.body.removeChild(popup);
+        }, 30000); // Wait for fade out animation
+    }, 2000); // Show for 2 seconds
+}
+
 function createList(item) {
     const tbody = document.querySelector('.listContainer');
     const row = document.createElement('tr');
 
     // Determine transaction type
-    const transactionType = item.txn==="oe"?"mt":item.txn.toLowerCase() || 'mt'; // Default to 'mt'
+    const transactionType = item.txn === "oe" ? "mt" : item.txn.toLowerCase() || 'mt'; // Default to 'mt'
 
     // Add a `value` attribute to the row for filtering
     row.setAttribute('value', transactionType);
@@ -96,7 +194,7 @@ function createList(item) {
 
 function displayAffectedRows(rows, filterCallback, highlightCallback = null, orderCountElement = null) {
     let visibleCount = 0; // Count visible rows for dynamic updates
-    let noOrderFoundAlert=document.querySelector('#noOrderFoundAlert')
+    let noOrderFoundAlert = document.querySelector('#noOrderFoundAlert')
     rows.forEach(row => {
         console.log(row)
         if (filterCallback(row)) {
@@ -111,11 +209,11 @@ function displayAffectedRows(rows, filterCallback, highlightCallback = null, ord
             row.style.display = 'none'; // Hide the row if it doesn't pass the filter
         }
     });
-    
+
     if (visibleCount === 0) {
-        noOrderFoundAlert.style.display='block'
-    }else{
-        noOrderFoundAlert.style.display='none'
+        noOrderFoundAlert.style.display = 'block'
+    } else {
+        noOrderFoundAlert.style.display = 'none'
     }
     // Update the order count if an element is provided
     if (orderCountElement) {
@@ -239,16 +337,16 @@ function addViewButtonListeners() {
     viewButtons.forEach(button => {
         button.addEventListener('click', () => {
             const row = button.closest('tr'); // Find the closest parent row for the clicked button
-            
+
             // Extract required values from the row
             uid = userInfoCheck.userId; // Assuming `uid` is globally available
             const orderNo = row.querySelector('td:nth-child(2)')?.textContent.trim(); // Order number
             const txn = row.getAttribute('value'); // Transaction type stored in the "value" attribute
-            
+
             if (uid && orderNo && txn) {
                 // Make the API call with these values
-                window.location.href=`order/?inid=${orderNo}&type=${txn}`
-                
+                window.location.href = `order/?inid=${orderNo}&type=${txn}`
+
             } else {
                 console.error('Missing required values for API call:', { uid, orderNo, txn });
             }

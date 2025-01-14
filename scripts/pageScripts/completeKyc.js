@@ -63,7 +63,7 @@ const kycData = async () => {
     }
     console.log('hey')
     try {
-        const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+        
         const params = new URLSearchParams({
             action: 'kyc_data',  // Removed extra whitespace
             orderID: orderId,
@@ -223,7 +223,7 @@ function createKycUploaders(documentObject) {
 
 
 async function deleteFileFromApi(data) {
-    const apiUrl = 'https://mvc.extravelmoney.com/api-etm/';
+    
     // Construct the parameters for the API call
     const params = new URLSearchParams({
         action: 'kyc_delete',

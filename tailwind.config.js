@@ -13,6 +13,7 @@ module.exports = {
     './src/**/*.{html,js,php}', // All source files
     './stylesv2/**/*.{html,js,php}',
     './wire-transfer/**/*.{html,js,php}',
+    './university-payment/**/*.{html,js,php}',
   ],
   theme: {
     extend: {
