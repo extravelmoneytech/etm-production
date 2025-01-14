@@ -43,7 +43,7 @@
 
                                     <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 md:mt-4">Book & Verify</div>
 
-                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 mt:mt-4">Book the best forex rates from money changers near you & get your KYC verified.</p>
+                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Book the best forex rates from money changers near you & get your KYC verified.</p>
                                     
                                     <div class="overflow-hidden mt-auto">
                                         <img class="max-w-60 mt-10 lg:mt-20"  src="<?php echo $fold . 'public/images/how-it-works2.webp'; ?>" alt="">
@@ -57,7 +57,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 mt:mt-4">Transfer Funds</div>
+                                    <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 md:mt-4">Transfer Funds</div>
 
                                     <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Securely transfer funds to the RBI approved money changer via NEFT/UPI.</p>
                                     
@@ -98,7 +98,7 @@
 
                                     <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 md:mt-4">Book & Verify</div>
 
-                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 mt:mt-4">Compare live rates from trusted exchange houses and banks online. Book & get KYC verified.</p>
+                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Compare live rates from trusted exchange houses and banks online. Book & get KYC verified.</p>
                                     
                                     <div class="overflow-hidden mt-auto">
                                         <img class="max-w-60 mt-10 lg:mt-20" src="<?php echo $fold . 'public/images/how-it-works2.webp'; ?>" alt="">
@@ -112,7 +112,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 mt:mt-4">Transfer Funds</div>
+                                    <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 md:mt-4">Transfer Funds</div>
 
                                     <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Securely transfer funds to your chosen exchange house or bank via NEFT/RTGS.</p>
                                     

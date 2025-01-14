@@ -8,7 +8,7 @@
                                     <span
                                         class="text-black text-opacity-60 font-semibold text-sm sm:text-base tracking-tighter">Users</span>
                                     <div class="flex">
-                                    <img src="<?php echo $fold . 'public/images/users.png'; ?>" alt="" style="width:5.5rem;object-fit:contain;"> 
+                                    <img style="width:5.5rem;object-fit:contain;max-width:5rem;" src="<?php echo $fold . 'public/images/users.webp?ver=1.1'; ?>" alt="" > 
 
                                     </div>
                                 </div>
@@ -17,9 +17,9 @@
                             <div
                                 class="flex flex-col justify-center sm:justify-between items-center  w-2/6 sm:w-1/3">
                                 <img class="h-auto self-auto w-20 sm:w-24"
-     src="<?php echo $fold . 'public/images/logo/trustpilot-logo.svg'; ?>" alt="trustpilot-logo">
+     src="<?php echo $fold . 'public/images/logo/trustpilot-logo.svg?ver=1.1'; ?>" alt="trustpilot-logo">
 
-                                <span class="text-green-500 text-2xl   font-semibold">4.9/5</span>
+                                <span class="text-green-500 text-2xl   font-semibold">4.8/5</span>
                                 
                                 <a  target="_blank" href="https://www.trustpilot.com/review/extravelmoney.com"><span
                                     class="underline hidden sm:block text-gray-400 text-xs font-normal cursor-pointer">See

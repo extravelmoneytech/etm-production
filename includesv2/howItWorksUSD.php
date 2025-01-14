@@ -11,14 +11,12 @@
 
 <section id="howItWorkSection" class="mt-24 px-5 sm:px-12 md:px-24">
 
-<p class="text-[#18325b] text-3xl font-extrabold">Its Done! in 3 simple steps</p>
+<p class="text-[#18325b] text-3xl font-extrabold">How to Buy USD in <?php echo $city;?>?</p>
 
 
 
                 <div  class="overflow-hidden mt-2 lg:mt-8">
                     <div id="howItWorksCardContainer" class="flex duration-300 ">
-                        
-        
                         <div class="cards-wrapper w-full flex-none">
                             <div class="mt-6 grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 min-w-[250px] w-full gap-4 sm:gap-8 md:gap-12">
                                 <div class="howItWorksCard bg-[#cfe3fb]/60 rounded-3xl flex items-center flex-col px-8 md:px-12 ">
@@ -30,10 +28,10 @@
 
                                     <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 md:mt-4">Book & Verify</div>
 
-                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Compare live rates from trusted exchange houses and banks online. Book & get KYC verified.</p>
+                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Book the best forex rates from money changers near you & get your KYC verified.</p>
                                     
                                     <div class="overflow-hidden mt-auto">
-                                        <img class="max-w-60 mt-10 lg:mt-20" src="<?php echo $fold . 'public/images/how-it-works2.webp'; ?>" alt="">
+                                        <img class="max-w-60 mt-10 lg:mt-20"  src="<?php echo $fold . 'public/images/how-it-works2.webp'; ?>" alt="">
                                     </div>
                                 </div>
 
@@ -46,7 +44,7 @@
 
                                     <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 md:mt-4">Transfer Funds</div>
 
-                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Securely transfer funds to your chosen exchange house or bank via NEFT/RTGS.</p>
+                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Securely transfer funds to the RBI approved money changer via NEFT/UPI.</p>
                                     
                                     <div class="overflow-hidden mt-auto">
                                         <img class="max-w-60 mt-10 lg:mt-20" src="<?php echo $fold . 'public/images/how-it-works.webp'; ?>" alt="">
@@ -60,9 +58,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 md:mt-4">Get Paid!</div>
+                                    <div class="text-[#18325b] text-2xl md:text-3xl font-extrabold mt-2 md:mt-4">Get Forex!</div>
 
-                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Sit back and relax! Your beneficiary will receive the funds within 48 working hours.</p>
+                                    <p class="text-center text-[#18325b]  md:text-lg font-normal leading-[27px] mt-2 md:mt-4">Get your currency or forex card at your doorstep, or collect it from the store within 48 hours!</p>
                                     
                                     <div class="overflow-hidden mt-auto">
                                         <img class="max-w-60 mt-10 lg:mt-20" src="<?php echo $fold . 'public/images/how-it-works3.webp'; ?>" alt="">
@@ -73,6 +71,8 @@
         
                             </div>
                         </div>
+        
+                        
                     </div>
                     
                 </div>
