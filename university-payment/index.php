@@ -17,8 +17,6 @@ include $fold . 'includesv2/head.php';
 ?>
 
 
-
-
 <body>
     <div class="flex flex-col items-center justify-center relative bg-white">
         <div class="chooseCityOverlay absolute top-0 left-0 w-full h-[100vh] bg-white customMd:bg-black/30  customMd:bg-opacity-60  z-20"
@@ -438,8 +436,6 @@ include $fold . 'includesv2/head.php';
 
 
 
-
-
             <?php
             include $fold . 'includesv2/press.php';
 
@@ -466,7 +462,8 @@ include $fold . 'includesv2/head.php';
                             <span class="flag-icon flag-icon-au mr-2 "></span>
                             <div class="text-black text-xl font-semiboldleading-[30px]">Australia</div>
                         </div>
-                        <p class="text-[#666666] text-[15px] font-normal leading-snug mt-2">Pay Tuition Fees for These Universities in Australia</p>
+                        <p class="text-[#666666] text-[15px] font-normal leading-snug mt-2">Pay Tuition Fees for These
+                            Universities in Australia</p>
 
                         <div class="flex flex-wrap mt-6 gap-x-20 gap-y-6 sm:gap-y-10">
                             <p class="text-black text-base font-medium leading-normal">1. Deakin University</p>
@@ -486,7 +483,8 @@ include $fold . 'includesv2/head.php';
                             <span class="flag-icon flag-icon-ca mr-2 "></span>
                             <div class="text-black text-xl font-semiboldleading-[30px]">Canada</div>
                         </div>
-                        <p class="text-[#666666] text-[15px] font-normal leading-snug mt-2">Pay Tuition Fees for These Universities in Canada</p>
+                        <p class="text-[#666666] text-[15px] font-normal leading-snug mt-2">Pay Tuition Fees for These
+                            Universities in Canada</p>
 
                         <div class="flex flex-wrap mt-6 gap-x-20 gap-y-6 sm:gap-y-10">
                             <p class="text-black text-base font-medium leading-normal">1. Algonquin College</p>
@@ -500,7 +498,8 @@ include $fold . 'includesv2/head.php';
                             <p class="text-black text-base font-medium leading-normal">9. Niagra College</p>
                             <p class="text-black text-base font-medium leading-normal">10. Northern College</p>
                             <p class="text-black text-base font-medium leading-normal">11. Sheridan College</p>
-                            <p class="text-black text-base font-medium leading-normal">12. University of British Columbia</p>
+                            <p class="text-black text-base font-medium leading-normal">12. University of British
+                                Columbia</p>
                             <p class="text-black text-base font-medium leading-normal">13. University of Alberta</p>
                             <p class="text-black text-base font-medium leading-normal">14. University of Calgary</p>
                             <p class="text-black text-base font-medium leading-normal">15. University of Windsor</p>
@@ -513,45 +512,58 @@ include $fold . 'includesv2/head.php';
                             <span class="flag-icon flag-icon-gb mr-2 "></span>
                             <div class="text-black text-xl font-semiboldleading-[30px]">UK (United Kingdom)</div>
                         </div>
-                        <p class="text-[#666666] text-[15px] font-normal leading-snug mt-2">Pay Tuition Fees for These Universities in UK</p>
+                        <p class="text-[#666666] text-[15px] font-normal leading-snug mt-2">Pay Tuition Fees for These
+                            Universities in UK</p>
 
                         <div class="flex flex-wrap mt-6 gap-x-20 gap-y-6 sm:gap-y-10">
                             <p class="text-black text-base font-medium leading-normal">1. BPP University</p>
-                            <p class="text-black text-base font-medium leading-normal">2. University of Hertfordshire</p>
+                            <p class="text-black text-base font-medium leading-normal">2. University of Hertfordshire
+                            </p>
                             <p class="text-black text-base font-medium leading-normal">3. Coventry University</p>
                             <p class="text-black text-base font-medium leading-normal">4. Angila Ruskin University</p>
                             <p class="text-black text-base font-medium leading-normal">5. University of Bedfordshire</p>
                             <p class="text-black text-base font-medium leading-normal">6. De Montfort University</p>
-                            <p class="text-black text-base font-medium leading-normal">7. The University of Sheffield</p>
+                            <p class="text-black text-base font-medium leading-normal">7. The University of Sheffield
+                            </p>
                             <p class="text-black text-base font-medium leading-normal">8. University of Leicester</p>
                             <p class="text-black text-base font-medium leading-normal">9. University of Essex</p>
                             <p class="text-black text-base font-medium leading-normal">10. University of East London</p>
-                            <p class="text-black text-base font-medium leading-normal">11. Sheffield Hallam University</p>
+                            <p class="text-black text-base font-medium leading-normal">11. Sheffield Hallam University
+                            </p>
                             <p class="text-black text-base font-medium leading-normal">12. University of Sunderland</p>
                             <p class="text-black text-base font-medium leading-normal">13. Aston University</p>
-                            <p class="text-black text-base font-medium leading-normal">14. Queen Mary University London</p>
-                            <p class="text-black text-base font-medium leading-normal">15. Nottingham Trent University</p>
-                            <p class="text-black text-base font-medium leading-normal">16. London Metropolitan University</p>
+                            <p class="text-black text-base font-medium leading-normal">14. Queen Mary University London
+                            </p>
+                            <p class="text-black text-base font-medium leading-normal">15. Nottingham Trent University
+                            </p>
+                            <p class="text-black text-base font-medium leading-normal">16. London Metropolitan
+                                University</p>
                             <p class="text-black text-base font-medium leading-normal">17. University of Portsmouth</p>
-                            <p class="text-black text-base font-medium leading-normal">18. London South Bank University</p>
+                            <p class="text-black text-base font-medium leading-normal">18. London South Bank University
+                            </p>
                             <p class="text-black text-base font-medium leading-normal">19. Caucasus University</p>
                             <p class="text-black text-base font-medium leading-normal">20. University of Bradford</p>
                             <p class="text-black text-base font-medium leading-normal">21. University of Nottingham</p>
                             <p class="text-black text-base font-medium leading-normal">22. University of Salford</p>
                             <p class="text-black text-base font-medium leading-normal">23. University of Windsor</p>
                             <p class="text-black text-base font-medium leading-normal">24. University of West London</p>
-                            <p class="text-black text-base font-medium leading-normal">25. The University of Northampton</p>
+                            <p class="text-black text-base font-medium leading-normal">25. The University of Northampton
+                            </p>
                             <p class="text-black text-base font-medium leading-normal">26. Loughborough University</p>
                             <p class="text-black text-base font-medium leading-normal">27. University of Stirling</p>
                             <p class="text-black text-base font-medium leading-normal">28. Newcastle University</p>
                             <p class="text-black text-base font-medium leading-normal">29. Heriot-Watt University</p>
                             <p class="text-black text-base font-medium leading-normal">30. University Of Manchester</p>
                             <p class="text-black text-base font-medium leading-normal">31. University of Liverpool</p>
-                            <p class="text-black text-base font-medium leading-normal">32. University of Central Lancashire</p>
+                            <p class="text-black text-base font-medium leading-normal">32. University of Central
+                                Lancashire</p>
                             <p class="text-black text-base font-medium leading-normal">33. University of Westminster</p>
-                            <p class="text-black text-base font-medium leading-normal">34. Cardiff Metropolitan University</p>
-                            <p class="text-black text-base font-medium leading-normal">35. University for Creative Arts</p>
-                            <p class="text-black text-base font-medium leading-normal">36. Birmingham City University</p>
+                            <p class="text-black text-base font-medium leading-normal">34. Cardiff Metropolitan
+                                University</p>
+                            <p class="text-black text-base font-medium leading-normal">35. University for Creative Arts
+                            </p>
+                            <p class="text-black text-base font-medium leading-normal">36. Birmingham City University
+                            </p>
                         </div>
                     </div>
 
@@ -560,11 +572,12 @@ include $fold . 'includesv2/head.php';
                             <span class="flag-icon flag-icon-ir mr-2 "></span>
                             <div class="text-black text-xl font-semiboldleading-[30px]">Ireland</div>
                         </div>
-                        <p class="text-[#666666] text-[15px] font-normal leading-snug mt-2">Pay Tuition Fees for These Universities in Ireland</p>
+                        <p class="text-[#666666] text-[15px] font-normal leading-snug mt-2">Pay Tuition Fees for These
+                            Universities in Ireland</p>
 
                         <div class="flex flex-wrap mt-6 gap-x-20 gap-y-6 sm:gap-y-10">
                             <p class="text-black text-base font-medium leading-normal">1. Dublin Business School</p>
-                            
+
                         </div>
                     </div>
                 </div>

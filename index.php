@@ -360,7 +360,7 @@ $city="";
             ?>
 
             <?php 
-            include $fold . 'includesv2/extravelmoneyNumbers.php';
+            include $fold . 'includesv2/extravelmoneyNumbers-beta.php';
             ?>
 
             <?php 
@@ -392,6 +392,12 @@ $city="";
             include $fold . 'includesv2/press.php';
             
             ?>
+
+            <?php 
+
+            include $fold . 'includesv2/related-blog.php';
+            
+            ?>
             
             
 
@@ -408,6 +414,7 @@ $city="";
             ?> 
 
             <div class="mt-12 customMd:mt-24 h-1"></div>
+
 
         </div>
 

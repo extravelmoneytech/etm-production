@@ -1,195 +1,353 @@
 <footer>
-        <section class="bg-[#FAF8F6] py-8">
-            <div class="flex px-8 customMd:px-24 flex-col">
-                <div class="flex flex-col justify-center items-start gap-4">
-                    <div class="flex flex-col justify-center customMd:justify-between items-start gap-4 customMd:flex-row w-full">
-                        <div>
-                            <img class="w-60" src="<?php echo $fold .'public/images/logo/ETM logo without tagline.png'; ?>" alt="">
-                            <p class="text-black text-sm font-normal leading-[21px]">Save big on sending money abroad & foreign currency exchange in india</p>
-                        </div>
-                        <div class="flex gap-2 justify-between w-full customMd:w-1/3">
-
-                        
-                            <a target="_blank" href="<?php echo $fold; ?>blog/" class="border-[#0e51a0] border rounded-3xl px-4 py-1 text-primary-blue text-sm">Blogs</a>
-                            <a rel=nofollow href="<?php echo $fold; ?>offers" class="border-[#0e51a0] border rounded-3xl px-4 py-1 text-primary-blue text-sm">Offers</a>
-                            <!--<a href="<?php echo $fold .'coming-soon'; ?>" class="border-[#0e51a0] border rounded-3xl px-4 py-1 text-primary-blue text-sm">Tools</a>-->
-                            <a href="<?php echo $fold; ?>faq/general-faq" class="border-[#0e51a0] border rounded-3xl px-4 py-1 text-primary-blue text-sm">FAQ</a>
-                        </div>
+    <section class="bg-[#FAF8F6] py-8">
+        <div class="flex px-8 customMd:px-24 flex-col">
+            <div class="flex flex-col justify-center items-start gap-4">
+                <div
+                    class="flex flex-col justify-center customMd:justify-between items-start gap-4 customMd:flex-row w-full">
+                    <div>
+                        <img class="w-60" src="<?php echo $fold . 'public/images/logo/ETM logo without tagline.png'; ?>"
+                            alt="">
+                        <p class="text-black text-sm font-normal leading-[21px]">Save big on sending money abroad &
+                            foreign currency exchange in india</p>
                     </div>
-                    
+                    <div class="flex justify-end  gap-8 w-full customMd:w-1/3">
 
-                    
+                        <a target="_blank" href="<?php echo $fold; ?>blog/"
+                            class="border-[#0e51a0] border rounded-3xl px-4 py-1 text-primary-blue text-sm">Blogs</a>
+                        <a rel=nofollow href="<?php echo $fold; ?>offers"
+                            class="border-[#0e51a0] border rounded-3xl px-4 py-1 text-primary-blue text-sm">Offers</a>
+                        <!--<a href="<?php echo $fold . 'coming-soon'; ?>" class="border-[#0e51a0] border rounded-3xl px-4 py-1 text-primary-blue text-sm">Tools</a>-->
+                        <a href="<?php echo $fold; ?>faq/general-faq"
+                            class="border-[#0e51a0] border rounded-3xl px-4 py-1 text-primary-blue text-sm">FAQ</a>
+                    </div>
+                </div>
 
-                    <div class="flex flex-col gap-4 mt-6 customMd:mt-12 customMd:flex-row w-full justify-between">
 
-                        <div class="flex flex-col gap-8">
-                            <!--<div class="flex flex-col">-->
-                            <!--    <h2 class="font-semibold text-lg mb-2">About Us</h2>-->
-                            <!--    <ul class="flex flex-col gap-1">-->
-                            <!--        <li class="text-black/60 text-sm"><a href="">Careers</a></li>-->
-                            <!--        <li class="text-black/60 text-sm"><a href="">Life @Extravelmoney</a></li>-->
-                            <!--        <li class="text-black/60 text-sm"><a href="">Company and Team</a></li>-->
-                            <!--        <li class="text-black/60 text-sm"><a href="">Help</a></li>-->
-                                    
-                            <!--    </ul>-->
-                            <!--</div>-->
-    
-                            <div class="flex flex-col">
-                                <h2 class="font-semibold text-lg mb-2">Meet US at</h2>
-                                <p class="text-black/60 text-sm">Extravelmoney Technosol Pvt Ltd <br>Vismaya, Infopark Phase 1 <br>Kochi, 682042</p>
-                            </div>
-                            <div class="flex flex-col">
-                                <h2 class="font-semibold text-lg mb-2">Follow Us</h2>
-                                <ul class="flex gap-4">
-                                    <li>
-                                        <a href="https://www.instagram.com/extravelmoney/" target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 40 40" fill="none">
-                                                <path d="M20 12.5C18.5166 12.5 17.0666 12.9399 15.8332 13.764C14.5999 14.5881 13.6386 15.7594 13.0709 17.1299C12.5032 18.5003 12.3547 20.0083 12.6441 21.4632C12.9335 22.918 13.6478 24.2544 14.6967 25.3033C15.7456 26.3522 17.082 27.0665 18.5368 27.3559C19.9917 27.6453 21.4997 27.4968 22.8701 26.9291C24.2406 26.3614 25.4119 25.4001 26.236 24.1668C27.0601 22.9334 27.5 21.4834 27.5 20C27.4979 18.0115 26.7071 16.1051 25.301 14.699C23.8949 13.2929 21.9885 12.5021 20 12.5ZM20 25C19.0111 25 18.0444 24.7068 17.2221 24.1573C16.3999 23.6079 15.759 22.827 15.3806 21.9134C15.0022 20.9998 14.9031 19.9945 15.0961 19.0245C15.289 18.0546 15.7652 17.1637 16.4645 16.4645C17.1637 15.7652 18.0546 15.289 19.0245 15.0961C19.9945 14.9031 20.9998 15.0022 21.9134 15.3806C22.827 15.759 23.6079 16.3999 24.1573 17.2221C24.7068 18.0444 25 19.0111 25 20C25 21.3261 24.4732 22.5979 23.5355 23.5355C22.5979 24.4732 21.3261 25 20 25ZM27.5 3.75H12.5C10.1801 3.75248 7.95596 4.67515 6.31556 6.31556C4.67515 7.95596 3.75248 10.1801 3.75 12.5V27.5C3.75248 29.8199 4.67515 32.044 6.31556 33.6844C7.95596 35.3249 10.1801 36.2475 12.5 36.25H27.5C29.8199 36.2475 32.044 35.3249 33.6844 33.6844C35.3249 32.044 36.2475 29.8199 36.25 27.5V12.5C36.2475 10.1801 35.3249 7.95596 33.6844 6.31556C32.044 4.67515 29.8199 3.75248 27.5 3.75ZM33.75 27.5C33.75 29.1576 33.0915 30.7473 31.9194 31.9194C30.7473 33.0915 29.1576 33.75 27.5 33.75H12.5C10.8424 33.75 9.25269 33.0915 8.08058 31.9194C6.90848 30.7473 6.25 29.1576 6.25 27.5V12.5C6.25 10.8424 6.90848 9.25269 8.08058 8.08058C9.25269 6.90848 10.8424 6.25 12.5 6.25H27.5C29.1576 6.25 30.7473 6.90848 31.9194 8.08058C33.0915 9.25269 33.75 10.8424 33.75 12.5V27.5ZM30 11.875C30 12.2458 29.89 12.6084 29.684 12.9167C29.478 13.225 29.1851 13.4654 28.8425 13.6073C28.4999 13.7492 28.1229 13.7863 27.7592 13.714C27.3955 13.6416 27.0614 13.463 26.7992 13.2008C26.537 12.9386 26.3584 12.6045 26.286 12.2408C26.2137 11.8771 26.2508 11.5001 26.3927 11.1575C26.5346 10.8149 26.775 10.522 27.0833 10.316C27.3916 10.11 27.7542 10 28.125 10C28.6223 10 29.0992 10.1975 29.4508 10.5492C29.8025 10.9008 30 11.3777 30 11.875Z" fill="#0E51A0"/>
-                                                <path d="M20 12.5C18.5166 12.5 17.0666 12.9399 15.8332 13.764C14.5999 14.5881 13.6386 15.7594 13.0709 17.1299C12.5032 18.5003 12.3547 20.0083 12.6441 21.4632C12.9335 22.918 13.6478 24.2544 14.6967 25.3033C15.7456 26.3522 17.082 27.0665 18.5368 27.3559C19.9917 27.6453 21.4997 27.4968 22.8701 26.9291C24.2406 26.3614 25.4119 25.4001 26.236 24.1668C27.0601 22.9334 27.5 21.4834 27.5 20C27.4979 18.0115 26.7071 16.1051 25.301 14.699C23.8949 13.2929 21.9885 12.5021 20 12.5ZM20 25C19.0111 25 18.0444 24.7068 17.2221 24.1573C16.3999 23.6079 15.759 22.827 15.3806 21.9134C15.0022 20.9998 14.9031 19.9945 15.0961 19.0245C15.289 18.0546 15.7652 17.1637 16.4645 16.4645C17.1637 15.7652 18.0546 15.289 19.0245 15.0961C19.9945 14.9031 20.9998 15.0022 21.9134 15.3806C22.827 15.759 23.6079 16.3999 24.1573 17.2221C24.7068 18.0444 25 19.0111 25 20C25 21.3261 24.4732 22.5979 23.5355 23.5355C22.5979 24.4732 21.3261 25 20 25ZM27.5 3.75H12.5C10.1801 3.75248 7.95596 4.67515 6.31556 6.31556C4.67515 7.95596 3.75248 10.1801 3.75 12.5V27.5C3.75248 29.8199 4.67515 32.044 6.31556 33.6844C7.95596 35.3249 10.1801 36.2475 12.5 36.25H27.5C29.8199 36.2475 32.044 35.3249 33.6844 33.6844C35.3249 32.044 36.2475 29.8199 36.25 27.5V12.5C36.2475 10.1801 35.3249 7.95596 33.6844 6.31556C32.044 4.67515 29.8199 3.75248 27.5 3.75ZM33.75 27.5C33.75 29.1576 33.0915 30.7473 31.9194 31.9194C30.7473 33.0915 29.1576 33.75 27.5 33.75H12.5C10.8424 33.75 9.25269 33.0915 8.08058 31.9194C6.90848 30.7473 6.25 29.1576 6.25 27.5V12.5C6.25 10.8424 6.90848 9.25269 8.08058 8.08058C9.25269 6.90848 10.8424 6.25 12.5 6.25H27.5C29.1576 6.25 30.7473 6.90848 31.9194 8.08058C33.0915 9.25269 33.75 10.8424 33.75 12.5V27.5ZM30 11.875C30 12.2458 29.89 12.6084 29.684 12.9167C29.478 13.225 29.1851 13.4654 28.8425 13.6073C28.4999 13.7492 28.1229 13.7863 27.7592 13.714C27.3955 13.6416 27.0614 13.463 26.7992 13.2008C26.537 12.9386 26.3584 12.6045 26.286 12.2408C26.2137 11.8771 26.2508 11.5001 26.3927 11.1575C26.5346 10.8149 26.775 10.522 27.0833 10.316C27.3916 10.11 27.7542 10 28.125 10C28.6223 10 29.0992 10.1975 29.4508 10.5492C29.8025 10.9008 30 11.3777 30 11.875Z" fill="url(#paint0_linear_1665_27128)"/>
-                                                <defs>
-                                                  <linearGradient id="paint0_linear_1665_27128" x1="47.9094" y1="51.6875" x2="4.345" y2="-19.8717" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#0E51A0"/>
-                                                    <stop offset="1" stop-color="#E31D1C"/>
-                                                  </linearGradient>
-                                                </defs>
-                                              </svg>
-                                        </a>
-                                    </li>
-    
-                                    <li>
-                                        <a href="http://www.linkedin.com/company/extravelmoney" target="_blank" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 41 40" fill="none">
-                                                <path d="M34.084 3.75H6.58398C5.92094 3.75 5.28506 4.01339 4.81622 4.48223C4.34738 4.95107 4.08398 5.58696 4.08398 6.25V33.75C4.08398 34.413 4.34738 35.0489 4.81622 35.5178C5.28506 35.9866 5.92094 36.25 6.58398 36.25H34.084C34.747 36.25 35.3829 35.9866 35.8518 35.5178C36.3206 35.0489 36.584 34.413 36.584 33.75V6.25C36.584 5.58696 36.3206 4.95107 35.8518 4.48223C35.3829 4.01339 34.747 3.75 34.084 3.75ZM34.084 33.75H6.58398V6.25H34.084V33.75ZM15.334 17.5V27.5C15.334 27.8315 15.2023 28.1495 14.9679 28.3839C14.7334 28.6183 14.4155 28.75 14.084 28.75C13.7525 28.75 13.4345 28.6183 13.2001 28.3839C12.9657 28.1495 12.834 27.8315 12.834 27.5V17.5C12.834 17.1685 12.9657 16.8505 13.2001 16.6161C13.4345 16.3817 13.7525 16.25 14.084 16.25C14.4155 16.25 14.7334 16.3817 14.9679 16.6161C15.2023 16.8505 15.334 17.1685 15.334 17.5ZM29.084 21.875V27.5C29.084 27.8315 28.9523 28.1495 28.7179 28.3839C28.4834 28.6183 28.1655 28.75 27.834 28.75C27.5025 28.75 27.1845 28.6183 26.9501 28.3839C26.7157 28.1495 26.584 27.8315 26.584 27.5V21.875C26.584 21.0462 26.2547 20.2513 25.6687 19.6653C25.0826 19.0792 24.2878 18.75 23.459 18.75C22.6302 18.75 21.8353 19.0792 21.2493 19.6653C20.6632 20.2513 20.334 21.0462 20.334 21.875V27.5C20.334 27.8315 20.2023 28.1495 19.9679 28.3839C19.7334 28.6183 19.4155 28.75 19.084 28.75C18.7525 28.75 18.4345 28.6183 18.2001 28.3839C17.9657 28.1495 17.834 27.8315 17.834 27.5V17.5C17.8355 17.1938 17.9494 16.8989 18.154 16.6711C18.3586 16.4433 18.6397 16.2985 18.9439 16.2642C19.2482 16.2299 19.5545 16.3085 19.8046 16.485C20.0548 16.6615 20.2315 16.9237 20.3012 17.2219C21.1468 16.6482 22.1327 16.3158 23.153 16.2602C24.1733 16.2046 25.1894 16.428 26.0924 16.9063C26.9953 17.3847 27.7508 18.1 28.2779 18.9754C28.805 19.8508 29.0836 20.8532 29.084 21.875ZM15.959 13.125C15.959 13.4958 15.849 13.8584 15.643 14.1667C15.437 14.475 15.1441 14.7154 14.8015 14.8573C14.4589 14.9992 14.0819 15.0363 13.7182 14.964C13.3545 14.8916 13.0204 14.713 12.7582 14.4508C12.4959 14.1886 12.3174 13.8545 12.245 13.4908C12.1727 13.1271 12.2098 12.7501 12.3517 12.4075C12.4936 12.0649 12.7339 11.772 13.0423 11.566C13.3506 11.36 13.7131 11.25 14.084 11.25C14.5813 11.25 15.0582 11.4475 15.4098 11.7992C15.7614 12.1508 15.959 12.6277 15.959 13.125Z" fill="#0E51A0"/>
-                                                <path d="M34.084 3.75H6.58398C5.92094 3.75 5.28506 4.01339 4.81622 4.48223C4.34738 4.95107 4.08398 5.58696 4.08398 6.25V33.75C4.08398 34.413 4.34738 35.0489 4.81622 35.5178C5.28506 35.9866 5.92094 36.25 6.58398 36.25H34.084C34.747 36.25 35.3829 35.9866 35.8518 35.5178C36.3206 35.0489 36.584 34.413 36.584 33.75V6.25C36.584 5.58696 36.3206 4.95107 35.8518 4.48223C35.3829 4.01339 34.747 3.75 34.084 3.75ZM34.084 33.75H6.58398V6.25H34.084V33.75ZM15.334 17.5V27.5C15.334 27.8315 15.2023 28.1495 14.9679 28.3839C14.7334 28.6183 14.4155 28.75 14.084 28.75C13.7525 28.75 13.4345 28.6183 13.2001 28.3839C12.9657 28.1495 12.834 27.8315 12.834 27.5V17.5C12.834 17.1685 12.9657 16.8505 13.2001 16.6161C13.4345 16.3817 13.7525 16.25 14.084 16.25C14.4155 16.25 14.7334 16.3817 14.9679 16.6161C15.2023 16.8505 15.334 17.1685 15.334 17.5ZM29.084 21.875V27.5C29.084 27.8315 28.9523 28.1495 28.7179 28.3839C28.4834 28.6183 28.1655 28.75 27.834 28.75C27.5025 28.75 27.1845 28.6183 26.9501 28.3839C26.7157 28.1495 26.584 27.8315 26.584 27.5V21.875C26.584 21.0462 26.2547 20.2513 25.6687 19.6653C25.0826 19.0792 24.2878 18.75 23.459 18.75C22.6302 18.75 21.8353 19.0792 21.2493 19.6653C20.6632 20.2513 20.334 21.0462 20.334 21.875V27.5C20.334 27.8315 20.2023 28.1495 19.9679 28.3839C19.7334 28.6183 19.4155 28.75 19.084 28.75C18.7525 28.75 18.4345 28.6183 18.2001 28.3839C17.9657 28.1495 17.834 27.8315 17.834 27.5V17.5C17.8355 17.1938 17.9494 16.8989 18.154 16.6711C18.3586 16.4433 18.6397 16.2985 18.9439 16.2642C19.2482 16.2299 19.5545 16.3085 19.8046 16.485C20.0548 16.6615 20.2315 16.9237 20.3012 17.2219C21.1468 16.6482 22.1327 16.3158 23.153 16.2602C24.1733 16.2046 25.1894 16.428 26.0924 16.9063C26.9953 17.3847 27.7508 18.1 28.2779 18.9754C28.805 19.8508 29.0836 20.8532 29.084 21.875ZM15.959 13.125C15.959 13.4958 15.849 13.8584 15.643 14.1667C15.437 14.475 15.1441 14.7154 14.8015 14.8573C14.4589 14.9992 14.0819 15.0363 13.7182 14.964C13.3545 14.8916 13.0204 14.713 12.7582 14.4508C12.4959 14.1886 12.3174 13.8545 12.245 13.4908C12.1727 13.1271 12.2098 12.7501 12.3517 12.4075C12.4936 12.0649 12.7339 11.772 13.0423 11.566C13.3506 11.36 13.7131 11.25 14.084 11.25C14.5813 11.25 15.0582 11.4475 15.4098 11.7992C15.7614 12.1508 15.959 12.6277 15.959 13.125Z" fill="url(#paint0_linear_1665_27130)"/>
-                                                <defs>
-                                                  <linearGradient id="paint0_linear_1665_27130" x1="48.2434" y1="51.6875" x2="4.67898" y2="-19.8717" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#0E51A0"/>
-                                                    <stop offset="1" stop-color="#E31D1C"/>
-                                                  </linearGradient>
-                                                </defs>
-                                              </svg>
-                                        </a>
-                                    </li>
-    
-                                    <li>
-                                        <a href="http://twitter.com/extravelmoney" target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 41 40" fill="none">
-                                                <path d="M34.223 33.0797L24.4417 17.7078L34.0933 7.09063C34.3116 6.84457 34.4241 6.52239 34.4064 6.19394C34.3887 5.86549 34.2423 5.55724 33.9989 5.33602C33.7555 5.11481 33.4347 4.99845 33.106 5.01218C32.7774 5.02591 32.4674 5.16862 32.2433 5.40937L23.0495 15.5219L16.723 5.57969C16.6102 5.40212 16.4543 5.25589 16.27 5.15456C16.0856 5.05323 15.8787 5.00007 15.6683 5H8.16828C7.94416 4.99989 7.72413 5.06004 7.53123 5.17416C7.33833 5.28827 7.17967 5.45215 7.07184 5.64863C6.96402 5.84511 6.911 6.06697 6.91835 6.29097C6.92569 6.51497 6.99313 6.73288 7.1136 6.92187L16.8948 22.2922L7.24328 32.9172C7.13057 33.0383 7.04302 33.1805 6.98569 33.3357C6.92835 33.4908 6.90239 33.6558 6.90929 33.8211C6.9162 33.9864 6.95584 34.1486 7.02591 34.2984C7.09599 34.4483 7.1951 34.5827 7.31752 34.694C7.43993 34.8052 7.58321 34.8911 7.73905 34.9465C7.89488 35.002 8.06018 35.026 8.22535 35.0171C8.39053 35.0082 8.5523 34.9666 8.70128 34.8948C8.85027 34.8229 8.98351 34.7222 9.09328 34.5984L18.287 24.4859L24.6136 34.4281C24.7273 34.6042 24.8835 34.7489 25.0678 34.8489C25.2521 34.9488 25.4586 35.0008 25.6683 35H33.1683C33.3922 34.9999 33.6119 34.9397 33.8046 34.8257C33.9972 34.7117 34.1557 34.548 34.2635 34.3517C34.3713 34.1555 34.4244 33.9339 34.4173 33.7102C34.4101 33.4864 34.343 33.2687 34.223 33.0797ZM26.3542 32.5L10.4448 7.5H14.9761L30.8917 32.5H26.3542Z" fill="#0E51A0"/>
-                                                <path d="M34.223 33.0797L24.4417 17.7078L34.0933 7.09063C34.3116 6.84457 34.4241 6.52239 34.4064 6.19394C34.3887 5.86549 34.2423 5.55724 33.9989 5.33602C33.7555 5.11481 33.4347 4.99845 33.106 5.01218C32.7774 5.02591 32.4674 5.16862 32.2433 5.40937L23.0495 15.5219L16.723 5.57969C16.6102 5.40212 16.4543 5.25589 16.27 5.15456C16.0856 5.05323 15.8787 5.00007 15.6683 5H8.16828C7.94416 4.99989 7.72413 5.06004 7.53123 5.17416C7.33833 5.28827 7.17967 5.45215 7.07184 5.64863C6.96402 5.84511 6.911 6.06697 6.91835 6.29097C6.92569 6.51497 6.99313 6.73288 7.1136 6.92187L16.8948 22.2922L7.24328 32.9172C7.13057 33.0383 7.04302 33.1805 6.98569 33.3357C6.92835 33.4908 6.90239 33.6558 6.90929 33.8211C6.9162 33.9864 6.95584 34.1486 7.02591 34.2984C7.09599 34.4483 7.1951 34.5827 7.31752 34.694C7.43993 34.8052 7.58321 34.8911 7.73905 34.9465C7.89488 35.002 8.06018 35.026 8.22535 35.0171C8.39053 35.0082 8.5523 34.9666 8.70128 34.8948C8.85027 34.8229 8.98351 34.7222 9.09328 34.5984L18.287 24.4859L24.6136 34.4281C24.7273 34.6042 24.8835 34.7489 25.0678 34.8489C25.2521 34.9488 25.4586 35.0008 25.6683 35H33.1683C33.3922 34.9999 33.6119 34.9397 33.8046 34.8257C33.9972 34.7117 34.1557 34.548 34.2635 34.3517C34.3713 34.1555 34.4244 33.9339 34.4173 33.7102C34.4101 33.4864 34.343 33.2687 34.223 33.0797ZM26.3542 32.5L10.4448 7.5H14.9761L30.8917 32.5H26.3542Z" fill="url(#paint0_linear_1665_27132)"/>
-                                                <defs>
-                                                  <linearGradient id="paint0_linear_1665_27132" x1="44.287" y1="49.2779" x2="2.5318" y2="-13.5765" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#0E51A0"/>
-                                                    <stop offset="1" stop-color="#E31D1C"/>
-                                                  </linearGradient>
-                                                </defs>
-                                              </svg>
-                                        </a>
-                                    </li>
-    
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        
+
+
+                <div class="flex flex-col gap-8  customMd:mt-8 customMd:flex-row w-full justify-between">
+
+                    <div class="flex flex-col gap-8">
 
 
                         <div class="flex flex-col">
-                            <h2 class="font-semibold text-lg mb-2">Quick Links</h2>
-                            <ul class="flex flex-col gap-1 list-disc">
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>about">About US</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>agent" target="_blank">Partner Login</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>rates">Live Rates</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>buy-forex">Buy Forex</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>forex-rates/">Forex Rates Today</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>tools/forex-tcs-calculator/">TCS Calculator</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>currency-converter/">Currency Converter</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>forex-limits">Remittance Limits</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>forex-partners">Forex Partners</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>privacy">Privacy Policy</a></li>
-                                <li class="text-black/60 text-sm ml-5"><a href="<?php echo $fold; ?>terms">Terms of Service</a></li>
-                                
-                                
-                                
+                            <h2 class="font-semibold text-lg mb-2">About Us</h2>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>about">Careers</a></li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>agent" target="_blank">Life
+                                        @ExTravelMoney</a></li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>rates">Company and Team</a>
+                                </li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>rates">Help</a></li>
                             </ul>
                         </div>
-
-
-                        <div class="flex flex-col">
-                            <h2 class="font-semibold text-lg mb-2">Money Transfer</h2>
-                            <ul class="flex flex-col gap-1">
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-usa" title="Transfer money from India to USA">Send Money to USA</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-australia/" title="Transfer money from India to Australia">Send Money to Australia</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-canada/" title="Transfer money from India to Canada">Send Money to Canada</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-uk" title="Transfer money from India to UK">Send Money to UK</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-new-zealand" title="Transfer money from India to New Zealand">Send Money to New Zealand</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-germany/" title="Transfer money from India to Germany">Send Money to Germany</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-france/" title="Transfer money from India to France">Send Money to France</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-singapore" title="Transfer money from India to Singapore">Send Money to Singapore</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-europe" title="Transfer money from India to Europe">Send Money to Europe</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>wire-transfer/india-to-uae/" title="Transfer money from India to UAE">Send Money to UAE</a></li>
-                                
-                                
-                            </ul>
-                        </div>
-
-                        <div class="flex flex-col">
-                            <h2 class="font-semibold text-lg mb-2">Currency Exchange</h2>
-                            <ul class="flex flex-col gap-1">
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/bangalore" title="Buy or sell Forex in Bangalore">Currency Exchange in Bangalore</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/chennai" title="Buy or sell Forex in Chennai">Currency Exchange in Chennai</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/delhi" title="Buy or sell Forex in Delhi">Currency Exchange in Delhi</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/mumbai" title="Buy or sell Forex in Mumbai">Currency Exchange in Mumbai</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/hyderabad/" title="Buy or sell Forex in Hyderabad">Currency Exchange in Hyderabad</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/kolkata" title="Buy or sell Forex in Kolkata">Currency Exchange in Kolkata</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/pune" title="Buy or sell Forex in Pune">Currency Exchange in Pune</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/noida" title="Buy or sell Forex in Noida">Currency Exchange in Noida</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/ahmedabad" title="Buy or sell Forex in Ahmedabad">Currency Exchange in Ahmedabad</a></li>
-                                <li class="text-black/60 text-sm"><a href="<?php echo $fold; ?>foreign-exchange/chandigarh" title="Buy or sell Forex in Chandigarh">Currency Exchange in Chandigarh</a></li>
-                            </ul>
-                        </div>
-
 
                     </div>
 
-                    <div class="flex-col flex mt-8">
-                        <p class="text-black/60 pb-4 border-b border-black/10 text-mediumFont">All currency exchange, forex card, and international remittance transactions are processed and KYC-verified by our RBI-authorized partner money changers and banks, as prescribed by the Reserve Bank of India..</p>
-
-                        <p class="text-black/60 pt-4 pb-4 border-b border-black/10 text-mediumFont">
-                            CIN : U72200KL2014PTC037740 <br>
-                            GSTIN: 32AADCE8460G1ZS
-                        </p>
-                        <p class="text-black/60 pt-4  text-mediumFont">
-                            Copyright © 2024 All Rights Reserved by ExTravelMoney Technosol (P) Ltd
-                        </p>
+                    <div class="flex flex-col">
+                        <h2 class="font-semibold text-lg mb-4">Send Money To</h2>
+                        <div class="flex flex-wrap gap-y-2 text-sm gap-x-2 mb-4">
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>wire-transfer/india-to-usa"
+                                    title="Transfer money from India to USA">USA</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a
+                                    href="<?php echo $fold; ?>wire-transfer/india-to-australia"
+                                    title="Transfer money from India to Australia">Australia</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a
+                                    href="<?php echo $fold; ?>wire-transfer/india-to-canada/"
+                                    title="Transfer money from India to Canada">Canada</span></a> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>wire-transfer/india-to-uk"
+                                    title="Transfer money from India to UK">UK</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a
+                                    href="<?php echo $fold; ?>wire-transfer/india-to-new-zealand"
+                                    title="Transfer money from India to New Zealand">New Zealand</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                        </div>
+                        <div class="flex flex-wrap gap-y-2 gap-x-2 text-sm">
+                            <span class="px-2 text-black/60"><a
+                                    href="<?php echo $fold; ?>wire-transfer/india-to-germany/"
+                                    title="Transfer money from India to Germany">Germany</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a
+                                    href="<?php echo $fold; ?>wire-transfer/india-to-france/"
+                                    title="Transfer money from India to France">France</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a
+                                    href="<?php echo $fold; ?>wire-transfer/india-to-singapore"
+                                    title="Transfer money from India to Singapore">Singapore</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>wire-transfer/india-to-europe"
+                                    title="Transfer money from India to Europe">Europe</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>wire-transfer/india-to-uae/"
+                                    title="Transfer money from India to UAE">UAE</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                        </div>
                     </div>
 
+
+                    <div class="flex flex-col">
+                        <h2 class="font-semibold text-lg mb-4">Get Currency Exchange From</h2>
+                        <div class="flex flex-wrap gap-y-2 gap-x-2 text-sm mb-4">
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/bangalore"
+                                    title="Buy or sell Forex in Bangalore">Bangalore</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/chennai"
+                                    title="Buy or sell Forex in Chennai">Chennai</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/delhi"
+                                    title="Buy or sell Forex in Delhi">Delhi</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/mumbai"
+                                    title="Buy or sell Forex in Mumbai">Mumbai</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/hyderabad/"
+                                    title="Buy or sell Forex in Hyderabad">Hyderabad</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                        </div>
+                        <div class="flex flex-wrap gap-y-2 gap-x-2 text-sm mb-4">
+
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/kolkata"
+                                    title="Buy or sell Forex in Kolkata">Kolkata</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/pune"
+                                    title="Buy or sell Forex in Pune">Pune</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/noida"
+                                    title="Buy or sell Forex in Noida">Noida</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/ahmedabad"
+                                    title="Buy or sell Forex in Ahmedabad">Ahmedabad</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+
+                        </div>
+                        <div class="flex flex-wrap gap-y-2 gap-x-2 text-sm mb-4">
+
+                            <span class="px-2 text-black/60"><a href="<?php echo $fold; ?>foreign-exchange/chandigarh"
+                                    title="Buy or sell Forex in Chandigarh">Chandigarh</a></span> <span
+                                class="text-[#E31D1C]">|</span>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="h-[1px] w-full border border-black/10"></div>
+
+
+                <div class="flex flex-col gap-8  customMd:flex-row w-full justify-between">
+
+                    <div class="flex flex-col w-1/2">
+                        <div class="flex flex-col">
+                            <h2 class="font-semibold text-lg mb-2">Meet US at</h2>
+                            <p class="text-black text-sm">Extravelmoney Technosol Pvt Ltd <br>Vismaya, Infopark Phase
+                                1 <br>Kochi, 682042</p>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <h2 class="font-semibold text-lg mb-2">Follow Us</h2>
+
+                            <ul class="flex gap-4">
+                                <li>
+                                    <a href="https://www.instagram.com/extravelmoney/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 40 40" fill="none">
+                                            <path
+                                                d="M20 12.5C18.5166 12.5 17.0666 12.9399 15.8332 13.764C14.5999 14.5881 13.6386 15.7594 13.0709 17.1299C12.5032 18.5003 12.3547 20.0083 12.6441 21.4632C12.9335 22.918 13.6478 24.2544 14.6967 25.3033C15.7456 26.3522 17.082 27.0665 18.5368 27.3559C19.9917 27.6453 21.4997 27.4968 22.8701 26.9291C24.2406 26.3614 25.4119 25.4001 26.236 24.1668C27.0601 22.9334 27.5 21.4834 27.5 20C27.4979 18.0115 26.7071 16.1051 25.301 14.699C23.8949 13.2929 21.9885 12.5021 20 12.5ZM20 25C19.0111 25 18.0444 24.7068 17.2221 24.1573C16.3999 23.6079 15.759 22.827 15.3806 21.9134C15.0022 20.9998 14.9031 19.9945 15.0961 19.0245C15.289 18.0546 15.7652 17.1637 16.4645 16.4645C17.1637 15.7652 18.0546 15.289 19.0245 15.0961C19.9945 14.9031 20.9998 15.0022 21.9134 15.3806C22.827 15.759 23.6079 16.3999 24.1573 17.2221C24.7068 18.0444 25 19.0111 25 20C25 21.3261 24.4732 22.5979 23.5355 23.5355C22.5979 24.4732 21.3261 25 20 25ZM27.5 3.75H12.5C10.1801 3.75248 7.95596 4.67515 6.31556 6.31556C4.67515 7.95596 3.75248 10.1801 3.75 12.5V27.5C3.75248 29.8199 4.67515 32.044 6.31556 33.6844C7.95596 35.3249 10.1801 36.2475 12.5 36.25H27.5C29.8199 36.2475 32.044 35.3249 33.6844 33.6844C35.3249 32.044 36.2475 29.8199 36.25 27.5V12.5C36.2475 10.1801 35.3249 7.95596 33.6844 6.31556C32.044 4.67515 29.8199 3.75248 27.5 3.75ZM33.75 27.5C33.75 29.1576 33.0915 30.7473 31.9194 31.9194C30.7473 33.0915 29.1576 33.75 27.5 33.75H12.5C10.8424 33.75 9.25269 33.0915 8.08058 31.9194C6.90848 30.7473 6.25 29.1576 6.25 27.5V12.5C6.25 10.8424 6.90848 9.25269 8.08058 8.08058C9.25269 6.90848 10.8424 6.25 12.5 6.25H27.5C29.1576 6.25 30.7473 6.90848 31.9194 8.08058C33.0915 9.25269 33.75 10.8424 33.75 12.5V27.5ZM30 11.875C30 12.2458 29.89 12.6084 29.684 12.9167C29.478 13.225 29.1851 13.4654 28.8425 13.6073C28.4999 13.7492 28.1229 13.7863 27.7592 13.714C27.3955 13.6416 27.0614 13.463 26.7992 13.2008C26.537 12.9386 26.3584 12.6045 26.286 12.2408C26.2137 11.8771 26.2508 11.5001 26.3927 11.1575C26.5346 10.8149 26.775 10.522 27.0833 10.316C27.3916 10.11 27.7542 10 28.125 10C28.6223 10 29.0992 10.1975 29.4508 10.5492C29.8025 10.9008 30 11.3777 30 11.875Z"
+                                                fill="#0E51A0" />
+                                            <path
+                                                d="M20 12.5C18.5166 12.5 17.0666 12.9399 15.8332 13.764C14.5999 14.5881 13.6386 15.7594 13.0709 17.1299C12.5032 18.5003 12.3547 20.0083 12.6441 21.4632C12.9335 22.918 13.6478 24.2544 14.6967 25.3033C15.7456 26.3522 17.082 27.0665 18.5368 27.3559C19.9917 27.6453 21.4997 27.4968 22.8701 26.9291C24.2406 26.3614 25.4119 25.4001 26.236 24.1668C27.0601 22.9334 27.5 21.4834 27.5 20C27.4979 18.0115 26.7071 16.1051 25.301 14.699C23.8949 13.2929 21.9885 12.5021 20 12.5ZM20 25C19.0111 25 18.0444 24.7068 17.2221 24.1573C16.3999 23.6079 15.759 22.827 15.3806 21.9134C15.0022 20.9998 14.9031 19.9945 15.0961 19.0245C15.289 18.0546 15.7652 17.1637 16.4645 16.4645C17.1637 15.7652 18.0546 15.289 19.0245 15.0961C19.9945 14.9031 20.9998 15.0022 21.9134 15.3806C22.827 15.759 23.6079 16.3999 24.1573 17.2221C24.7068 18.0444 25 19.0111 25 20C25 21.3261 24.4732 22.5979 23.5355 23.5355C22.5979 24.4732 21.3261 25 20 25ZM27.5 3.75H12.5C10.1801 3.75248 7.95596 4.67515 6.31556 6.31556C4.67515 7.95596 3.75248 10.1801 3.75 12.5V27.5C3.75248 29.8199 4.67515 32.044 6.31556 33.6844C7.95596 35.3249 10.1801 36.2475 12.5 36.25H27.5C29.8199 36.2475 32.044 35.3249 33.6844 33.6844C35.3249 32.044 36.2475 29.8199 36.25 27.5V12.5C36.2475 10.1801 35.3249 7.95596 33.6844 6.31556C32.044 4.67515 29.8199 3.75248 27.5 3.75ZM33.75 27.5C33.75 29.1576 33.0915 30.7473 31.9194 31.9194C30.7473 33.0915 29.1576 33.75 27.5 33.75H12.5C10.8424 33.75 9.25269 33.0915 8.08058 31.9194C6.90848 30.7473 6.25 29.1576 6.25 27.5V12.5C6.25 10.8424 6.90848 9.25269 8.08058 8.08058C9.25269 6.90848 10.8424 6.25 12.5 6.25H27.5C29.1576 6.25 30.7473 6.90848 31.9194 8.08058C33.0915 9.25269 33.75 10.8424 33.75 12.5V27.5ZM30 11.875C30 12.2458 29.89 12.6084 29.684 12.9167C29.478 13.225 29.1851 13.4654 28.8425 13.6073C28.4999 13.7492 28.1229 13.7863 27.7592 13.714C27.3955 13.6416 27.0614 13.463 26.7992 13.2008C26.537 12.9386 26.3584 12.6045 26.286 12.2408C26.2137 11.8771 26.2508 11.5001 26.3927 11.1575C26.5346 10.8149 26.775 10.522 27.0833 10.316C27.3916 10.11 27.7542 10 28.125 10C28.6223 10 29.0992 10.1975 29.4508 10.5492C29.8025 10.9008 30 11.3777 30 11.875Z"
+                                                fill="url(#paint0_linear_1_611)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1_611" x1="47.9094" y1="51.6875"
+                                                    x2="4.345" y2="-19.8717" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0E51A0" />
+                                                    <stop offset="1" stop-color="#E31D1C" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.linkedin.com/company/extravelmoney" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 41 40" fill="none">
+                                            <path
+                                                d="M34.0835 3.75H6.5835C5.92045 3.75 5.28457 4.01339 4.81573 4.48223C4.34689 4.95107 4.0835 5.58696 4.0835 6.25V33.75C4.0835 34.413 4.34689 35.0489 4.81573 35.5178C5.28457 35.9866 5.92045 36.25 6.5835 36.25H34.0835C34.7465 36.25 35.3824 35.9866 35.8513 35.5178C36.3201 35.0489 36.5835 34.413 36.5835 33.75V6.25C36.5835 5.58696 36.3201 4.95107 35.8513 4.48223C35.3824 4.01339 34.7465 3.75 34.0835 3.75ZM34.0835 33.75H6.5835V6.25H34.0835V33.75ZM15.3335 17.5V27.5C15.3335 27.8315 15.2018 28.1495 14.9674 28.3839C14.733 28.6183 14.415 28.75 14.0835 28.75C13.752 28.75 13.434 28.6183 13.1996 28.3839C12.9652 28.1495 12.8335 27.8315 12.8335 27.5V17.5C12.8335 17.1685 12.9652 16.8505 13.1996 16.6161C13.434 16.3817 13.752 16.25 14.0835 16.25C14.415 16.25 14.733 16.3817 14.9674 16.6161C15.2018 16.8505 15.3335 17.1685 15.3335 17.5ZM29.0835 21.875V27.5C29.0835 27.8315 28.9518 28.1495 28.7174 28.3839C28.483 28.6183 28.165 28.75 27.8335 28.75C27.502 28.75 27.184 28.6183 26.9496 28.3839C26.7152 28.1495 26.5835 27.8315 26.5835 27.5V21.875C26.5835 21.0462 26.2543 20.2513 25.6682 19.6653C25.0822 19.0792 24.2873 18.75 23.4585 18.75C22.6297 18.75 21.8348 19.0792 21.2488 19.6653C20.6627 20.2513 20.3335 21.0462 20.3335 21.875V27.5C20.3335 27.8315 20.2018 28.1495 19.9674 28.3839C19.733 28.6183 19.415 28.75 19.0835 28.75C18.752 28.75 18.434 28.6183 18.1996 28.3839C17.9652 28.1495 17.8335 27.8315 17.8335 27.5V17.5C17.835 17.1938 17.9489 16.8989 18.1535 16.6711C18.3581 16.4433 18.6392 16.2985 18.9435 16.2642C19.2477 16.2299 19.554 16.3085 19.8041 16.485C20.0543 16.6615 20.231 16.9237 20.3007 17.2219C21.1463 16.6482 22.1322 16.3158 23.1525 16.2602C24.1728 16.2046 25.1889 16.428 26.0919 16.9063C26.9948 17.3847 27.7504 18.1 28.2774 18.9754C28.8045 19.8508 29.0832 20.8532 29.0835 21.875ZM15.9585 13.125C15.9585 13.4958 15.8485 13.8584 15.6425 14.1667C15.4365 14.475 15.1436 14.7154 14.801 14.8573C14.4584 14.9992 14.0814 15.0363 13.7177 14.964C13.354 14.8916 13.0199 14.713 12.7577 14.4508C12.4954 14.1886 12.3169 13.8545 12.2445 13.4908C12.1722 13.1271 12.2093 12.7501 12.3512 12.4075C12.4931 12.0649 12.7335 11.772 13.0418 11.566C13.3501 11.36 13.7127 11.25 14.0835 11.25C14.5808 11.25 15.0577 11.4475 15.4093 11.7992C15.761 12.1508 15.9585 12.6277 15.9585 13.125Z"
+                                                fill="#0E51A0" />
+                                            <path
+                                                d="M34.0835 3.75H6.5835C5.92045 3.75 5.28457 4.01339 4.81573 4.48223C4.34689 4.95107 4.0835 5.58696 4.0835 6.25V33.75C4.0835 34.413 4.34689 35.0489 4.81573 35.5178C5.28457 35.9866 5.92045 36.25 6.5835 36.25H34.0835C34.7465 36.25 35.3824 35.9866 35.8513 35.5178C36.3201 35.0489 36.5835 34.413 36.5835 33.75V6.25C36.5835 5.58696 36.3201 4.95107 35.8513 4.48223C35.3824 4.01339 34.7465 3.75 34.0835 3.75ZM34.0835 33.75H6.5835V6.25H34.0835V33.75ZM15.3335 17.5V27.5C15.3335 27.8315 15.2018 28.1495 14.9674 28.3839C14.733 28.6183 14.415 28.75 14.0835 28.75C13.752 28.75 13.434 28.6183 13.1996 28.3839C12.9652 28.1495 12.8335 27.8315 12.8335 27.5V17.5C12.8335 17.1685 12.9652 16.8505 13.1996 16.6161C13.434 16.3817 13.752 16.25 14.0835 16.25C14.415 16.25 14.733 16.3817 14.9674 16.6161C15.2018 16.8505 15.3335 17.1685 15.3335 17.5ZM29.0835 21.875V27.5C29.0835 27.8315 28.9518 28.1495 28.7174 28.3839C28.483 28.6183 28.165 28.75 27.8335 28.75C27.502 28.75 27.184 28.6183 26.9496 28.3839C26.7152 28.1495 26.5835 27.8315 26.5835 27.5V21.875C26.5835 21.0462 26.2543 20.2513 25.6682 19.6653C25.0822 19.0792 24.2873 18.75 23.4585 18.75C22.6297 18.75 21.8348 19.0792 21.2488 19.6653C20.6627 20.2513 20.3335 21.0462 20.3335 21.875V27.5C20.3335 27.8315 20.2018 28.1495 19.9674 28.3839C19.733 28.6183 19.415 28.75 19.0835 28.75C18.752 28.75 18.434 28.6183 18.1996 28.3839C17.9652 28.1495 17.8335 27.8315 17.8335 27.5V17.5C17.835 17.1938 17.9489 16.8989 18.1535 16.6711C18.3581 16.4433 18.6392 16.2985 18.9435 16.2642C19.2477 16.2299 19.554 16.3085 19.8041 16.485C20.0543 16.6615 20.231 16.9237 20.3007 17.2219C21.1463 16.6482 22.1322 16.3158 23.1525 16.2602C24.1728 16.2046 25.1889 16.428 26.0919 16.9063C26.9948 17.3847 27.7504 18.1 28.2774 18.9754C28.8045 19.8508 29.0832 20.8532 29.0835 21.875ZM15.9585 13.125C15.9585 13.4958 15.8485 13.8584 15.6425 14.1667C15.4365 14.475 15.1436 14.7154 14.801 14.8573C14.4584 14.9992 14.0814 15.0363 13.7177 14.964C13.354 14.8916 13.0199 14.713 12.7577 14.4508C12.4954 14.1886 12.3169 13.8545 12.2445 13.4908C12.1722 13.1271 12.2093 12.7501 12.3512 12.4075C12.4931 12.0649 12.7335 11.772 13.0418 11.566C13.3501 11.36 13.7127 11.25 14.0835 11.25C14.5808 11.25 15.0577 11.4475 15.4093 11.7992C15.761 12.1508 15.9585 12.6277 15.9585 13.125Z"
+                                                fill="url(#paint0_linear_1_613)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1_613" x1="48.2429" y1="51.6875"
+                                                    x2="4.6785" y2="-19.8717" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0E51A0" />
+                                                    <stop offset="1" stop-color="#E31D1C" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://twitter.com/extravelmoney" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 41 40" fill="none">
+                                            <path
+                                                d="M34.2235 33.0797L24.4422 17.7078L34.0938 7.09063C34.3121 6.84457 34.4246 6.52239 34.4069 6.19394C34.3892 5.86549 34.2428 5.55724 33.9994 5.33602C33.756 5.11481 33.4351 4.99845 33.1065 5.01218C32.7779 5.02591 32.4679 5.16862 32.2438 5.40937L23.05 15.5219L16.7235 5.57969C16.6106 5.40212 16.4548 5.25589 16.2705 5.15456C16.0861 5.05323 15.8791 5.00007 15.6688 5H8.16877C7.94465 4.99989 7.72462 5.06004 7.53172 5.17416C7.33882 5.28827 7.18015 5.45215 7.07233 5.64863C6.9645 5.84511 6.91149 6.06697 6.91883 6.29097C6.92618 6.51497 6.99362 6.73288 7.11408 6.92187L16.8953 22.2922L7.24377 32.9172C7.13106 33.0383 7.04351 33.1805 6.98617 33.3357C6.92884 33.4908 6.90288 33.6558 6.90978 33.8211C6.91669 33.9864 6.95633 34.1486 7.0264 34.2984C7.09647 34.4483 7.19559 34.5827 7.31801 34.694C7.44042 34.8052 7.5837 34.8911 7.73954 34.9465C7.89537 35.002 8.06067 35.026 8.22584 35.0171C8.39102 35.0082 8.55279 34.9666 8.70177 34.8948C8.85076 34.8229 8.984 34.7222 9.09377 34.5984L18.2875 24.4859L24.6141 34.4281C24.7278 34.6042 24.884 34.7489 25.0683 34.8489C25.2526 34.9488 25.4591 35.0008 25.6688 35H33.1688C33.3927 34.9999 33.6124 34.9397 33.8051 34.8257C33.9977 34.7117 34.1562 34.548 34.264 34.3517C34.3718 34.1555 34.4249 33.9339 34.4178 33.7102C34.4106 33.4864 34.3435 33.2687 34.2235 33.0797ZM26.3547 32.5L10.4453 7.5H14.9766L30.8922 32.5H26.3547Z"
+                                                fill="#0E51A0" />
+                                            <path
+                                                d="M34.2235 33.0797L24.4422 17.7078L34.0938 7.09063C34.3121 6.84457 34.4246 6.52239 34.4069 6.19394C34.3892 5.86549 34.2428 5.55724 33.9994 5.33602C33.756 5.11481 33.4351 4.99845 33.1065 5.01218C32.7779 5.02591 32.4679 5.16862 32.2438 5.40937L23.05 15.5219L16.7235 5.57969C16.6106 5.40212 16.4548 5.25589 16.2705 5.15456C16.0861 5.05323 15.8791 5.00007 15.6688 5H8.16877C7.94465 4.99989 7.72462 5.06004 7.53172 5.17416C7.33882 5.28827 7.18015 5.45215 7.07233 5.64863C6.9645 5.84511 6.91149 6.06697 6.91883 6.29097C6.92618 6.51497 6.99362 6.73288 7.11408 6.92187L16.8953 22.2922L7.24377 32.9172C7.13106 33.0383 7.04351 33.1805 6.98617 33.3357C6.92884 33.4908 6.90288 33.6558 6.90978 33.8211C6.91669 33.9864 6.95633 34.1486 7.0264 34.2984C7.09647 34.4483 7.19559 34.5827 7.31801 34.694C7.44042 34.8052 7.5837 34.8911 7.73954 34.9465C7.89537 35.002 8.06067 35.026 8.22584 35.0171C8.39102 35.0082 8.55279 34.9666 8.70177 34.8948C8.85076 34.8229 8.984 34.7222 9.09377 34.5984L18.2875 24.4859L24.6141 34.4281C24.7278 34.6042 24.884 34.7489 25.0683 34.8489C25.2526 34.9488 25.4591 35.0008 25.6688 35H33.1688C33.3927 34.9999 33.6124 34.9397 33.8051 34.8257C33.9977 34.7117 34.1562 34.548 34.264 34.3517C34.3718 34.1555 34.4249 33.9339 34.4178 33.7102C34.4106 33.4864 34.3435 33.2687 34.2235 33.0797ZM26.3547 32.5L10.4453 7.5H14.9766L30.8922 32.5H26.3547Z"
+                                                fill="url(#paint0_linear_1_615)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1_615" x1="44.2875" y1="49.2779"
+                                                    x2="2.53229" y2="-13.5765" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0E51A0" />
+                                                    <stop offset="1" stop-color="#E31D1C" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li><a href="https://www.facebook.com/extravelmoney/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 40 40" fill="none">
+                                            <path
+                                                d="M20 3.75C16.7861 3.75 13.6443 4.70305 10.972 6.48862C8.29969 8.27419 6.21689 10.8121 4.98696 13.7814C3.75704 16.7507 3.43524 20.018 4.06225 23.1702C4.68926 26.3224 6.23692 29.2179 8.50952 31.4905C10.7821 33.7631 13.6776 35.3107 16.8298 35.9378C19.982 36.5648 23.2493 36.243 26.2186 35.013C29.1879 33.7831 31.7258 31.7003 33.5114 29.028C35.297 26.3557 36.25 23.2139 36.25 20C36.2455 15.6916 34.5319 11.561 31.4855 8.51454C28.439 5.46806 24.3084 3.75455 20 3.75ZM21.25 33.6922V23.75H25C25.3315 23.75 25.6495 23.6183 25.8839 23.3839C26.1183 23.1495 26.25 22.8315 26.25 22.5C26.25 22.1685 26.1183 21.8505 25.8839 21.6161C25.6495 21.3817 25.3315 21.25 25 21.25H21.25V17.5C21.25 16.837 21.5134 16.2011 21.9822 15.7322C22.4511 15.2634 23.087 15 23.75 15H26.25C26.5815 15 26.8995 14.8683 27.1339 14.6339C27.3683 14.3995 27.5 14.0815 27.5 13.75C27.5 13.4185 27.3683 13.1005 27.1339 12.8661C26.8995 12.6317 26.5815 12.5 26.25 12.5H23.75C22.4239 12.5 21.1522 13.0268 20.2145 13.9645C19.2768 14.9021 18.75 16.1739 18.75 17.5V21.25H15C14.6685 21.25 14.3505 21.3817 14.1161 21.6161C13.8817 21.8505 13.75 22.1685 13.75 22.5C13.75 22.8315 13.8817 23.1495 14.1161 23.3839C14.3505 23.6183 14.6685 23.75 15 23.75H18.75V33.6922C15.2262 33.3705 11.9621 31.7028 9.63663 29.0359C7.31112 26.369 6.10325 22.9082 6.26425 19.3735C6.42525 15.8387 7.94274 12.5021 10.5011 10.0577C13.0594 7.61322 16.4616 6.24912 20 6.24912C23.5384 6.24912 26.9406 7.61322 29.499 10.0577C32.0573 12.5021 33.5748 15.8387 33.7358 19.3735C33.8968 22.9082 32.6889 26.369 30.3634 29.0359C28.0379 31.7028 24.7738 33.3705 21.25 33.6922Z"
+                                                fill="#0E51A0" />
+                                            <path
+                                                d="M20 3.75C16.7861 3.75 13.6443 4.70305 10.972 6.48862C8.29969 8.27419 6.21689 10.8121 4.98696 13.7814C3.75704 16.7507 3.43524 20.018 4.06225 23.1702C4.68926 26.3224 6.23692 29.2179 8.50952 31.4905C10.7821 33.7631 13.6776 35.3107 16.8298 35.9378C19.982 36.5648 23.2493 36.243 26.2186 35.013C29.1879 33.7831 31.7258 31.7003 33.5114 29.028C35.297 26.3557 36.25 23.2139 36.25 20C36.2455 15.6916 34.5319 11.561 31.4855 8.51454C28.439 5.46806 24.3084 3.75455 20 3.75ZM21.25 33.6922V23.75H25C25.3315 23.75 25.6495 23.6183 25.8839 23.3839C26.1183 23.1495 26.25 22.8315 26.25 22.5C26.25 22.1685 26.1183 21.8505 25.8839 21.6161C25.6495 21.3817 25.3315 21.25 25 21.25H21.25V17.5C21.25 16.837 21.5134 16.2011 21.9822 15.7322C22.4511 15.2634 23.087 15 23.75 15H26.25C26.5815 15 26.8995 14.8683 27.1339 14.6339C27.3683 14.3995 27.5 14.0815 27.5 13.75C27.5 13.4185 27.3683 13.1005 27.1339 12.8661C26.8995 12.6317 26.5815 12.5 26.25 12.5H23.75C22.4239 12.5 21.1522 13.0268 20.2145 13.9645C19.2768 14.9021 18.75 16.1739 18.75 17.5V21.25H15C14.6685 21.25 14.3505 21.3817 14.1161 21.6161C13.8817 21.8505 13.75 22.1685 13.75 22.5C13.75 22.8315 13.8817 23.1495 14.1161 23.3839C14.3505 23.6183 14.6685 23.75 15 23.75H18.75V33.6922C15.2262 33.3705 11.9621 31.7028 9.63663 29.0359C7.31112 26.369 6.10325 22.9082 6.26425 19.3735C6.42525 15.8387 7.94274 12.5021 10.5011 10.0577C13.0594 7.61322 16.4616 6.24912 20 6.24912C23.5384 6.24912 26.9406 7.61322 29.499 10.0577C32.0573 12.5021 33.5748 15.8387 33.7358 19.3735C33.8968 22.9082 32.6889 26.369 30.3634 29.0359C28.0379 31.7028 24.7738 33.3705 21.25 33.6922Z"
+                                                fill="url(#paint0_linear_1_617)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1_617" x1="47.9094" y1="51.6875"
+                                                    x2="4.345" y2="-19.8717" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0E51A0" />
+                                                    <stop offset="1" stop-color="#E31D1C" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@Extravelmoney" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 40 40" fill="none">
+                                            <path
+                                                d="M26.0272 18.9594L18.5272 13.9594C18.339 13.8338 18.1201 13.7616 17.894 13.7507C17.6679 13.7397 17.4431 13.7903 17.2435 13.8972C17.044 14.004 16.8772 14.163 16.7609 14.3573C16.6447 14.5515 16.5833 14.7736 16.5835 15V25C16.5833 25.2264 16.6447 25.4485 16.7609 25.6427C16.8772 25.837 17.044 25.996 17.2435 26.1028C17.4431 26.2097 17.6679 26.2603 17.894 26.2494C18.1201 26.2384 18.339 26.1663 18.5272 26.0406L26.0272 21.0406C26.1987 20.9265 26.3393 20.7718 26.4366 20.5903C26.5338 20.4087 26.5847 20.206 26.5847 20C26.5847 19.794 26.5338 19.5913 26.4366 19.4097C26.3393 19.2282 26.1987 19.0735 26.0272 18.9594ZM19.0835 22.6641V17.3438L23.0804 20L19.0835 22.6641ZM36.9476 10.8625C36.8003 10.2865 36.5183 9.75373 36.1246 9.30818C35.7309 8.86264 35.237 8.51707 34.6835 8.30001C29.3272 6.23126 20.8022 6.25001 20.3335 6.25001C19.8647 6.25001 11.3397 6.23126 5.9835 8.30001C5.43 8.51707 4.93605 8.86264 4.54239 9.30818C4.14874 9.75373 3.86666 10.2865 3.71943 10.8625C3.31475 12.4219 2.8335 15.2719 2.8335 20C2.8335 24.7281 3.31475 27.5781 3.71943 29.1375C3.86644 29.7138 4.14842 30.2469 4.54209 30.6927C4.93575 31.1385 5.42982 31.4843 5.9835 31.7016C11.1147 33.6813 19.146 33.75 20.2304 33.75H20.4366C21.521 33.75 29.5569 33.6813 34.6835 31.7016C35.2372 31.4843 35.7312 31.1385 36.1249 30.6927C36.5186 30.2469 36.8006 29.7138 36.9476 29.1375C37.3522 27.575 37.8335 24.7281 37.8335 20C37.8335 15.2719 37.3522 12.4219 36.9476 10.8625ZM34.5272 28.5188C34.4796 28.7105 34.3873 28.8881 34.2577 29.0373C34.1282 29.1864 33.9651 29.3026 33.7819 29.3766C28.8366 31.2859 20.4257 31.2516 20.3444 31.2516H20.3335C20.2491 31.2516 11.8444 31.2828 6.896 29.3766C6.71282 29.3026 6.54978 29.1864 6.42023 29.0373C6.29067 28.8881 6.1983 28.7105 6.15068 28.5188C5.771 27.0922 5.3335 24.4641 5.3335 20C5.3335 15.5359 5.771 12.9078 6.13975 11.4891C6.18648 11.2962 6.27845 11.1173 6.40805 10.967C6.53765 10.8168 6.70116 10.6995 6.88506 10.625C11.6538 8.78282 19.6444 8.75001 20.2991 8.75001H20.3413C20.4257 8.75001 28.8382 8.72188 33.7788 10.625C33.962 10.6989 34.125 10.8152 34.2546 10.9643C34.3841 11.1134 34.4765 11.2911 34.5241 11.4828C34.896 12.9078 35.3335 15.5359 35.3335 20C35.3335 24.4641 34.896 27.0922 34.5272 28.5109V28.5188Z"
+                                                fill="black" />
+                                            <path
+                                                d="M26.0272 18.9594L18.5272 13.9594C18.339 13.8338 18.1201 13.7616 17.894 13.7507C17.6679 13.7397 17.4431 13.7903 17.2435 13.8972C17.044 14.004 16.8772 14.163 16.7609 14.3573C16.6447 14.5515 16.5833 14.7736 16.5835 15V25C16.5833 25.2264 16.6447 25.4485 16.7609 25.6427C16.8772 25.837 17.044 25.996 17.2435 26.1028C17.4431 26.2097 17.6679 26.2603 17.894 26.2494C18.1201 26.2384 18.339 26.1663 18.5272 26.0406L26.0272 21.0406C26.1987 20.9265 26.3393 20.7718 26.4366 20.5903C26.5338 20.4087 26.5847 20.206 26.5847 20C26.5847 19.794 26.5338 19.5913 26.4366 19.4097C26.3393 19.2282 26.1987 19.0735 26.0272 18.9594ZM19.0835 22.6641V17.3438L23.0804 20L19.0835 22.6641ZM36.9476 10.8625C36.8003 10.2865 36.5183 9.75373 36.1246 9.30818C35.7309 8.86264 35.237 8.51707 34.6835 8.30001C29.3272 6.23126 20.8022 6.25001 20.3335 6.25001C19.8647 6.25001 11.3397 6.23126 5.9835 8.30001C5.43 8.51707 4.93605 8.86264 4.54239 9.30818C4.14874 9.75373 3.86666 10.2865 3.71943 10.8625C3.31475 12.4219 2.8335 15.2719 2.8335 20C2.8335 24.7281 3.31475 27.5781 3.71943 29.1375C3.86644 29.7138 4.14842 30.2469 4.54209 30.6927C4.93575 31.1385 5.42982 31.4843 5.9835 31.7016C11.1147 33.6813 19.146 33.75 20.2304 33.75H20.4366C21.521 33.75 29.5569 33.6813 34.6835 31.7016C35.2372 31.4843 35.7312 31.1385 36.1249 30.6927C36.5186 30.2469 36.8006 29.7138 36.9476 29.1375C37.3522 27.575 37.8335 24.7281 37.8335 20C37.8335 15.2719 37.3522 12.4219 36.9476 10.8625ZM34.5272 28.5188C34.4796 28.7105 34.3873 28.8881 34.2577 29.0373C34.1282 29.1864 33.9651 29.3026 33.7819 29.3766C28.8366 31.2859 20.4257 31.2516 20.3444 31.2516H20.3335C20.2491 31.2516 11.8444 31.2828 6.896 29.3766C6.71282 29.3026 6.54978 29.1864 6.42023 29.0373C6.29067 28.8881 6.1983 28.7105 6.15068 28.5188C5.771 27.0922 5.3335 24.4641 5.3335 20C5.3335 15.5359 5.771 12.9078 6.13975 11.4891C6.18648 11.2962 6.27845 11.1173 6.40805 10.967C6.53765 10.8168 6.70116 10.6995 6.88506 10.625C11.6538 8.78282 19.6444 8.75001 20.2991 8.75001H20.3413C20.4257 8.75001 28.8382 8.72188 33.7788 10.625C33.962 10.6989 34.125 10.8152 34.2546 10.9643C34.3841 11.1134 34.4765 11.2911 34.5241 11.4828C34.896 12.9078 35.3335 15.5359 35.3335 20C35.3335 24.4641 34.896 27.0922 34.5272 28.5109V28.5188Z"
+                                                fill="url(#paint0_linear_1_1916)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1_1916" x1="50.3897" y1="46.8125"
+                                                    x2="18.0839" y2="-20.7259" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0E51A0" />
+                                                    <stop offset="1" stop-color="#E31D1C" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex flex-col w-full">
+                        <h2 class="font-semibold text-lg mb-4">Quick Links</h2>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <!-- Column 1 -->
+                            <ul type="none" class="flex flex-col gap-2 ">
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>about">About US</a></li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>partner"
+                                        target="_blank">Partner Login</a></li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>rates">Live Rates</a></li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>buy-forex">Buy Forex</a>
+                                </li>
+                            </ul>
+
+                            <!-- Column 2 -->
+                            <ul type="none" class="flex flex-col gap-2 ">
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>forex-rates/">Forex Rates
+                                        Today</a></li>
+                                <li class="text-black text-sm"><a
+                                        href="<?php echo $fold; ?>tools/forex-tcs-calculator/">TCS Calculator</a></li>
+                                <li class="text-black text-sm"><a
+                                        href="<?php echo $fold; ?>currency-converter/">Currency Converter</a></li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>forex-limits">Remittance
+                                        Limits</a></li>
+                            </ul>
+
+                            <!-- Column 3 -->
+                            <ul type="none" class="flex flex-col gap-2 ">
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>forex-partners">Forex
+                                        Partners</a></li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>privacy">Privacy Policy</a>
+                                </li>
+                                <li class="text-black text-sm"><a href="<?php echo $fold; ?>terms">Terms of Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-        </section>
-        
-        
-        <a class="whatsappChatBotContainer" href="https://api.whatsapp.com/send?phone=919995023600&text=Hi%20" target="_blank">
-        <div class="whatsappChatBot">
-            <span>Chat with us</span>
-            <img src="<?php echo $fold; ?>public/images/whatsapp.svg" alt="">
-        </div>
+            <div class="flex flex-col mt-8">
+                <p class="text-black/60 pt-4 border-t border-black/10 text-mediumFont">
+                    All currency exchange, forex card, and international remittance transactions are processed and
+                    KYC-verified
+                    by our RBI-authorized partner money changers and banks, as prescribed by the Reserve Bank of India.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 border-b border-black/10 px-4">
+                    <p class="text-black/60 pt-2 pb-2   text-mediumFont">
+                        CIN : U72200KL2014PTC037740 <span>|</span> GSTIN: 32AADCE8460G1ZS
+
+                    </p>
+                    <p class="text-black/60 pt-2 pb-2    text-mediumFont">
+                        Copyright © 2025 All Rights Reserved by ExTravelMoney Technosol (P)
+                        Ltd
+                    </p>
+                </div>
+
+
+            </div>
+
+
+    </section>
+
+
+    <section>
+        <a class="whatsappChatBotContainer" href="https://api.whatsapp.com/send?phone=919995023600&text=Hi%20"
+            target="_blank">
+            <div class="whatsappChatBot">
+                <span>Chat with us</span>
+                <img src="<?php echo $fold; ?>public/images/whatsapp.svg" alt="">
+            </div>
         </a>
 
 
-        <div class="loadingAnimationContainer hidden items-center justify-center h-screen fixed top-0 left-0 w-full bg-white z-50">
+        <div
+            class="loadingAnimationContainer hidden items-center justify-center h-screen fixed top-0 left-0 w-full bg-white z-50">
             <div class="loading">
                 <svg viewBox="0 0 187.3 93.7" height="200px" width="300px" class="svgbox">
-                 <defs>
-                   <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
-                     <stop stop-color="#2C5AA2" offset="0%"></stop>
-                        <stop stop-color="#E3373A" offset="100%"></stop>
-                   </linearGradient>
-                 </defs>
-                 <path stroke="url(#gradient)" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"></path>
-               </svg>
+                    <defs>
+                        <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
+                            <stop stop-color="#2C5AA2" offset="0%"></stop>
+                            <stop stop-color="#E3373A" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path stroke="url(#gradient)"
+                        d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z">
+                    </path>
+                </svg>
             </div>
         </div>
-        
-        
-    </footer>
+    </section>
+
+
+</footer>

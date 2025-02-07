@@ -1,115 +1,115 @@
-<div class="flex flex-col mt-12 ">
+<div
+    class="flex  mt-16 justify-start items-center flex-col customMd:flex-row customMd:justify-between customMd:items-start gap-y-8">
     <div>
-        <div class="flex  items-center gap-2 ">
-            <div class="w-2 h-12 bg-[#e31d1c]"></div>
-            <h2 class="text-[#040815] text-xl  customMd:text-[40px] font-bold  customMd:leading-[60px] ">
-                Make
-                Tuition Fee Payments to</h2>
-        </div>
-
-
-        <div class="flex-justify-center">
-            <div class="locationContainer mt-8">
-
-                <div class="grid md:grid-cols-3 justify-start gap-4  w-full ">
-                    <div class="flex justify-start">
-                        <a href="../university-fee-payment/india-to-usa/" target="_blank">
-                            <div class="location">
-                                <span class="flag-icon flag-icon-us mr-2" style="width:1.8rem;"></span>
-                                <span class="locationName">Universtiy Fee to USA</span>
-                                <svg class="locationBtnArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M17.031 12.5307L9.53104 20.0307C9.46136 20.1004 9.37863 20.1556 9.28759 20.1933C9.19654 20.2311 9.09896 20.2505 9.00042 20.2505C8.90187 20.2505 8.80429 20.2311 8.71324 20.1933C8.6222 20.1556 8.53947 20.1004 8.46979 20.0307C8.40011 19.961 8.34483 19.8783 8.30712 19.7872C8.26941 19.6962 8.25 19.5986 8.25 19.5001C8.25 19.4015 8.26941 19.3039 8.30712 19.2129C8.34483 19.1218 8.40011 19.0391 8.46979 18.9694L15.4401 12.0001L8.46979 5.03068C8.32906 4.88995 8.25 4.69907 8.25 4.50005C8.25 4.30103 8.32906 4.11016 8.46979 3.96943C8.61052 3.8287 8.80139 3.74963 9.00042 3.74963C9.19944 3.74963 9.39031 3.8287 9.53104 3.96943L17.031 11.4694C17.1008 11.5391 17.1561 11.6218 17.1938 11.7128C17.2316 11.8039 17.251 11.9015 17.251 12.0001C17.251 12.0986 17.2316 12.1962 17.1938 12.2873C17.1561 12.3783 17.1008 12.461 17.031 12.5307Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="flex justify-start">
-                        <a href="../university-fee-payment/india-to-australia/" target="_blank">
-                            <div class="location">
-                                <span class="flag-icon flag-icon-au mr-2" style="width:1.8rem;"></span>
-                                <span class="locationName">Universtiy Fee to Australia</span>
-                                <svg class="locationBtnArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M17.031 12.5307L9.53104 20.0307C9.46136 20.1004 9.37863 20.1556 9.28759 20.1933C9.19654 20.2311 9.09896 20.2505 9.00042 20.2505C8.90187 20.2505 8.80429 20.2311 8.71324 20.1933C8.6222 20.1556 8.53947 20.1004 8.46979 20.0307C8.40011 19.961 8.34483 19.8783 8.30712 19.7872C8.26941 19.6962 8.25 19.5986 8.25 19.5001C8.25 19.4015 8.26941 19.3039 8.30712 19.2129C8.34483 19.1218 8.40011 19.0391 8.46979 18.9694L15.4401 12.0001L8.46979 5.03068C8.32906 4.88995 8.25 4.69907 8.25 4.50005C8.25 4.30103 8.32906 4.11016 8.46979 3.96943C8.61052 3.8287 8.80139 3.74963 9.00042 3.74963C9.19944 3.74963 9.39031 3.8287 9.53104 3.96943L17.031 11.4694C17.1008 11.5391 17.1561 11.6218 17.1938 11.7128C17.2316 11.8039 17.251 11.9015 17.251 12.0001C17.251 12.0986 17.2316 12.1962 17.1938 12.2873C17.1561 12.3783 17.1008 12.461 17.031 12.5307Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="flex justify-start">
-                        <a href="../university-fee-payment/india-to-canada/" target="_blank">
-                            <div class="location">
-                                <span class="flag-icon flag-icon-ca mr-2" style="width:1.8rem;"></span>
-                                <span class="locationName">Universtiy Fee to Canada</span>
-                                <svg class="locationBtnArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M17.031 12.5307L9.53104 20.0307C9.46136 20.1004 9.37863 20.1556 9.28759 20.1933C9.19654 20.2311 9.09896 20.2505 9.00042 20.2505C8.90187 20.2505 8.80429 20.2311 8.71324 20.1933C8.6222 20.1556 8.53947 20.1004 8.46979 20.0307C8.40011 19.961 8.34483 19.8783 8.30712 19.7872C8.26941 19.6962 8.25 19.5986 8.25 19.5001C8.25 19.4015 8.26941 19.3039 8.30712 19.2129C8.34483 19.1218 8.40011 19.0391 8.46979 18.9694L15.4401 12.0001L8.46979 5.03068C8.32906 4.88995 8.25 4.69907 8.25 4.50005C8.25 4.30103 8.32906 4.11016 8.46979 3.96943C8.61052 3.8287 8.80139 3.74963 9.00042 3.74963C9.19944 3.74963 9.39031 3.8287 9.53104 3.96943L17.031 11.4694C17.1008 11.5391 17.1561 11.6218 17.1938 11.7128C17.2316 11.8039 17.251 11.9015 17.251 12.0001C17.251 12.0986 17.2316 12.1962 17.1938 12.2873C17.1561 12.3783 17.1008 12.461 17.031 12.5307Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="flex justify-start">
-                        <a href="../university-fee-payment/india-to-uk/" target="_blank">
-                            <div class="location">
-                                <span class="flag-icon flag-icon-gb mr-2" style="width:1.8rem;"></span>
-                                <span class="locationName">Universtiy Fee to UK</span>
-                                <svg class="locationBtnArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M17.031 12.5307L9.53104 20.0307C9.46136 20.1004 9.37863 20.1556 9.28759 20.1933C9.19654 20.2311 9.09896 20.2505 9.00042 20.2505C8.90187 20.2505 8.80429 20.2311 8.71324 20.1933C8.6222 20.1556 8.53947 20.1004 8.46979 20.0307C8.40011 19.961 8.34483 19.8783 8.30712 19.7872C8.26941 19.6962 8.25 19.5986 8.25 19.5001C8.25 19.4015 8.26941 19.3039 8.30712 19.2129C8.34483 19.1218 8.40011 19.0391 8.46979 18.9694L15.4401 12.0001L8.46979 5.03068C8.32906 4.88995 8.25 4.69907 8.25 4.50005C8.25 4.30103 8.32906 4.11016 8.46979 3.96943C8.61052 3.8287 8.80139 3.74963 9.00042 3.74963C9.19944 3.74963 9.39031 3.8287 9.53104 3.96943L17.031 11.4694C17.1008 11.5391 17.1561 11.6218 17.1938 11.7128C17.2316 11.8039 17.251 11.9015 17.251 12.0001C17.251 12.0986 17.2316 12.1962 17.1938 12.2873C17.1561 12.3783 17.1008 12.461 17.031 12.5307Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="flex justify-start">
-                        <a href="../university-fee-payment/india-to-germany" target="_blank">
-                            <div class="location">
-                                <span class="flag-icon flag-icon-de mr-2" style="width:1.8rem;"></span>
-                                <span class="locationName">Universtiy Fee to Germany</span>
-                                <svg class="locationBtnArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M17.031 12.5307L9.53104 20.0307C9.46136 20.1004 9.37863 20.1556 9.28759 20.1933C9.19654 20.2311 9.09896 20.2505 9.00042 20.2505C8.90187 20.2505 8.80429 20.2311 8.71324 20.1933C8.6222 20.1556 8.53947 20.1004 8.46979 20.0307C8.40011 19.961 8.34483 19.8783 8.30712 19.7872C8.26941 19.6962 8.25 19.5986 8.25 19.5001C8.25 19.4015 8.26941 19.3039 8.30712 19.2129C8.34483 19.1218 8.40011 19.0391 8.46979 18.9694L15.4401 12.0001L8.46979 5.03068C8.32906 4.88995 8.25 4.69907 8.25 4.50005C8.25 4.30103 8.32906 4.11016 8.46979 3.96943C8.61052 3.8287 8.80139 3.74963 9.00042 3.74963C9.19944 3.74963 9.39031 3.8287 9.53104 3.96943L17.031 11.4694C17.1008 11.5391 17.1561 11.6218 17.1938 11.7128C17.2316 11.8039 17.251 11.9015 17.251 12.0001C17.251 12.0986 17.2316 12.1962 17.1938 12.2873C17.1561 12.3783 17.1008 12.461 17.031 12.5307Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="flex justify-start">
-                        <a href="../university-fee-payment/india-to-new-zealand" target="_blank">
-                            <div class="location">
-                                <span class="flag-icon flag-icon-nz mr-2" style="width:1.8rem;"></span>
-                                <span class="locationName">Universtiy Fee to New Zealand</span>
-                                <svg class="locationBtnArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M17.031 12.5307L9.53104 20.0307C9.46136 20.1004 9.37863 20.1556 9.28759 20.1933C9.19654 20.2311 9.09896 20.2505 9.00042 20.2505C8.90187 20.2505 8.80429 20.2311 8.71324 20.1933C8.6222 20.1556 8.53947 20.1004 8.46979 20.0307C8.40011 19.961 8.34483 19.8783 8.30712 19.7872C8.26941 19.6962 8.25 19.5986 8.25 19.5001C8.25 19.4015 8.26941 19.3039 8.30712 19.2129C8.34483 19.1218 8.40011 19.0391 8.46979 18.9694L15.4401 12.0001L8.46979 5.03068C8.32906 4.88995 8.25 4.69907 8.25 4.50005C8.25 4.30103 8.32906 4.11016 8.46979 3.96943C8.61052 3.8287 8.80139 3.74963 9.00042 3.74963C9.19944 3.74963 9.39031 3.8287 9.53104 3.96943L17.031 11.4694C17.1008 11.5391 17.1561 11.6218 17.1938 11.7128C17.2316 11.8039 17.251 11.9015 17.251 12.0001C17.251 12.0986 17.2316 12.1962 17.1938 12.2873C17.1561 12.3783 17.1008 12.461 17.031 12.5307Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+        <div>
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-12 bg-[#e31d1c]"></div>
+                <h2 class="text-[#040815] text-xl customMd:text-[40px] font-bold  customMd:leading-[60px]">Charges for
+                    Money Transfer from India to USA</h2>
             </div>
         </div>
+        <div class="mt-2">
+            <ul style="list-style-type:decimal"
+                class="list-disc flex-col justify-start items-start gap-5 inline-flex mt-4">
+                <li class="ml-4 self-stretch text-black text-sm font-normal  leading-normal">Conversion Rate - Depends
+                    on the live USD-INR exchange rate.</li>
+                <li class="ml-4 self-stretch text-black text-sm font-normal  leading-normal">Sending Bank Charge -
+                    Depending on our partnered bank/remittance option chosen by you (Typically it’s in the range of 300
+                    - 600 INR).</li>
+                <li class="ml-4 self-stretch text-black text-sm font-normal  leading-normal">Intermediary Bank Charge -
+                    Intermediary banks in the SWIFT network might deduct a charge. You can cover this charge upfront by
+                    opting for the ‘OUR’ option when making the wire transfer. (It usually comes in the range of 1500-
+                    2500 INR)
+                </li>
+                <li class="ml-4 self-stretch text-black text-sm font-normal  leading-normal">Beneficiary Bank Charge -
+                    Sometimes the beneficiary bank in USA might deduct a charge after the fund is credited. It depends
+                    on the beneficiary bank, check with the beneficiary’s bank to find out the exact amount.
+                </li>
+                <li class="ml-4 self-stretch text-black text-sm font-normal  leading-normal">GST - Depends on the amount
+                    you are transferring, usually quite minimal (minimum Rs 45 per transaction)
+                </li>
+                <li class="ml-4 self-stretch text-black text-sm font-normal  leading-normal">5% TCS may be applicable on
+                    your transfer if you have done forex transactions worth more than 7 Lakh INR in the financial year.
+                    Tax applies to amount exceeding 7 lakhs only. This can be reclaimed at the time of filing your IT
+                    returns. (0.5% is the source of fund is an education loan). To find out if TCS applies for your
+                    transaction, use our TCS Calculator.
+                </li>
 
+                <p class="text-black/60 mt-4 text-sm font-normal font-['Plus Jakarta Sans'] leading-[21px]">All the fees
+                    applicable will be shown transparently in our order summary page and also intimated by our customer
+                    support team prior to the transfer. <br>
 
+                    ExTravelMoney does not charge any hidden fees. We also do not charge any Booking Fees on Money
+                    Transfer Abroad.</p>
 
-
-
-
+            </ul>
+        </div>
     </div>
+
+
+</div>
+
+<div
+    class="flex  mt-16 justify-start items-center flex-col customMd:flex-row customMd:justify-between customMd:items-start gap-y-8">
+    <div>
+        <div>
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-12 bg-[#e31d1c]"></div>
+                <h2 class="text-[#040815] text-xl customMd:text-[40px] font-bold  customMd:leading-[60px]">Maximum limit
+                    for money transfer from India to UK</h2>
+            </div>
+        </div>
+        <div class="mt-2">
+            <p class="text-black mt-4 text-sm font-normal font-['Plus Jakarta Sans'] leading-[21px]">If you are an
+                <strong>Indian Resident</strong>, then you can transfer abroad / to the UK, a maximum of <strong>USD
+                    2,50,000</strong> equivalent in GBP per financial year from your <strong>Savings Account</strong>.
+            </p>
+            <p class="text-black mt-4 text-sm font-normal font-['Plus Jakarta Sans'] leading-[21px]">If you are a
+                <strong>Non-Resident India (NRI)</strong>, then the maximum amount of money you can send to the UK from
+                India depends on the type of your bank account.</p>
+
+            <ul style="list-style-type:decimal"
+                class="ml-5 list-disc flex-col justify-start items-start gap-5 inline-flex mt-4">
+                <li class="ml-4 self-stretch text-black text-sm font-normal  leading-normal">NRO Account - USD 1 million
+                    equivalent in GBP per financial year.</li>
+                <li class="ml-4 self-stretch text-black text-sm font-normal  leading-normal">NRE Account - No limit to
+                    repatriation.</li>
+
+            </ul>
+            <div class="pr-5">
+                <table class="border-collapse border border-gray-400 w-full text-sm mt-8 ml-5">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-400 px-4 py-2 font-bold text-left">Residential Status</th>
+                            <th class="border border-gray-400 px-4 py-2 font-bold text-left">Account Type</th>
+                            <th class="border border-gray-400 px-4 py-2 font-bold text-left">Maximum Remittance
+                                Limit<br>(in a financial year)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2">Resident Indian</td>
+                            <td class="border border-gray-400 px-4 py-2">Savings Account</td>
+                            <td class="border border-gray-400 px-4 py-2">USD 2,50,000 equivalent in GBP (GBP 2,00,000
+                                approx)
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2" rowspan="2">Non-Resident Indian</td>
+                            <td class="border border-gray-400 px-4 py-2">NRO Account</td>
+                            <td class="border border-gray-400 px-4 py-2">USD 1 million equivalent in GBP (GBP 8,00,000
+                                approx)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2">NRE Account</td>
+                            <td class="border border-gray-400 px-4 py-2">No limit to repatriation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
 </div>

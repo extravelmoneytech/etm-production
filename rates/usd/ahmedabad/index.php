@@ -16,10 +16,8 @@ $widgetType = 'fx';
 $defaultCountry = "us";
 $ratesPage = true;
 include $fold . 'includesv2/head.php';
+include $fold.'includes/best-city-rates.php'; 
 ?>
-
-
-
 
 <body>
     <div class="flex flex-col items-center justify-center relative bg-white">
@@ -242,16 +240,14 @@ include $fold . 'includesv2/head.php';
             ?>
             <div class="cityPageContainer">
                 <?php
-                include $fold . 'includesv2/facts-usd.php';
+                include '../facts-usd.php';
                 ?>
                 <?php
-                include $fold . 'includesv2/usd-cities.php';
+                include $fold . 'includesv2/currency-rates.php';
                 ?>
             </div>
+
             
-            <?php
-            // include $fold . 'includesv2/faq.php';
-            ?>
 
             <div class="mt-12 customMd:mt-24 h-1"></div>
 

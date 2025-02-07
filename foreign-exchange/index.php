@@ -18,8 +18,6 @@ $defaultProduct="currency";
 ?>
 
 
-
-
 <body>
     <div class="flex flex-col items-center justify-center relative bg-white">
         <div class="chooseCityOverlay absolute top-0 left-0 w-full h-[100vh] bg-white customMd:bg-black/30  customMd:bg-opacity-60  z-20"

@@ -1,0 +1,127 @@
+.mainText {
+  font-size: 24px;
+  font-weight: bold;
+}
+.titleText {
+  font-size: 20px;
+  font-weight: bold;
+}
+.subTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+.tableHeading {
+  font-size: 18px;
+}
+.paraText {
+  color: #555555;
+  font-size: 14px;
+  text-align:justify ;
+}
+.paraBold {
+  font-size: 14px;
+  font-weight: 500;
+}
+.smallText {
+  font-size: 12px;
+}
+
+.custom-list {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.custom-list-item {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.paraColor{
+ color: #555555;
+}
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+  .mainText {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 130%;
+  }
+  .titleText {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 150%;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .tableHeading {
+    font-size: 18px;
+  }
+  .paraText {
+    font-size: 14px;
+    color: #555555;
+    letter-spacing: 0;
+    text-align:justify ;
+  }
+  .paraBold {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .smallText {
+    font-size: 12px;
+  }
+  .custom-list {
+    font-size: 14px; /* Keep the same size as .paraText for tablet */
+    line-height: 1.7; /* Adjust line height for better readability */
+  }
+  .custom-list-item {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+  .mainText {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 130%;
+  }
+
+  .titleText {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .subTitle {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .tableHeading {
+    font-size: 20px;
+  }
+  .paraText {
+    font-size: 16px;
+    color: #555555;
+    text-align:justify ;
+  }
+  .paraBold {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .smallText {
+    font-size: 12px;
+  }
+  .custom-list {
+    font-size: 16px; /* Match the .paraText size on desktop */
+    line-height: 1.8; /* Add more spacing for large screens */
+  }
+  .custom-list-item {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}

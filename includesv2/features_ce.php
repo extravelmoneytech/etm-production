@@ -3,17 +3,30 @@
 
                 <div class="w-full justify-between items-center gap-2 customMd:gap-6 flex ">
 
-                    <div class="h-1 w-full   relative bg-[#0e51a0]"></div>
-                    <?php
-    if ($ratesPage == true) {
-        echo '<p class="text-[#040815] text-center text-2xl font-extrabold w-full leading-[72px] text-nowrap">Why Buy US Dollar via <span class="text-[#0e51a0]">E</span><span class="text-[#e31d1c] ">x</span>travelmoney</p>';
-    } else {
-        echo '<p class="text-[#040815] text-center text-2xl font-extrabold w-full leading-[72px] text-nowrap">Why Buy Forex via <span class="text-[#0e51a0]">E</span><span class="text-[#e31d1c] ">x</span>travelmoney</p>';
-    }
-    ?>
+                    <div class="h-1 w-full   relative bg-[#0e51a0] hidden sm:block"></div>
+                   <?php
+        $currencyFullNames = [
 
-                    
-                    <div class="h-1 w-full  relative bg-[#e31d1c]"></div>
+            'AED' => 'Arab Emirates Dirham',
+            'AUD' => 'Australian Dollar',
+            'CAD' => 'Canadian Dollar',
+            'EUR' => 'Euro',
+            'GBP' => 'British Pound',
+            'SAR' => 'Saudi Riyal',
+            'SGD' => 'Singapore Dollar',
+            'THB' => 'Thai Baht',
+            'USD' => 'US Dollar',
+            'MYR' => 'Malaysian Ringgit'
+
+        ];
+        $currencyFullName = isset($currencyFullNames[$currency]) ? $currencyFullNames[$currency] : 'Unknown Currency';
+        if ($ratesPage == true) {
+            echo '<p class="text-[#040815] text-center text-2xl font-extrabold w-full leading-[72px] ">Why Buy ' . $currencyFullName . ' via <span class="text-[#0e51a0]">E</span><span class="text-[#e31d1c] ">x</span>travelmoney</p>';
+        } else {
+            echo '<p class="text-[#040815] text-center text-2xl font-extrabold w-full leading-[72px] ">Why Buy Forex via <span class="text-[#0e51a0]">E</span><span class="text-[#e31d1c] ">x</span>travelmoney</p>';
+        }
+        ?>
+                    <div class="h-1 w-full  relative bg-[#e31d1c]  hidden sm:block"></div>
                 </div>
                 
                 <div class="flex flex-col customMd:flex-row justify-center w-full items-center relative customMd:justify-between  mt-8">

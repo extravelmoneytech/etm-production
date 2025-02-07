@@ -8,10 +8,9 @@
                 <p class="">Best Rates in </p>
                 <p class=""
                     style="word-wrap: break-word;background: linear-gradient(26deg, #0E51A0 1.1%, #E3373A 40.49%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                    <?php echo $city;?></p>
+                    <?php echo $city; ?>
+                </p>
             </h1>
-
-
 
             <!--rates widget start-->
             <div class="relative border w-full sm:w-4/5 mt-6 rounded-lg overflow-hidden">
@@ -24,8 +23,13 @@
                                         <span>Currency</span>
                                         <div
                                             class="flex items-center bg-white/10 rounded px-2 py-1 space-x-2 mt-2 sm:mt-0">
-                                            <span class="text-xs sm:text-sm text-white">USD</span>
-                                            
+                                            <?php
+                                            if ($ratesPage == true) {
+                                                echo '<span class="text-xs sm:text-sm text-white">' . $currency . ' </span>';
+                                            }
+                                            ?>
+
+
                                         </div>
                                     </div>
                                 </th>
@@ -38,28 +42,32 @@
                             <tr class="border-b">
                                 <th scope="row"
                                     class="px-3 sm:px-6 py-4 font-medium text-gray-900 whitespace-normal sm:whitespace-nowrap">
-                                    Buy USD in Currency
+                                    Buy <?php echo $currency; ?> in Currency
                                 </th>
                                 <td class="px-3 sm:px-6 py-4 text-gray-900 font-semibold">
-                                <span class="symrupee">₹</span><span class="rate-span" id="buy-rate"><?php echo $buy_value;?> </span></td>
-                                
+                                    <span class="symrupee">₹</span><span class="rate-span"
+                                        id="buy-rate"><?php echo $buy_value; ?> </span>
+                                </td>
+
                             </tr>
                             <tr class="border-b">
                                 <th scope="row"
                                     class="px-3 sm:px-6 py-4 font-medium text-gray-900 whitespace-normal sm:whitespace-nowrap">
-                                    Buy USD in Forex Card
+                                    Buy <?php echo $currency; ?> in Forex Card
                                 </th>
                                 <td class="px-3 sm:px-6 py-4 text-gray-900 font-semibold">
-                                <span class="symrupee">₹</span><span class="rate-span" id="buy-rate-forex"><?php echo $buy_value_forex;?></span>
+                                    <span class="symrupee">₹</span><span class="rate-span"
+                                        id="buy-rate-forex"><?php echo $buy_value_forex; ?></span>
                                 </td>
                             </tr>
                             <tr class="border-b">
                                 <th scope="row"
                                     class="px-3 sm:px-6 py-4 font-medium text-gray-900 whitespace-normal sm:whitespace-nowrap">
-                                    Sell USD in Currency
+                                    Sell <?php echo $currency; ?> in Currency
                                 </th>
                                 <td class="px-3 sm:px-6 py-4 text-gray-900 font-semibold">
-                                <span class="symrupee">₹</span><span class="rate-span" id="sell-rate"><?php echo $sell_value;?></span>
+                                    <span class="symrupee">₹</span><span class="rate-span"
+                                        id="sell-rate"><?php echo $sell_value; ?></span>
                                 </td>
                             </tr>
                             <tr>
@@ -68,7 +76,8 @@
                                     Remit US Dollar
                                 </th>
                                 <td class="px-3 sm:px-6 py-4 text-gray-900 font-semibold">
-                                <span class="symrupee">₹</span><span class="rate-span" id="mt-rate"><?php echo $mt_value;?></span>
+                                    <span class="symrupee">₹</span><span class="rate-span"
+                                        id="mt-rate"><?php echo $mt_value; ?></span>
                                 </td>
                             </tr>
                         </tbody>
@@ -76,15 +85,8 @@
                 </div>
             </div>
 
-          
-
 
             <!--rates widget end-->
-
-
-
-
-
             <div class="mt-10  flex-col gap-2 hidden sm:flex">
                 <div class="flex gap-8">
                     <div class="flex flex-col gap-2">

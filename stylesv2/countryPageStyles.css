@@ -121,8 +121,8 @@
 
 .headingText {
     color: #040815;
-    font-family: "Plus Jakarta Sans";
-    font-size: 2.3rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -130,15 +130,15 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-bottom: 20px;
 }
 
 .headingText::before {
     background: #E31D1C;
     content: '';
     width: 6px;
-    height: 100%;
+    height: 2.2rem; 
     display: block;
-    height: 2.2rem;
 }
 
 .contentText {
@@ -332,7 +332,8 @@
             line-height: normal;
             letter-spacing: -0.6px;
             margin-top: 1rem;
-y}
+y
+}
 
 
 .stepContentHeader p {
@@ -366,6 +367,8 @@ y}
     grid-template-columns: auto auto;
     }
 }
+
+
 
 .cityCard {
     cursor: pointer;
@@ -477,7 +480,7 @@ y}
     }
 @media (max-width: 940px) {
     .headingText {
-        font-size: 1.8rem !important;
+        font-size: 20px !important;
     }
     .headerSection {
         flex-direction: column;
@@ -543,3 +546,238 @@ y}
         padding: 3rem 2rem;
     }
 }
+
+
+
+
+.mainText {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    padding-bottom: 20px;
+  }
+  .titleText {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding-bottom: 20px;
+  }
+  .subTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    padding-bottom: 10px;
+  }
+  .subHead {
+    font-size: 16px;
+    font-weight:bolder;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 20px;
+  }
+  .tableHead {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    padding-top: 20px;
+        padding-bottom: 20px;
+ 
+  }
+  .paraText {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    color: #555555;
+    text-align: justify;
+
+  }
+  .paraBold {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .smallText {
+    font-size: 12px;
+  }
+  
+  .custom-list {
+    list-style-type: decimal;
+    margin: 0;
+    padding: 0 2rem;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 10px;
+
+  }
+  
+  .custom-list-item {
+    
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .container {
+    margin-top: 20px;
+}
+/* Grid Container Styling */
+.documents-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+    
+
+}
+
+/* Card Styling */
+.documents-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+  
+}
+
+  /* Tablet (768px and up) */
+  @media screen and (min-width: 768px) {
+    .mainText {
+        font-size: 36px;
+        line-height: 120%;
+        padding-bottom: 20px;
+    }
+    .titleText {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; 
+        padding-bottom: 20px;
+    }
+  
+    .subTitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        padding-bottom: 10px;
+    }
+    .tableHead {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+ 
+    }
+    .paraText {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      color: #555555;
+      text-align: justify;
+
+    }
+    .paraBold {
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .smallText {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    .custom-list {
+      font-size: 14px; 
+      line-height: 1.7; 
+      margin-top: 10px;
+    }
+    .custom-list-item {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .container {
+        margin-top: 40px;
+    }
+    .documents-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+
+    .documents-card {
+        padding: 1rem; 
+    }
+    .headingText {
+        font-size: 2.5rem; 
+        gap: 8px; 
+    }
+
+    .headingText::before {
+        height: 2.5rem; 
+    }
+  }
+  
+  /* Desktop (1024px and up) */
+  @media screen and (min-width: 1024px) {
+    .mainText {
+        font-size: 40px;
+        line-height: 120%;
+        padding-bottom: 20px;
+    }
+  
+    .titleText {
+        font-size: 32px;
+        line-height: 130%;
+        padding-bottom: 20px;
+    }
+    .subTitle {
+        font-size: 24px;
+        line-height: 120%;
+        padding-bottom: 10px;
+    }
+    .tableHead {
+        font-size: 20px;
+        line-height: 150%;
+        padding: 20px 0;
+    }
+    .paraText {
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .paraBold {
+        font-size: 16px;
+    }
+    .smallText {
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .custom-list,
+    .custom-list-item {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .container {
+        margin-top: 80px;
+    }
+
+    .headingText {
+        font-size: 40px;
+        gap: 10px;
+        
+        &::before {
+            height: 2.8rem;
+        }
+    }
+  }
+  
+  

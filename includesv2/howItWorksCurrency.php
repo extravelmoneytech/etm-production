@@ -13,12 +13,34 @@
 <section id="howItWorkSection" class="mt-24 px-5 sm:px-12 md:px-24">
 
     <?php
-    if ($ratesPage == true) {
-        echo '<p class="text-[#18325b] text-3xl font-extrabold">How to Buy USD in ' . $city . '?</p>';
+    $currency = isset($currency) ? $currency : null;
+    $ratesPage = isset($ratesPage) ? $ratesPage : null;
+    $city = isset($city) ? $city : null;
+
+    $currencyFullNames = [
+
+        'AED' => 'Arab Emirates Dirham',
+        'AUD' => 'Australian Dollar',
+        'CAD' => 'Canadian Dollar',
+        'EUR' => 'Euro',
+        'GBP' => 'British Pound',
+        'SAR' => 'Saudi Riyal',
+        'SGD' => 'Singapore Dollar',
+        'THB' => 'Thai Baht',
+        'USD' => 'US Dollar'
+
+    ];
+    $currencyFullName = isset($currencyFullNames[$currency]) ? $currencyFullNames[$currency] : 'Unknown Currency';
+    if ($ratesPage && $city) {
+        echo '<p class="text-[#18325b] text-3xl font-extrabold">How to Buy ' . $currencyFullName . ' in ' . $city . '?</p>';
+    } else if ($city) {
+        echo '<p class="text-[#18325b] text-3xl font-extrabold">How to Buy Forex in ' . ucwords(str_replace('-', ' ', $city)) . '?</p>';
+
     } else {
-        echo '<p class="text-[#18325b] text-3xl font-extrabold">It\'s Done! in 3 simple steps</p>';
+        echo '<p class="text-[#18325b] text-3xl font-extrabold">It\'s done in 3 simple steps!</p>';
     }
     ?>
+
 
 
     <div class="overflow-hidden mt-2 lg:mt-8">
@@ -100,7 +122,3 @@
 
 
 </section>
-
-</body>
-
-</html>
